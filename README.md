@@ -6,3 +6,4 @@ Metterò solo alcuni esercizi, quelli più completi ed elaborati, per il resto s
 Nell'utilizzo di interfacce grafiche sono state utilizzate le librerie FLTK ( https://www.fltk.org ) che sono rilasciate sotto licenza LGPL con qualche eccezione ( https://www.fltk.org/COPYING.php ).
 Ho installato le librerie in Visual Studio Community 2019 e mantengo aggiornati sia VS che FLTK.
 Ho creato una soluzione per ogni capitolo e nella soluzione c'è un progetto per ogni esercizio.
+Siccome FLTK è a 32 bit e sono in debug, bisognerà aggiungere le librerie di debug come nel manuale di fltk e compilare gli esercizi a 32 bit.
