@@ -1,0 +1,465 @@
+#Currency	ID	Name	Rate	Decimal Places	Ticker Symbol	Prefix	Suffix	
+EUR	12aa062f-bbb0-4349-9830-d2a50f4c7330	Euro	1.0	2		€		
+CAD	b22af7b1-e84c-463a-bfd4-03f1b7399fe2	Canadian Dollar	1.4772291820191599	2		$		
+	562943a4-04f2-4e3a-bdff-1a4830366371	BG Selection Blackrock Multi assets Inflation Focused	0.009081360205768366	5				
+	e07e1edb-9ef9-4567-9a6a-641038000a18	Lux IM Global Emerging Market	0.010796610169491527	5				
+FJD	e688a066-8406-496a-a373-8b1bafa6d6f0	Fijian Dollar	2.2804716285924833	2		F$		
+JMD	66adca95-9219-4ff7-8348-8b81fb9f0caa	Jamaican Dollar	103.90567428150332	2		J$		
+SEK	7c72ff69-3979-4809-ab97-9084f610a236	Swedish Krona	0.21488577745025794	2		kr.		
+CHF	453dbba5-26e5-4d60-b70b-c5ee4e11dab4	Swiss Franc	1.5917464996315402	2		Fr.		
+	6f4aa718-429e-411e-84d4-a178ce67a7df	LUX IM Innovation Strategy	0.009129310344827585	5				
+	5a7f2f34-dd77-4fc9-8b34-b4f050b9b0f1	LUX IM Goldman Sachs Data An.	0.009868421052631578	5				
+BMD	783f9b00-e661-44e5-96a2-dac036ec7fa7	Bermudian Dollar	1.475313190862196	2		BD$		
+	b57d7f1f-97a2-416d-a0cc-02ab3cd57809	BG Sel. Smaller Companies	0.006583625207384194	5				
+SAR	0c8e1d83-c7db-4bbc-8e50-c35912d11b6e	Saudi 'Arabian' Riyal	5.5195283714075165	2		SR		
+	ac9089c9-1c73-4042-8bd4-deb747c32cf5	BG Selection Morgan Stanley North America Equities	0.005860874559701799	5				
+SGD	21df7fbc-9342-4b4c-819d-4c509e7a456b	Singapore Dollars	2.111422254974208	2		S$		
+ILS	fddef7b5-e846-45dd-99ed-af8dfab48a74	Israeli New Shekel	5.632277081798084	2			NIS	
+TRY	3bc61c4f-d3fb-4f05-92f6-cbb6a52177a5	Yeni Türk Lirası	1.7266028002947678	2		YTL		
+	e6dada1e-0bdc-4fb0-a4b9-7aec151966b8	BG Sel. T-Cube	0.00737696335078534	5				
+VEF	356c3e25-3b4e-4b36-84f8-6812dae8aa91	Venezuelan Bolivar	3165.070007369197	2		Bs		
+KPW	dc299827-5b58-485a-97dc-57d00245102e	North Korean Won	3.242446573323508	2			Wn	
+	943bbc65-fef6-44d1-a13c-4cbb94b11c47	LUX IM Flexible Global Eq.	0.009421052631578946	5				
+CRC	7d3eaa1a-a504-46d7-a16e-0b022244ba28	Costa Rica Colon	763.3529845246867	2			 CRC	
+TRL	e33ea377-8551-4bcd-9251-9a8802fa31fd	Turkish Lira	2354375.9608843033	0			TL	
+	10d9ac4e-4135-43c7-b286-e8d5aa28a8b3	LUX IM MS Global.R.E. & I. Eq.	0.007278526008229611	5				
+IDR	dde9eed1-6be0-40dc-ae78-c4fc38659529	Indonesian Rupiah	13898.305084745763	0		Rp		
+KRW	cf544d75-8cf0-4732-b80a-e0953fd2cf60	South Korean Won	1383.198231392778	0			W	
+	8399ebff-d786-4ea2-a86e-1cf80d6de085	Lux Gen. Inv. Europe Eq. Rec.	0.009034782608695653	5				
+DKK	8caf2c96-5297-44f4-a265-40f3a5050dfd	Danish Krone	7.446573323507738	2			 kr.	
+JOD	feeec6dc-48b9-4d44-aa3c-2f0a5fa18e12	Jordonian Dollar	1.044657332350774	3		JD		
+	f4a196df-96c3-41cc-b886-ce3204f5cd15	Lux IM Small Mid Cap Euro Eq.	0.008029935599916488	5				
+	b9db03a4-7093-4b60-9fe3-95f5c91ee70b	LUX IM Smart Industries	0.009127450980392157	5				
+	3498c120-5b2d-4bca-a7e1-14a7b0622043	LUX IM US EQUITIES	0.006057093425605536	5				
+LBP	e603b249-50cb-4c55-ad2f-a7b57bf69f86	Lebanese Pound	2228.4450994841563	0			L.L.	
+	2a5272cb-77d5-4fa9-8894-5412d1311653	BG Selection Africa & Middle East Equities	0.008987012987012988	5				
+TWD	0c4637e9-a87c-48e4-9681-7dc4cda635c1	Taiwan Dollars	47.83669859985262	2		NT$		
+SDG	acb0054e-0092-4c98-aa92-6a7a2cdc4958	Sudan Pound	345.44583640383195	2		Pound		
+	4f413594-4a4f-4688-a80b-44fe7ac1e880	BG Selection Anima Italy Equities	0.008919890463745106	5				
+	235accfb-0e5b-4c4f-8cef-55b6e1fa86c0	LUX IM ESG GI Diversified Str.	0.010067934782608695	5				
+	2becff24-cd53-4c6c-bbbf-69fc995f7df8	BG Selection Morgan Stanley Real Assets Port	0.008495166250403521	5				
+TTD	7d60c957-8639-4bee-92f6-a1225fbd0142	Trinidad and Tobago Dollar	9.212232866617539	2		TT$		
+Lux IM Global ESG	963e3da3-0dba-4db3-a270-96cbef6c8d0a	Lux IM Global ESG	0.009627450980392157	5				
+	b107b090-b688-4d4a-bbae-a5137217ce80	BG Select M&G Multi Asset Allocation	0.00910821469883688	5				
+BRL	dcae4f3b-1c7a-474a-a9bc-3139489b6dfc	Brazilian Real	2.5880619012527637	2		R$		
+LU0260158638	00f7f0f5-5974-42a7-b1e2-5992964ce2ba	GIS Global Equity	0.006331606217616581	5				
+MXN	ce9ac2b6-c92f-4a3d-8a15-69e002ea970e	Mexican Pesos	16.100957995578483	2		$		
+EGP	03aa25ab-a020-4b68-8f1f-db966210ab03	Egyption Pound	8.124539425202654	2		L.E.		
+	5102844d-c205-4af3-b351-1dd8a5a7a9f4	GSF Fidelity World	0.008932642487046632	5				
+	8dc38f34-9cdd-473a-9843-9146c14057d8	BG Sel. UBS Em. Market Sol.	0.008358974358974359	5				
+	ce89d76a-9049-4f0c-934d-f97b93de46a2	LUX IM Blackrock GI. Dividend	0.00781954887218045	5				
+HKD	0fcb21c7-f508-45e1-b06b-9a6d1dd2405f	Hong Kong Dollar	11.496831245394253	2		HK$		
+THB	33647211-cabf-4fb4-b026-f1c492c74434	Thai Baht	43.920412675018426	2		Bt		
+	174597a2-b719-4753-b01a-62ab805267c8	BG Selection Invesco Europe Equities	0.0076789473684210525	5				
+CLP	4c56a1e4-913b-48ab-96a3-1372217751a9	Chilean Pesos	731.0980103168755	2		Ch$		
+USD	6ed74df6-1278-43c0-807c-f732e5fc05c0	US Dollar	1.0	2		$		
+BSD	8f67b4da-502f-41a7-b4de-c0391e8be9d2	Bahamian Dollar	1.4701547531319088	2		B$		
+ISK	4235d354-000d-4cad-b94f-18e49c726314	Icelandic Krona	91.30434782608697	2			IKr	
+GBP	629482b6-523d-4f1d-a3e9-c9bdadd6eaf9	British Pound	0.7466470154753133	2		£		
+	16e5537b-eaee-4e33-99ff-5d925105ea67	BG Selection Invesco Asia Global Opportunities	0.007414507772020725	5				
+	0e01d7a0-ae4a-41cc-9047-1a4b0d3fb5b5	BG Selection Vontobel Global Elite CX	0.007464357692020602	5				
+ZAR	e4859da9-7e24-4fd5-9b9b-fc53253b96fe	South African Rand	10.081798084008842	2		R		
+PHP	0a8f95c5-d71c-4cf1-9704-ed3422b04e04	Philippines Peso	60.2063375092115	2		P		
+IT0003528186	b79fc909-97ee-418e-9738-e4c94dda29fa	Eurizon Profilo Flessibile Sviluppo	0.15330369461904034	5				
+AUD	d4fa6384-5fbb-454b-a3dc-5eb5f8bd0342	Australian Dollar	1.6868091378039796	2		A$		
+CNY	1c894088-a986-43c1-bdec-a23ee03d739c	Chinese 'Yuan' Renminbi	10.725865880619013	2		Y		
+RON	b4778db3-9c59-45ae-af09-9774f35222eb	Romanian Leu	3.581724392041268	2			lei	
+INR	670a5943-4575-4af9-a14e-6dc91fe76e9f	Indian Rupee	57.89977892409727	2		Rs		
+	2ad7bf4c-890e-484e-bea4-59bc51655fdf	BG Selection Global Dynamic	0.007316753926701571	5				
+ZMK	2b46344c-272d-4974-b665-b9b4215c58b5	Zambian Kwacha	5505.526897568166	0		ZK		
+	bc5f4c2a-09ff-45e9-a02f-bd136a9ebbb3	BG Selection Pictet World Opportunities	0.006244614020407399	5				
+PKR	f247b64a-04b1-4618-96da-11487b6fd7a8	Pakistani Rupee	91.30434782608697	2		Rs		
+JPY	2d967030-fffa-488d-8298-173ba4beb975	Japanese Yen	160.13264554163598	0		¥		
+BGN	339bfd85-252c-4f35-b7c8-f82b9250d6ba	Bulgarian Lev	1.969933677229182	2			lv	
+	87e97e08-3f2d-4124-82e5-76ebb6cd7b4e	LUX IM Pictet Future Trends	0.009580808080808082	5				
+NZD	ca48b1b1-45bd-4388-9fe3-ab3db3b2eb46	New Zealand Dollar	1.9233603537214443	2		NZ$		
+	18d1dcaf-5a0e-47b1-b6d4-a98c64c4329d	LUX IM Global Medtech	0.010673640167364017	5				
+NOK	247073b2-0879-46c3-a8d7-317975cdcd0e	Norwegian Kroner	7.878408253500369	2		kr.		
+MYR	9c6cc0f0-e56e-471c-aad9-020133ccd5c4	Malaysian Ringgit	4.831982313927782	2		RM		
+
+#Account	Account ID	Account Type	Currency	Start Balance	
+Ciro	8c07e8a0-cb72-49f6-be09-9a60298357b7	BANK	EUR	369.00	
+#Date	Tax Date	Date Entered	Check Number	Description	Status	Account	Memo	Amount	
+2020.06.29	2020.06.29	2020.06.29 15:50:01:967		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.01.11	2020.01.11	2020.01.11 19:33:19:113		Caterina Pesce	X	Ciro	Copia dati.	15.00	
+-	-	-	-	-	X	Entrate extra	Caterina Pesce	15.00	
+2020.08.01	2020.08.01	2020.08.02 11:08:24:264		Gina	X	Ciro		-20.00	
+-	-	-	-	-	X	Gina	Gina	-20.00	
+2020.07.19	2020.07.19	2020.07.19 19:56:55:069		Caremar	X	Ciro	Traghetto Procida-Ischia	-2.00	
+-	-	-	-	-	X	Trasporti pubblici	Caremar	-2.00	
+2020.02.08	2020.02.08	2020.02.08 08:27:28:918		Gina	X	Ciro		-20.00	
+-	-	-	-	-	X	Gina	Gina	-20.00	
+2020.08.10	2020.08.10	2020.08.10 06:21:49:178		Global Service 3000	X	Ciro	Carburante. PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.02.22	2020.02.22	2020.02.22 13:45:38:159		Global Service 3000	X	Ciro	Carburante PANDA.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.08.09	2020.08.09	2020.08.10 06:20:18:074		Bar Olmo	X	Ciro	Torta	-27.80	
+-	-	-	-	-	X	Regali	Bar Olmo	-27.80	
+2020.06.01	2020.06.01	2020.06.01 14:51:24:790		Global Service 3000	X	Ciro	Parcheggio. Migliaccio	-2.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-2.00	
+2020.06.09	2020.06.09	2020.06.14 19:49:48:158		Silvia Padovani	X	Ciro		50.00	
+-	-	-	-	-	X	Entrate extra	Silvia Padovani	50.00	
+2020.08.18	2020.08.18	2020.08.18 21:16:41:279		Global Service 3000	x	Ciro	Parcheggio. St. Raphael	-2.00	
+-	-	-	-	-	x	Spesa Global	Global Service 3000	-2.00	
+2020.06.30	2020.06.30	2020.06.30 14:41:07:932		Givim	X	Ciro	Batterie	-5.00	
+-	-	-	-	-	X	Elettrodomestici:Riparazioni e manutenzione	Givim	-5.00	
+2020.01.02	2019.12.30	2019.12.31 07:52:16:197		CiroInGiro	X	Ciro	Scalato dalla Tredicesima	350.00	
+-	-	-	-	-	X	Conto Facile		350.00	
+2020.03.17	2020.03.17	2020.03.17 14:53:56:849		Farmacia Garofalo Michele	X	Ciro	Xatral 10 + Decloreum + Pantoprazolo	-12.75	
+-	-	-	-	-	X	Spese mediche	Farmacia Garofalo Michele	-12.75	
+2020.07.19	2020.07.19	2020.07.19 19:57:30:665		Secco	X	Ciro	dianamelles@pec.it	6.10	
+-	-	-	-	-	X	Entrate extra	Secco	6.10	
+2020.05.09	2020.05.09	2020.05.09 19:32:48:956		Gina	X	Ciro	Gina	-20.00	
+-	-	-	-	-	X	Gina		-20.00	
+2020.01.10	2020.01.10	2020.01.10 19:23:55:348		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.03.09	2020.03.09	2020.03.09 15:25:01:777		Parcheggio di Parascandola Maria	X	Ciro	x ASL x Daniele	-4.00	
+-	-	-	-	-	X	Auto:Parcheggio	Parcheggio di Parascandola Maria	-4.00	
+2020.01.15	2020.01.15	2020.01.15 14:18:55:427		Gina	X	Ciro	Gina	-50.00	
+-	-	-	-	-	X	Gina		-50.00	
+2020.01.31	2020.01.29	2020.01.29 15:05:40:818			X	Ciro	CiroInGiro	100.00	
+-	-	-	-	-	X	Conto Facile	Prelievo BancoMAT Ischia	150.00	
+2020.02.25	2020.02.25	2020.02.25 18:52:53:417			X	Ciro	Pistacchi	-6.00	
+-	-	-	-	-	X	Ristoranti		-6.00	
+2020.07.25	2020.07.25	2020.07.25 21:44:52:998		Marina	X	Ciro	Upgrade SSD + Test sk-video	50.00	
+-	-	-	-	-	X	Entrate extra	Marina	50.00	
+2020.02.13	2020.02.13	2020.02.13 19:59:56:544		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.08.13	2020.08.13	2020.08.13 16:25:27:129		comune di Ischia	x	Ciro	Porto x Ramona	-1.00	
+-	-	-	-	-	x	Auto:Parcheggio	comune di Ischia	-1.00	
+2020.02.26	2020.02.26	2020.02.26 08:47:58:831		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.08.13	2020.08.13	2020.08.13 16:26:32:398		Comune di Casamicciola	x	Ciro	Porto x Ramona	-1.00	
+-	-	-	-	-	x	Auto:Parcheggio	Comune di Casamicciola	-1.00	
+2020.08.03	2020.08.03	2020.08.03 14:46:34:576		Global Service 3000	X	Ciro	Carburante. PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.06.12	2020.06.12	2020.06.13 16:53:14:246		Gina	X	Ciro		-10.00	
+-	-	-	-	-	X	Gina	Gina	-10.00	
+2020.01.07	2020.01.07	2020.01.07 13:58:10:278		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.06.26	2020.06.26	2020.06.26 08:25:10:872		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.04.18	2020.04.18	2020.04.19 17:52:33:024		Da Mimmo	X	Ciro	Mozzarella	-4.00	
+-	-	-	-	-	X	Alimentari	Da Mimmo	-4.00	
+2020.02.29	2020.02.29	2020.02.29 19:53:54:903		Comune di Casamicciola	X	Ciro	MD	-1.00	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Casamicciola	-1.00	
+2020.02.11	2020.02.11	2020.02.11 20:10:13:918		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.07.04	2020.07.04	2020.07.04 15:00:21:468		Global Service 3000	X	Ciro	Carburante PANDA.	-30.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-30.00	
+2020.08.19	2020.08.19	2020.08.19 17:23:59:983		Global Service 3000	x	Ciro	Manutenzione PANDA	-29.50	
+-	-	-	-	-	x	Spesa Global	Global Service 3000	-29.50	
+2020.08.02	2020.08.02	2020.08.02 13:14:55:083		Gina	X	Ciro	Gina	-50.00	
+-	-	-	-	-	X	Gina		-50.00	
+2020.04.13	2020.04.13	2020.04.13 11:02:34:700		Gina	X	Ciro	x spesa alimentari	-0.15	
+-	-	-	-	-	X	Gina	Gina	-0.15	
+2020.03.25	2020.03.23	2020.03.23 15:07:02:930		CiroInGiro	X	Ciro		150.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	150.00	
+2020.02.17	2020.02.17	2020.02.18 08:53:57:836		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.07.18	2020.07.18	2020.07.19 19:55:08:969		Caremar	X	Ciro	Traghetto Procida-Ischia	-2.00	
+-	-	-	-	-	X	Trasporti pubblici	Caremar	-2.00	
+2020.03.16	2020.03.16	2020.03.16 19:23:19:103		Ischia Ufficio	X	Ciro	Epson T130 Cervo Cyano XL	-15.00	
+-	-	-	-	-	X	Elettrodomestici:Consumabili	Ischia Ufficio	-15.00	
+2020.01.12	2020.01.12	2020.01.12 10:37:11:776		Gina	X	Ciro		-20.00	
+-	-	-	-	-	X	Gina	Gina	-20.00	
+2020.08.09	2020.08.09	2020.08.10 06:19:38:406		I Gemelli	X	Ciro	Parcheggio x Procida.	-5.00	
+-	-	-	-	-	X	Auto:Parcheggio	I Gemelli	-5.00	
+2020.02.25	2020.02.25	2020.02.25 18:52:25:644		Comune di Casamicciola	X	Ciro	Carnevale	-2.00	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Casamicciola	-2.00	
+2020.03.11	2020.03.11	2020.03.11 18:50:24:803		Farmacia Garofalo Michele	X	Ciro	ForProst 400	-22.90	
+-	-	-	-	-	X	Spese mediche	Farmacia Garofalo Michele	-22.90	
+2020.04.30	2020.04.30	2020.07.14 06:46:33:650		Global Service 3000	X	Ciro	Stipendio di Aprile non percepito	-107.00	
+-	-	-	-	-	X	Stipendio non percepito	Global Service 3000	-107.00	
+2020.03.17	2020.03.17	2020.03.18 07:08:33:586		Comune di Barano	X	Ciro	Parcheggio x farmacia	-0.50	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-0.50	
+2020.08.13	2020.08.13	2020.08.13 20:05:54:577		Giorgio Catalanotti	x	Ciro	Impostazioni batch e stampante.	30.00	
+-	-	-	-	-	x	Entrate extra	Giorgio Catalanotti	30.00	
+2020.03.21	2020.03.21	2020.03.21 16:29:50:964		Gina	X	Ciro	x spesa alimentari	-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.05.24	2020.05.24	2020.05.24 16:40:44:645		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.05.16	2020.05.16	2020.05.17 19:02:10:660		Alfredo Boccanfuso	X	Ciro	SSD WD 250 GB	60.00	
+-	-	-	-	-	X	Entrata Global	Alfredo Boccanfuso	60.00	
+2020.02.08	2020.02.08	2020.02.08 14:08:42:399		Global Service 3000	X	Ciro	Spina + cavetto Cell.	-5.00	
+-	-	-	-	-	X	Spesa Global	cavetto cell.	-3.00	
+-	-	-	-	-	X	Uscite extra	Spina forno Gigi	-2.00	
+2020.04.24	2020.04.24	2020.04.24 13:06:51:189			X	Ciro	Versamento soldi di Gigi	-500.00	
+-	-	-	-	-	X	Conto Facile		-500.00	
+2020.05.31	2020.05.31	2020.06.28 09:26:27:586		Global Service 3000	X	Ciro	Stipendio Maggio.	15.00	
+-	-	-	-	-	X	Stipendio	Global Service 3000	15.00	
+2020.04.21	2020.04.21	2020.04.21 08:59:12:473		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.01.16	2020.01.16	2020.01.16 14:24:00:970		Comune di Barano	X	Ciro	Parcheggio	-4.00	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-4.00	
+2020.07.15	2020.07.15	2020.07.15 08:57:01:346		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.01.13	2020.01.13	2020.01.13 20:06:02:833		Global Service 3000	X	Ciro	Assistenza Morgera	20.00	
+-	-	-	-	-	X	Entrata Global	Global Service 3000	20.00	
+2020.07.14	2020.07.14	2020.07.15 08:56:37:049		Global Service 3000	X	Ciro	Carburante PANDA	-30.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-30.00	
+2020.02.16	2020.02.16	2020.02.16 19:44:24:143		Caremar	X	Ciro	Traghetto Procida-Ischia	-22.90	
+-	-	-	-	-	X	Trasporti pubblici	Caremar	-22.90	
+2020.06.18	2020.06.18	2020.06.18 15:17:35:200		Global Service 3000	X	Ciro	Parcheggio. Perrazzo.	-1.50	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-1.50	
+2020.08.13	2020.08.13	2020.08.13 16:27:20:535			x	Ciro	Bar con Ramona	-5.00	
+-	-	-	-	-	x	Ristoranti		-5.00	
+2020.01.09	2020.01.09	2020.01.09 19:08:26:538		Global Service 3000	X	Ciro	Sk-Video usata	20.00	
+-	-	-	-	-	X	Entrata Global	Global Service 3000	20.00	
+2020.06.02	2020.06.02	2020.06.03 07:35:03:765			X	Ciro	dai soldi di GG	-800.00	
+-	-	-	-	-	X	Conto Facile		-800.00	
+2020.08.19	2020.08.19	2020.08.19 20:36:40:187		Gina	x	Ciro	Gina	-20.00	
+-	-	-	-	-	x	Gina		-20.00	
+2020.02.21	2020.02.21	2020.02.21 20:57:24:821		Pino Montagna	X	Ciro	Rimozione virus.	20.00	
+-	-	-	-	-	X	Entrate extra	Pino Montagna	20.00	
+2020.07.18	2020.07.18	2020.07.19 19:55:48:391			X	Ciro	Regalo Margherita	-30.00	
+-	-	-	-	-	X	Regali		-30.00	
+2020.03.23	2020.03.23	2020.03.23 15:05:07:836		Global Service 3000	X	Ciro	Carburante Panda.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.06.09	2020.06.09	2020.06.10 07:15:53:928		Global Service 3000	X	Ciro	Carburante. PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.08.17	2020.08.17	2020.08.17 17:30:59:916		Global Service 3000	x	Ciro	Parcheggio. Aragona	-1.00	
+-	-	-	-	-	x	Spesa Global	Global Service 3000	-1.00	
+2020.03.14	2020.03.14	2020.03.14 15:08:17:960		Dott. Muro Pasquale	X	Ciro	Ecografica spalla.	-50.00	
+-	-	-	-	-	X	Spese mediche	Dott. Muro Pasquale	-50.00	
+2020.01.30	2020.01.30	2020.01.30 16:37:51:760		Global Service 3000	X	Ciro	Carburante PANDA.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.06.07	2020.06.07	2020.06.07 16:24:29:581		Mateda	X	Ciro	Configurazione AP - Villa Santini	20.00	
+-	-	-	-	-	X	Entrate extra	Mateda	20.00	
+2020.02.05	2020.02.05	2020.02.05 20:23:12:023		Ida	X	Ciro	x scarpe.	80.00	
+-	-	-	-	-	X	Entrate extra	Ida	80.00	
+2020.08.13	2020.08.13	2020.08.13 20:07:00:400		Global Service 3000	x	Ciro	Carburante. PANDA.	-20.00	
+-	-	-	-	-	x	Spesa Global	Global Service 3000	-20.00	
+2020.03.16	2020.03.16	2020.03.16 19:22:48:592		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.03.05	2020.03.05	2020.03.05 14:39:08:440		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.03.11	2020.03.11	2020.03.11 15:24:04:675			X	Ciro		-20.00	
+-	-	-	-	-	X	Auto:Carburante		-20.00	
+2020.04.11	2020.04.11	2020.04.11 17:46:42:401		Salvato Elettrodomestici	X	Ciro	Anticipo connessione per la scuola su Tablet in comodato d'uso	-40.00	
+-	-	-	-	-	X	Scuola	Salvato Elettrodomestici	-40.00	
+2020.04.30	2020.04.30	2020.06.28 09:26:07:624		Global Service 3000	X	Ciro	Stipendio Aprile.	107.00	
+-	-	-	-	-	X	Stipendio	Global Service 3000	107.00	
+2020.08.16	2020.08.16	2020.08.16 21:55:18:639		Parcheggio Di Costanzo Vincenzo	x	Ciro	Parcheggio a Sant'Angelo	-4.00	
+-	-	-	-	-	x	Auto:Parcheggio	Parcheggio Di Costanzo Vincenzo	-4.00	
+2020.03.04	2020.03.04	2020.03.04 15:35:22:574		Gina	X	Ciro		-20.00	
+-	-	-	-	-	X	Gina	Gina	-20.00	
+2020.05.31	2020.05.31	2020.07.14 06:47:41:536		Global Service 3000	X	Ciro	Stipendio di maggio non percepito	-15.00	
+-	-	-	-	-	X	Stipendio non percepito	Global Service 3000	-15.00	
+2020.02.20	2020.02.20	2020.02.20 08:56:53:202		Diagnostica San Giovan Giuseppe	X	Ciro	Analisi Sanghe e Urine	-82.00	
+-	-	-	-	-	X	Spese mediche	Diagnostica San Giovan Giuseppe	-82.00	
+2020.03.24	2020.03.24	2020.03.24 11:05:46:805		Fai da te	X	Ciro	colla x Ida	-5.00	
+-	-	-	-	-	X	Uscite extra	Fai da te	-5.00	
+2020.02.21	2020.02.21	2020.02.21 20:53:39:588		EAV	X	Ciro	Biglietti BUS	-3.00	
+-	-	-	-	-	X	Trasporti pubblici	EAV	-3.00	
+2020.03.17	2020.03.14	2020.03.14 15:07:31:631		CiroInGiro	X	Ciro		150.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	150.00	
+2020.07.29	2020.07.29	2020.07.29 13:45:10:803		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.03.24	2020.03.24	2020.03.24 11:05:18:842		Panificio Montevergine	X	Ciro		-29.00	
+-	-	-	-	-	X	Alimentari	Panificio Montevergine	-29.00	
+2020.06.08	2020.06.08	2020.06.08 13:57:13:520		Fai da te	X	Ciro	materiale per pitturazione	-50.00	
+-	-	-	-	-	X	Uscite extra	Fai da te	-50.00	
+2020.04.18	2020.04.18	2020.04.18 11:00:18:726			X	Ciro		120.00	
+-	-	-	-	-	X	Prestiti:Nuccia	Riparazione NB	120.00	
+2020.02.01	2020.02.01	2020.02.02 16:12:02:665		Comune di Forio	X	Ciro	Veterinario x Nuccia	-2.00	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Forio	-2.00	
+2020.01.21	2020.01.21	2020.01.21 08:34:18:094		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.01.04	2020.01.04	2020.01.02 08:14:23:228		Gina	X	Ciro		-70.00	
+-	-	-	-	-	X	Gina	Gina	-70.00	
+2020.02.03	2020.02.03	2020.02.03 20:21:18:025		Global Service 3000	X	Ciro	Carburante. Panda.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.07.19	2020.07.19	2020.07.19 19:56:13:078		Mamma&Papà	X	Ciro	Regalo x Angelo	100.00	
+-	-	-	-	-	X	Regali ricevuti	Mamma&Papà	100.00	
+2020.02.19	2020.02.19	2020.02.19 17:40:22:292		Farmacia Garofalo Michele	X	Ciro	Ricetta x Ecografia Addome Completo	-51.15	
+-	-	-	-	-	X	Spese mediche	Farmacia Garofalo Michele	-51.15	
+2020.01.09	2020.01.09	2020.01.09 19:11:40:640		Ischia Ufficio	X	Ciro	Power Bank	-11.50	
+-	-	-	-	-	X	Elettrodomestici:Riparazioni e manutenzione	Ischia Ufficio	-11.50	
+2020.07.07	2020.07.07	2020.07.07 21:32:03:012		Global Service 3000	X	Ciro	Parcheggio. Stella Maris.	-1.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-1.00	
+2020.08.22	2020.08.22	2020.08.08 20:25:57:302		Marina	 	Ciro	Resto Upgrade SSD + Test sk-video	-20.00	
+-	-	-	-	-	 	Uscite extra	Marina	-20.00	
+2020.02.21	2020.02.19	2020.02.19 20:15:31:466		CiroInGiro	X	Ciro		150.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	150.00	
+2020.02.21	2020.02.21	2020.02.21 20:54:39:035		Comune di Barano	X	Ciro	Parcheggio x casa	-0.50	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-0.50	
+2020.02.05	2020.02.05	2020.02.09 11:16:32:326		Gina	X	Ciro		-20.00	
+-	-	-	-	-	X	Gina	Gina	-20.00	
+2020.06.26	2020.06.26	2020.06.27 14:27:49:775			X	Ciro	Parcheggio. La Colombaia.	-2.00	
+-	-	-	-	-	X	Spesa Global		-2.00	
+2020.02.24	2020.02.20	2020.02.21 20:52:24:278		CiroInGiro	X	Ciro		110.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	110.00	
+2020.08.06	2020.08.06	2020.08.06 14:27:59:564		CdM	X	Ciro	Recupero dati.	50.00	
+-	-	-	-	-	X	Entrate extra	CdM	50.00	
+2020.01.09	2020.01.07	2020.01.07 13:53:02:343		CiroInGiro	X	Ciro		150.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	150.00	
+2020.03.14	2020.03.14	2020.03.14 09:35:00:934		Gina	X	Ciro		-20.00	
+-	-	-	-	-	X	Gina	Gina	-20.00	
+2020.07.15	2020.07.15	2020.07.16 06:48:14:294		Global Service 3000	X	Ciro	Parcheggio. Aragona	-5.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-5.00	
+2020.01.16	2020.01.16	2020.01.16 08:53:45:957		Navigare	X	Ciro	Doccia	-19.00	
+-	-	-	-	-	X	Casa:Riparazioni e Manutenzione	Navigare	-19.00	
+2020.02.29	2020.02.29	2020.02.29 19:53:43:626		Comune di Barano	X	Ciro	Parcheggio x casa	-0.50	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-0.50	
+2020.01.25	2020.01.25	2020.01.25 20:29:04:208		Comune di Casamicciola	X	Ciro	Spesa all'MD	-1.00	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Casamicciola	-1.00	
+2020.05.29	2020.05.29	2020.05.30 13:48:20:360		Maria	X	Ciro	Controllo PC	20.00	
+-	-	-	-	-	X	Entrate extra	Maria	20.00	
+2020.07.30	2020.07.30	2020.07.30 16:15:59:251			X	Ciro	Libri Indiani	-15.00	
+-	-	-	-	-	X	Libri		-15.00	
+2020.01.09	2020.01.09	2020.01.09 19:08:48:428		Nuccia	X	Ciro	Sk-video usata x PC	-20.00	
+-	-	-	-	-	X	Regali	Nuccia	-20.00	
+2020.02.21	2020.02.21	2020.02.21 20:53:23:161		Caremar	X	Ciro	Traghetto Procida-Ischia	-4.00	
+-	-	-	-	-	X	Trasporti pubblici	Caremar	-4.00	
+2020.05.26	2020.05.26	2020.05.26 20:18:36:498		Ischia Ufficio	X	Ciro	Epson T1292 Compatibile	-3.00	
+-	-	-	-	-	X	Elettrodomestici:Consumabili	Ischia Ufficio	-3.00	
+2020.03.12	2020.03.10	2020.03.10 19:18:30:872		CiroInGiro	X	Ciro		110.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	110.00	
+2020.08.18	2020.08.18	2020.08.18 21:16:29:352		Global Service 3000	x	Ciro	Parcheggio. Aragona	-2.00	
+-	-	-	-	-	x	Spesa Global	Global Service 3000	-2.00	
+2020.02.16	2020.02.16	2020.02.16 19:44:02:446		Medmar	X	Ciro	Procida	-30.30	
+-	-	-	-	-	X	Trasporti pubblici	Medmar	-30.30	
+2020.01.01	2020.01.01	2020.01.07 14:30:58:541			X	Ciro	Biscotti	-3.00	
+-	-	-	-	-	X	Alimentari		-3.00	
+2020.04.17	2020.04.17	2020.04.17 15:29:13:333		Agricola	X	Ciro	Uova	-13.20	
+-	-	-	-	-	X	Alimentari	Agricola	-13.20	
+2020.08.12	2020.08.12	2020.08.12 14:28:22:379		Ida	X	Ciro	x pantofole	56.00	
+-	-	-	-	-	X	Entrate extra	Ida	56.00	
+2020.04.21	2020.04.21	2020.04.21 13:58:22:907		Panificio Montevergine	X	Ciro	Farina 25 Kg.	-25.00	
+-	-	-	-	-	X	Alimentari	Panificio Montevergine	-25.00	
+2020.04.10	2020.04.10	2020.04.10 19:17:44:668		Decò	X	Ciro	Alimentari	-55.00	
+-	-	-	-	-	X	Casa:Casalinghi	dash simply	-5.90	
+-	-	-	-	-	X	Casa:Casalinghi	ajax sgrassatore	-1.19	
+-	-	-	-	-	X	Alimentari	Alimentari	-47.17	
+-	-	-	-	-	X	Beneficenza	resto mancante	-0.74	
+2020.06.03	2020.06.03	2020.06.03 15:43:23:677		Global Service 3000	X	Ciro	Carburante. PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.02.21	2020.02.21	2020.02.21 20:52:34:969		Guerra Carmine	X	Ciro	x Procida	-3.00	
+-	-	-	-	-	X	Auto:Parcheggio	Guerra Carmine	-3.00	
+2020.02.26	2020.02.26	2020.02.26 19:58:03:056		Farmacia Garofalo Michele	X	Ciro	ForProst 400	-23.20	
+-	-	-	-	-	X	Spese mediche	Farmacia Garofalo Michele	-23.20	
+2020.01.20	2020.01.20	2020.01.20 13:45:18:467		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.02.16	2020.02.16	2020.02.09 10:56:58:697			X	Ciro	Busta x Luisa	-50.00	
+-	-	-	-	-	X	Regali		-50.00	
+2020.01.22	2020.01.22	2020.01.22 13:55:33:071		Comune di Casamicciola	X	Ciro	Parcheggio x Calise.	-1.00	
+-	-	-	-	-	X	Spesa Global	Comune di Casamicciola	-1.00	
+2020.02.29	2020.02.29	2020.02.28 21:11:15:982		Global Service 3000	X	Ciro	Carburante PANDA.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.01.20	2020.01.20	2020.01.20 13:46:49:326		Global Service 3000	X	Ciro	Parcheggio S.Raphael.	-1.50	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-1.50	
+2020.06.21	2020.06.21	2020.06.21 14:38:09:905		Global Service 3000	X	Ciro	Carburante PANDA.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.06.15	2020.06.15	2020.06.15 14:35:02:565		Gina	X	Ciro	x farmacia e fruttivendolo	-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.08.12	2020.08.12	2020.08.12 14:30:03:829		comune di Ischia	X	Ciro	Parcheggio. Aragona.	-3.00	
+-	-	-	-	-	X	Spesa Global	comune di Ischia	-3.00	
+2020.01.11	2020.01.11	2020.01.11 19:33:37:560		Global Service 3000	X	Ciro	Batteria Raffaele Pilato	30.00	
+-	-	-	-	-	X	Entrata Global	Global Service 3000	30.00	
+2020.02.19	2020.02.19	2020.02.19 17:38:44:630		Farmacia Garofalo Michele	X	Ciro	Xatral 10	-3.88	
+-	-	-	-	-	X	Spese mediche	Farmacia Garofalo Michele	-3.88	
+2020.07.12	2020.07.12	2020.07.12 17:23:19:599		Gina	X	Ciro	Gina	-20.00	
+-	-	-	-	-	X	Gina		-20.00	
+2020.02.21	2020.02.21	2020.02.21 20:54:06:742			X	Ciro	Acqua	-1.00	
+-	-	-	-	-	X	Alimentari		-1.00	
+2020.03.19	2020.03.19	2020.03.21 09:25:00:111		Global Service 3000	X	Ciro	Parcheggio x Faidate	-2.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-2.00	
+2020.07.06	2020.07.06	2020.07.06 13:58:35:238		Global Service 3000	X	Ciro	x DVD scuola.	20.00	
+-	-	-	-	-	X	Entrate extra	Global Service 3000	20.00	
+2020.01.31	2020.01.31	2020.01.31 14:15:18:556		Global Service 3000	X	Ciro	Parcheggio. S.Raphael.	-1.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-1.00	
+2020.02.19	2020.02.19	2020.02.19 17:40:05:018		Farmacia Garofalo Michele	X	Ciro	Contenitore Urine	-1.00	
+-	-	-	-	-	X	Spese mediche	Farmacia Garofalo Michele	-1.00	
+2020.05.24	2020.05.24	2020.05.25 07:49:28:887		Farmacia Isolaverde	X	Ciro		-8.00	
+-	-	-	-	-	X	Cura personale	Farmacia Isolaverde	-8.00	
+2020.01.21	2020.01.21	2020.01.21 13:32:55:329		CICLISCOTTO	X	Ciro	Cameradaria x ruota 26"x1.75	-5.00	
+-	-	-	-	-	X	Sport:Ciclismo:Riparazione e Manutenzione	CICLISCOTTO	-5.00	
+2020.03.31	2020.03.31	2020.03.31 13:03:41:452		Gina	X	Ciro	x spesa alimentari	-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.03.03	2020.03.03	2020.03.03 15:41:59:461		Global Service 3000	X	Ciro	Carburante PANDA.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.07.31	2020.07.31	2020.07.31 20:24:19:126		Global Service 3000	X	Ciro	Parcheggio. Raphael	-1.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-1.00	
+2020.03.05	2020.03.05	2020.03.05 14:39:17:402		Libera Manzueto	X	Ciro	x documenti ASL	50.00	
+-	-	-	-	-	X	Regali ricevuti	Libera Manzueto	50.00	
+2020.02.11	2020.02.11	2020.02.12 19:32:41:417		Ida	X	Ciro	x presa forno.	2.00	
+-	-	-	-	-	X	Entrate extra	Ida	2.00	
+2020.07.25	2020.07.25	2020.07.25 21:44:25:383		I Gemelli	X	Ciro	Parcheggio x Procida.	-3.00	
+-	-	-	-	-	X	Auto:Parcheggio	I Gemelli	-3.00	
+2020.08.12	2020.08.12	2020.08.12 19:54:06:134			X	Ciro	Alimentatore Nino Iacono	70.00	
+-	-	-	-	-	X	Entrate extra		70.00	
+2020.04.27	2020.04.27	2020.04.27 15:35:53:315		Franco Regine	X	Ciro	Assistenza PC della figlia	30.00	
+-	-	-	-	-	X	Entrate extra	Franco Regine	30.00	
+2020.08.07	2020.08.07	2020.08.07 20:33:34:356		Comune di Barano	X	Ciro	Parcheggio x casa	-1.00	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-1.00	
+2020.07.24	2020.07.24	2020.07.25 07:49:18:069		Global Service 3000	X	Ciro	Carburante PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.01.15	2020.01.15	2020.01.15 14:18:27:579		Mateda	X	Ciro	Configurazione AP - Francesco Trani	50.00	
+-	-	-	-	-	X	Entrate extra	Mateda	50.00	
+2020.02.20	2020.02.20	2020.02.20 09:09:33:427		Gina	X	Ciro		-50.07	
+-	-	-	-	-	X	Gina	Gina	-50.07	
+2020.07.18	2020.07.18	2020.07.19 19:55:35:092		CiroInGiro	X	Ciro		70.00	
+-	-	-	-	-	X	SuperFlash	CiroInGiro	70.00	
+2020.04.03	2020.04.03	2020.04.03 12:34:36:812		Mondospina	X	Ciro	Regalo di Lucia x riparazione PC	20.00	
+-	-	-	-	-	X	Entrate extra	Mondospina	20.00	
+2020.08.09	2020.08.09	2020.08.10 06:19:58:987		Caremar	X	Ciro	Traghetto Procida-Ischia A/R	-13.60	
+-	-	-	-	-	X	Trasporti pubblici	Caremar	-13.60	
+2020.06.25	2020.06.25	2020.06.26 21:03:26:324		Ischia Ufficio	X	Ciro	DVD Scuola	-20.00	
+-	-	-	-	-	X	Uscite extra	Ischia Ufficio	-20.00	
+2020.07.18	2020.07.18	2020.07.19 19:54:22:880		I Gemelli	X	Ciro	Parcheggio x Procida.	-6.00	
+-	-	-	-	-	X	Auto:Parcheggio	I Gemelli	-6.00	
+2020.05.19	2020.05.19	2020.05.19 14:15:11:807		Gina	X	Ciro	Gina	-50.00	
+-	-	-	-	-	X	Gina		-50.00	
+2020.06.21	2020.06.21	2020.06.22 08:10:42:600			X	Ciro	Gigi x Video Editing	50.00	
+-	-	-	-	-	X	Entrate extra		50.00	
+2020.07.08	2020.07.08	2020.06.28 12:00:28:520		Dentista Ungaro	X	Ciro	Pulizia denti	-50.00	
+-	-	-	-	-	X	Spese mediche	Dentista Ungaro	-50.00	
+2020.07.03	2020.07.03	2020.07.03 08:31:21:532		Gina	X	Ciro	Gina	-50.00	
+-	-	-	-	-	X	Gina		-50.00	
+2020.05.06	2020.05.06	2020.05.06 19:02:03:769		Global Service 3000	X	Ciro	Carburante PANDA	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.05.07	2020.05.07	2020.05.07 18:26:54:709		Global Service 3000	X	Ciro	Prestito in attesa della cassa integrazione	1000.00	
+-	-	-	-	-	X	Global Service 3000	Global Service 3000	1000.00	
+2020.06.10	2020.06.10	2020.06.10 20:00:08:432		Gina	X	Ciro		-35.00	
+-	-	-	-	-	X	Gina	Gina	-35.00	
+2020.01.02	2020.01.02	2019.12.20 20:58:55:755		Global Service 3000	X	Ciro	Scalato dalla Tredicesima.	-350.00	
+-	-	-	-	-	X	Stipendio non percepito	Global Service 3000	-350.00	
+2020.03.09	2020.03.09	2020.03.09 15:25:50:646		Gina	X	Ciro		-50.00	
+-	-	-	-	-	X	Gina	Gina	-50.00	
+2020.08.19	2020.08.19	2020.08.19 17:23:29:892		Global Service 3000	x	Ciro	Carburante PANDA	-20.00	
+-	-	-	-	-	x	Spesa Global	Global Service 3000	-20.00	
+2020.07.25	2020.07.25	2020.07.25 21:44:41:603		Caremar	X	Ciro	Traghetto Procida-Ischia A/R	-4.00	
+-	-	-	-	-	X	Trasporti pubblici	Caremar	-4.00	
+2020.01.17	2020.01.17	2020.01.17 14:23:46:326		Global Service 3000	X	Ciro	Carburante PANDA.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+2020.05.20	2020.05.20	2020.05.20 19:27:43:543			X	Ciro		30.00	
+-	-	-	-	-	X	Prestiti:Regine		30.00	
+2020.06.03	2020.06.03	2020.06.03 07:43:54:800		Gina	X	Ciro		-40.00	
+-	-	-	-	-	X	Gina	Gina	-40.00	
+2020.03.11	2020.03.11	2020.03.11 18:50:05:314		Comune di Barano	X	Ciro	Parcheggio x farmacia	-0.50	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-0.50	
+2020.06.17	2020.06.17	2020.06.18 15:17:09:305		Global Service 3000	X	Ciro	Parcheggio. Hotel Vittorio.	-5.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-5.00	
+2020.04.10	2020.04.10	2020.04.10 14:02:20:123		Global Service 3000	X	Ciro	Prestito in attesa cassa integrazione	750.00	
+-	-	-	-	-	X	Global Service 3000	Global Service 3000	750.00	
+2020.06.16	2020.06.16	2020.06.17 14:56:27:218		Global Service 3000	X	Ciro	Carburante. PANDA.	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.01.09	2020.01.09	2020.01.09 19:10:55:243		Global Service 3000	X	Ciro	Pagamento La Cocchia	25.00	
+-	-	-	-	-	X	Entrata Global	Global Service 3000	25.00	
+2020.03.17	2020.03.17	2020.03.17 14:53:45:198		Comune di Barano	X	Ciro	Parcheggio x farmacia	-0.50	
+-	-	-	-	-	X	Auto:Parcheggio	Comune di Barano	-0.50	
+2020.01.07	2020.01.07	2020.01.03 19:51:20:919		Global Service 3000	X	Ciro	Carburante PANDA	-20.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-20.00	
+2020.02.13	2020.02.11	2020.02.11 20:10:29:935		CiroInGiro	X	Ciro		150.00	
+-	-	-	-	-	X	Conto Facile	CiroInGiro	150.00	
+2020.01.09	2020.01.09	2020.01.09 19:11:11:607		Ischia Ufficio	X	Ciro	Batterie telefono	-4.50	
+-	-	-	-	-	X	Spesa Global	Ischia Ufficio	-4.50	
+2020.05.25	2020.05.25	2020.05.25 15:10:33:219		Global Service 3000	X	Ciro		10.00	
+-	-	-	-	-	X	Entrata Global	Global Service 3000	10.00	
+2020.05.25	2020.05.25	2020.05.25 15:10:18:902		Barbieri	X	Ciro	Mancia	10.00	
+-	-	-	-	-	X	Entrate extra	Barbieri	10.00	
+2020.02.07	2020.02.07	2020.02.07 20:19:43:024		Global Service 3000	X	Ciro	Carburante. Panda.	-10.00	
+-	-	-	-	-	X	Spesa Global	Global Service 3000	-10.00	
+
