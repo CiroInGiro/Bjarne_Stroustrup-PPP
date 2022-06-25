@@ -7,3 +7,5 @@ Nell'utilizzo di interfacce grafiche sono state utilizzate le librerie FLTK ( ht
 Ho installato le librerie in Visual Studio Community 2019 e mantengo aggiornati sia VS che FLTK.
 Ho creato una soluzione per ogni capitolo e nella soluzione c'è un progetto per ogni esercizio.
 Siccome FLTK è a 32 bit e sono in debug, bisognerà aggiungere le librerie di debug come nel manuale di fltk e compilare gli esercizi a 32 bit.
+Nelle varie cartelle dedicate ai capitoli c'è anche una sottocartella GUI, dove serve, che sono classi di interfaccia a FLTK in allegato al libro, la cartella è copiata in ogni esercizio perché man mana queste classi sono state modificate per adattarsi all'esercizio.
+Stessa cosa per la cartella MyClass che invece contiene codice degli esercizi precedenti e racchiuso in classi per poterlo riutilizzare e non riscriverlo o ammazzarsi col "copia e incolla".
