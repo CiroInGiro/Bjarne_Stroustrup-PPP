@@ -1,0 +1,32 @@
+#pragma once
+
+#include <iostream>
+
+struct God {
+	std::string name;
+	std::string mythology;
+	std::string vehicle;
+	std::string weapon;
+};
+
+class SLink {
+public:
+	SLink(const std::string& n, const std::string& m, const std::string& v, const std::string& w) :godname{ n, m, v, w } {}
+	SLink* insert(SLink* l); // aggiunge prima dell'elemento corrente
+	SLink* add(SLink* l); // aggiunge dopo l'elemento corrente
+	SLink* find(const std::string& s);
+	SLink* next() const;
+	SLink* erase();
+	~SLink();
+	SLink* end();
+	std::string name() const;
+	std::string mythology() const;
+	std::string vehicle() const;
+	std::string weapon() const;
+	SLink* add_ordered(SLink* l);
+private:
+	God godname;
+	SLink* succ{ nullptr };
+	SLink* prec{ nullptr };
+};
+
