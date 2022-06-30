@@ -1,0 +1,56 @@
+{Savia}{Via Lux Sgomento}{{21/12/2021}}{
+{Maglia California}{18}{1}
+{T-Shirt Addison}{9}{2}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Joe}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Joe}{Via Lux Sgomento}{{13/12/2021}}{
+{Maglia California}{18}{1}
+{T-Shirt Addison}{9}{2}}
+{Savia}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Joe}{Via Lux Sgomento}{{18/12/2021}}{
+{Tuta completo Minecraft}{44}{1}
+{Tuta completo spider man}{22}{1}
+{Radiolina}{5}{1}}
+{Joe}{Via Lux Sgomento}{{21/12/2021}}{
+{Dentifricio}{2}{1}
+{Pallone}{10}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tuta completo spider man}{22}{1}
+{Pigiama pail}{15}{1}}
+{Joe}{Via Lux Sgomento}{{27/12/2021}}{
+{Dentifricio}{2}{1}
+{Pallone}{1}{1}
+{Fonzies}{1}{10}
+{Biscotti}{2}{2}
+{Birra}{1}{8}
+{Bici}{100}{1}
+{Pantoloncino}{21}{1}
+{Maglietta}{8}{2}
+{Joystick}{22}{1}
+{Cuffie}{10}{1}
+{Pane}{2}{1}
+{Nutella}{2}{1}
+{Crostatina}{3}{2}
+{Quaderno}{1}{4}
+{Penna blue}{1}{5}
+{Penna rossa}{1}{5}
+{Matita}{1}{5}
+{Gomma da cancellare}{1}{2}}

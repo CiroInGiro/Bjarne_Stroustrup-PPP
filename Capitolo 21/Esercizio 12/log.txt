@@ -1,0 +1,316 @@
+
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Data.
+Errore lettura Data.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Data.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Order::cliente.
+Errore lettura Order::address
+Errore lettura Data.
+Errore lettura Order::data_ordine.
+Errore lettura Order::acquisti.
+Errore lettura Purchase::prodotto.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.
+Errore lettura Purchase::unit_price.
+Errore lettura Purchase::count
+Errore acquisti in ordine senza fine.

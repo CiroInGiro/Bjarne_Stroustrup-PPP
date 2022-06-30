@@ -1,0 +1,8 @@
+{Amedeo Canditi}{Via lettino}{{6/7/2008}}{
+{Tablet}{256}{2}}{Gisa Ronco}{Via come me}{{29/2/1992}}{
+{Galaxy}{550}{1}}{Gloab Galak}{Via Lattea}{{15/6/2001}}{
+{Cicciocolato bianco}{12.5}{5}}{J&J}{Via Luigino Scottex}{{10/10/2000}}{
+{Software Magazzino}{250}{1}}{Jo}{Via L.Canditi 8}{{6/1/1966}}{
+{Tastiera}{15}{2}
+{Tastiera Mac}{55}{1}}{Sara Canditi}{Via stanzetta}{{12/12/2012}}{
+{Xiaomi}{199}{1}}

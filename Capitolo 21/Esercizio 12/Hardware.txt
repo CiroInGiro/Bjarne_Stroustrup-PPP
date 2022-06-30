@@ -1,0 +1,35 @@
+{Savia}{Via Lux Sgomento}{{21/12/2021}}{
+{App OS}{37.52}{1}
+{iPhone RX}{558.00}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Cuffie Gaming}{22}{1}
+{Visore VR}{150}{1}}
+{Joe}{Via Lux Sgomento}{{12/12/2021}}{
+{NAS TS251}{220}{1}
+{HDD 500GB}{150}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Tablet}{122}{1}
+{Batterie Stilo}{1,5}{4}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Microfono wireless}{12.99}{1}
+{Supporto cellulare}{5}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Casse acustiche}{22}{1}}
+{Joe}{Via Lux Sgomento}{{12/12/2021}}{
+{Schermo 4K}{2200}{1}
+{Cavo HDMI}{15}{1}}
+{Savia}{Via Lux Sgomento}{{12/12/2021}}{
+{Tastiera retroilluminata}{120}{1}
+{Mouse retroilluminato}{85}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{Prndrive 4GB}{12}{1}
+{Proiettore Sony}{1500}{1}}
+{Joe}{Via Lux Sgomento}{{12/12/2021}}{
+{PC i9}{922.99}{1}
+{Tastiera + Mouse Bluethooth}{150}{1}}
+{Joe}{Via Lux Sgomento}{{12/12/2021}}{
+{Cavo USB}{5.20}{1}
+{Stampante A3}{125}{1}}
+{Amedeo}{Via Lux Sgomento}{{12/12/2021}}{
+{iPod}{282.99}{1}
+{Cartucce stampante}{18}{3}}

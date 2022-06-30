@@ -1,0 +1,6993 @@
+INTERFACCIA
+HOST/STAMPANTE
+
+
+
+
+INDICE
+CAPITOLO 1 - INTERFACCIA SAE/HOST	5
+1.1 INTRODUZIONE ED OBIETTIVI	5
+CAPITOLO 2 - REGOLE GENERALI	6
+2.1  TRASMISSIONE	7
+2.2  RICEZIONE	7
+2.3  PROTOCOLLO	9
+CAPITOLO 3  - ESSIONE DI COMUNICAZIONE SAE-HOST	13
+3.1 APERTURA/CHIUSURA DI UNA SESSIONE DI COMUNICAZIONE SAE-HOST DA HOST	13
+3.1.1 APERTURA	13
+3.1.2 CHIUSURA	15
+3.1.3 PROTOCOLLO	16
+3.2 PROCEDURA DI RICHIESTA APERTURA SESSIONE DA SAE	20
+3.2.1 PROTOCOLLO	21
+
+CAPITOLO 4 - RICHIESTE HOST	22
+4.1 RICHIESTA DI LETTURA DI TUTTI I RECORDS MEMORIZZATI SU SAE	22
+4.2 RICHIESTA DI LETTURA STATO UTENTE	24
+4.3 RICHIESTA DI IMPOSTAZIONE CREDITO CONTATORE UTENTE	27
+4.4 RICHIESTA DI AZZERAMENTO CONTATORE UTENTE	30
+4.5 RICHIESTA DI CAMBIO CLASSE UTENTE	33
+4.6 RICHIESTA DI CHECK-IN/CHECK-OUT UTENTE	35
+4.7 RICHIESTA DI CANCELLAZIONE SERVIZI UTENTE	39
+4.8 RICHIESTA DI ATTIVAZIONE RELE`	41
+4.9 RICHIESTA DI DISATTIVAZIONE RELE`	44
+4.10 RICHIESTA DI IMPOSTAZIONE SVEGLIA	47
+4.11 RICHIESTA DI CANCELLAZIONE SVEGLIA	50
+4.12 RICHIESTA DI MESSAGGIO DA OPERATORE	54
+4.13 RICHIESTA DI DISATTIVAZIONE MESSAGGIO DA OPERATORE	57
+4.14 RICHIESTA DI ATTIVAZIONE NON DISTURBARE	60
+4.15 RICHIESTA DI DISATTIVAZIONE NON DISTURBARE	63
+4.16 RICHIESTA DI SVEGLIA IMMEDIATA	66
+4.17 RICHIESTA DI IMPOSTAZIONE ORARIO DI SISTEMA	69
+4.18 RICHIESTA DI CAMBIO STANZA	72
+
+CAPITOLO 5 - RECORDS GENERATI DAL SAE	74
+5.1 RECORD DI ADDEBITO TASSAZIONE  UTENTE DA SAE	75
+5.2 RECORD DI ADDEBITO CHIAMATA URBANA ENTRANTE DA SAE	79
+5.3 RECORD DI IMPOSTAZIONE CREDITO CONTATORE DA SAE	83
+5.4 RECORD DI AZZERAMENTO CONTATORE DA SAE	84
+5.5 RECORD DI STATO UTENTE DA SAE	85
+5.6 RECORD DI ADDEBITO CONSUMAZIONE UTENTE DA MINIBAR DA SAE	86
+5.7 RECORD DI ALLARME AUSILIARIO TELEFONO DA SAE	88
+5.8 RECORD DI STATO STANZA DA SAE	90
+5.9 RECORD DI IMPOSTAZIONE SVEGLIA DA SAE	91
+5.10 RECORD DI CANCELLAZIONE SVEGLIA DA SAE	92
+5.11 RECORD DI INOLTRO SVEGLIA DA SAE	93
+
+5.12 RECORD DI ALLARME INTRUSIONE DA SAE	94
+5.13 RECORD DI RONDA DA SAE	95
+5.14RECORD DI FINE ALLARME AUSILIARIO TELEFONO DA SAE	96
+(SOLO PER VERSIONE HOTEL)	96
+5.15RECORD DI INIZIO ALLARME ESTERNO DA SAE	97
+(SOLO PER VERSIONE HOTEL)	97
+5.16RECORD DI FINE ALLARME ESTERNO DA SAE	98
+(SOLO PER VERSIONE HOTEL)	98
+
+CAPITOLO 6 - PROSPETTO RIASSUNTIVO MESSAGGI	99
+
+CAPITOLO 7 - FORMATO MESSAGGI	101
+
+CAPITOLO 8 - CARATTERISTICHE DEL CANALE SERIALE	103
+
+CAPITOLO 9 - ESEMPI DI MESSAGGI TRA SAE ED HOST	105
+
+CAPITOLO 10 - INTERFACCIA SAE/STAMPANTE	111
+10.1 FORMATO RECORD PER LA VERSIONE ANNUNCI VOCALI ED ISDN	111
+10.2 RECORD : "ADDEBITO DI UTENTE" (*)	112
+10.3 RECORD : "ADDEBITO CHIAMATA URBANA ENTRANTE"	118
+10.4 RECORD : "IMPOSTAZIONE SVEGLIA"	123
+10.5 RECORD : "CANCELLAZIONE SVEGLIA"	125
+10.6 RECORD : "INOLTRO SVEGLIA" (*)	127
+10.7 RECORD : "STANZA PRONTA"	127
+10.8 RECORD : "RONDA"	127
+10.9 RECORD : "ALLARME DATIFON"	127
+10.10 RECORD : "CONTATORE DI UTENTE" (*)	127
+10.11 RECORD : "INTRUSIONE SUL TERMINALE DI GESTIONE" (*)	127
+10.12 RECORD :"IMPOSTAZIONE CREDITO SU CONTATORE DI UTENTE"	127
+10.13 RECORD :"AZZERAMENTO CONTATORE DI ADDEBITO PER UTENTE"	127
+10.14 RECORD :"ADDEBITO CONSUMAZIONE"	127
+10.15 RECORD :"INIZIO ALLARME ESTERNO"	127
+10.16 RECORD :"FINE ALLARME ESTERNO"	127
+10.17 ESEMPI DI STAMPA	127
+10.17.1 RECORD: ADDEBITO SINGOLA URBANA USCENTE	127
+10.17.2 RECORD: ADDEBITO SINGOLA URBANA ENTRANTE	127
+10.17.3 RECORD: IMPOSTAZIONE SVEGLIA	127
+10.17.4 RECORD: CANCELLAZIONE SVEGLIA	127
+10.17.5 RECORD: INOLTRO SVEGLIA	127
+10.17.6 RECORD: STANZA PRONTA	127
+10.17.7 RECORD: RONDA	127
+10.17.8 RECORD: ALLARME AUSILIARIO TELEFONO	127
+10.17.9 RECORD: CONTATORE DI UTENTE	127
+10.17.10 RECORD: INTRUSIONE DAL TERMINALE DI MANUTENZIONE	127
+10.17.11 RECORD: IMPOSTAZIONE CREDITO SU CONTATORE DI UTENTE	127
+10.17.12 RECORD: AZZERAMENTO CONTATORE DI UTENTE	127
+10.17.13 RECORD: ADDEBITO CONSUMAZIONE	127
+10.17.14 RECORD: INIZIO ALLARME ESTERNO	127
+10.17.15 RECORD: FINE ALLARME ESTERNO	127
+
+CAPITOLO 11 - COLLEGAMENTO STAMPANTE	127
+11.1 VELOCITA' STAMPANTE	127
+11.2 CAVO DI COLLEGAMENTO DELLA STAMPANTE	127
+
+
+CAPITOLO 1
+INTERFACCIA SAE/HOST
+
+
+1.1 INTRODUZIONE ED OBIETTIVI
+
+L'HOST ä un calcolatore esterno con cui si puï avere accesso, tramite 
+via seriale, a diversi servizi offerti dal SAE.
+
+A livello di sistema, esistono i seguenti vincoli:
+	- possono esistere al massimo 4 HOST, uno per ogni blocco di 
+multiproprietÖ in cui puï essere suddiviso il SAE;
+	- lo stesso HOST puï essere associato ad uno o pió blocchi di 
+multiproprietÖ;
+	- un blocco di multiproprietÖ puï essere associato ad un solo HOST;
+	- la documentazione addebiti a cui l'HOST ha accesso Ç relativa 
+solo ai blocchi di multiproprietÖ a cui esso ä associato;
+	- gli HOST previsti in fase di personalizzazione del SAE devono 
+essere sempre fisicamente collegati al SAE e pronti al 
+collegamento;
+	- un solo HOST per volta puï essere  effettivamente  in 
+collegamento con il SAE.
+
+Il collegamento SAE-HOST Ç di tipo bidirezionale ed Ç retto da un 
+protocollo di colloquio di cui si fornisce di seguito la specifica.
+Si assume che l'HOST si colleghi al SAE in alternativa alla stampante 
+sia per lo scarico dei record sia per l'impostazione di servizi sul 
+centralino.
+In realtÖ Ç possibile collegare la stampante su una porta seriale e 
+l'HOST su un'altra porta di espansione (utilizzando un'altra scheda di 
+UnitÖ di Servizio), caratterizzando la stampante su un blocco di 
+multiproprietÖ e l'HOST su un altro blocco.
+In questo caso sulla prima via seriale il SAE fornisce senza necessitÖ 
+di interrogazione i record man mano che questi vengono generati; sulla 
+seconda via seriale il SAE resta disponibile al collegamento con l'HOST 
+per ottemperare alla impostazione dei servizi richiesti.
+Ovviamente non si applicano in questo caso le richieste di lettura dei 
+record da parte di HOST, in quanto questi vengono giÖ scaricati sulla 
+prima via seriale.
+L'associazione di HOST e stampante al blocco di multiproprietÖ viene 
+stabilita in fase di personalizzazione del SAE, dove viene anche fissata 
+la porta seriale per il collegamento fisico.
+Il protocollo di colloquio prevede un set di comandi elementari 
+(messaggi) inviabili da Host al SAE.
+E' compito del pacchetto gestionale aggregare i comandi necessari per 
+l'ottenimento delle funzioni desiderate.
+Ad esempio: all'arrivo di un utente il pacchetto gestionale residente su 
+Host dovrebbe inviare al SAE i seguenti comandi:
+-	check-in: per impostare nome e lingua dell'utente
+-	cancellazione servizi: per annullare i servizi telefonici      
+	ancora attivi
+-	azzeramento contatori: per cancellare i dati di tassazione
+-	cambio di classe: per abilitare il telefono.
+
+
+
+
+
+CAPITOLO 2
+REGOLE GENERALI
+
+Sono di seguito riportate le regole che devono essere soddisfatte 
+nell'interfacciamento dell'HOST al SAE.
+
+Regola fondamentale e' che il Master del protocollo di scambio e' l'HOST 
+per cui:
+
+* solo l'HOST e' abilitato all'apertura di una sessione di 
+comunicazione; 
+il SAE puo' solo sollecitare l'HOST ad aprire una sessione di 
+comunicazione, tramite l'invio di un messaggio di richiesta 
+trasferimento dati (RICH_TRASF) quando ha necessitÖ di trasferire 
+con urgenza i dati di documentazione addebiti bufferizzati al suo 
+interno pena la loro perdita oppure quando sono stati generati 
+record importanti quali allarmi sveglia, telefono, ecc.;
+e' a carico dell'HOST a seguito della ricezione del messaggio di 
+RICH_TRASF l'apertura della sessione di trasferimento dati da SAE 
+ad Host;
+
+* solo l'HOST e' abilitato alla chiusura di una sessione di 
+comunicazione;
+il SAE non esegue nessuna verifica sull'utilizzo della linea 
+seriale nell'ambito di una sessione di comunicazione che pertanto 
+puo' rimanere impegnata da un HOST anche in mancanza di traffico su 
+di essa;
+
+* il SAE non gestisce timer di trasmissione o ricezione, escluso quello 
+associato alla trasmissione del messaggio RICH_TRASF, che limitino 
+la durata di una sessione di comunicazione;
+e' a carico dell'HOST, se lo ritiene necessario, gestire timer per 
+poter chiudere una sessione che sta evolvendo in modo anomalo; 
+
+* il SAE non gestisce contatori di ritrasmissione di un messaggio non 
+ricevuto correttamente dall'HOST; il SAE si limita solo a 
+ritrasmettere l'ultimo messaggio trasmesso fintanto che l'HOST 
+segnala con un messaggio di NOT_ACKNOWLEDGE (NACK) l'errata 
+ricezione del messaggio suddetto;
+e' a carico dell'HOST, se lo ritiene necessario, gestire contatori 
+per poter chiudere una sessione che sta evolvendo in modo anomalo. 
+
+
+
+
+
+
+
+
+
+
+
+
+2.1  TRASMISSIONE
+
+Eseguita la trasmissione di un messaggio e' a carico del mittente la 
+gestione di eventuali timer di "ATTESA RISPOSTA".
+Allo scadere di tale timer il mittente puo' eseguire o meno l'attivita' 
+di ritrasmissione del messaggio per un certo numero di volte (Nr) prima 
+di considerare conclusa negativamente una sessione di scambio.
+Il SAE a tal proposito non attiva nessun timer.
+
+
+2.2  RICEZIONE
+
+Le regole generali che devono essere seguite in fase di ricezione di un 
+messaggio sono le seguenti:
+
+1)	RICEZIONE DI UN MESSAGGIO NON CORRETTO
+
+Alla ricezione di un messaggio che a seguito di verifica  risulti 
+non corretto (i controlli di correttezza messaggio sono elencati 
+nell'APPENDICE 2), il destinatario deve inviare al mittente un 
+NACK, per richiedergli la ritrasmissione del messaggio stesso.
+E' a carico del mittente decidere il numero di ritrasmissioni (Nr) 
+consecutive di un messaggio prima di considerare conclusa 
+negativamente una sessione di scambio.
+Il SAE a tal proposito non ha nessun limite al numero di 
+ritrasmissioni eseguibili (Nr = "infinito") .
+
+2)	RICEZIONE DI UN MESSAGGIO CORRETTO, CONTENENTE UNA RICHIESTA 
+SCONOSCIUTA O NON PREVISTA NELLA FASE CORRENTE
+
+Alla ricezione di un messaggio corretto che contiene, perï, una 
+richiesta sconosciuta o non prevista nella fase corrente, il 
+destinatario provvede a scartare il messaggio stesso.
+
+3)	RICEZIONE DI UN MESSAGGIO CORRETTO, CONTENENTE UNA RICHIESTA 
+CONOSCIUTA, PREVISTA NELLA FASE CORRENTE, MA NON ACCETTABILE
+Alla ricezione di un messaggio corretto, contenente una richiesta 
+conosciuta, prevista nella fase corrente ma non accettabile per un 
+qualsiasi motivo, il destinatario deve inviare un COMANDERR al 
+mittente del messaggio che ha ricevuto.
+
+4) RICEZIONE DI UN MESSAGGIO CORRETTO, CONTENENTE UN NACK
+Se il mittente di un messaggio riceve un NACK, esso deve 
+ritrasmettere il suo messaggio al destinatario.
+E' a carico del mittente decidere il numero di ritrasmissioni 
+consecutive di un messaggio prima di considerare conclusa 
+negativamente una sessione di scambio.
+Il SAE a tal proposito non ha nessun limite al numero di 
+ritrasmissioni eseguibili.
+
+
+
+
+
+5)	RICEZIONE DI UN MESSAGGIO CORRETTO, CONTENENTE UN COMANDERR
+
+Se il mittente di un messaggio riceve un COMANDERR, in una delle 
+fasi in cui il COMANDERR puo' arrivare, esso puï scegliere tra:
+
+- ritrasmettere il suo messaggio al destinatario, dopo aver 
+eventualmente verificato la correttezza del suo contenuto 
+informativo;
+- trasmettere un nuovo messaggio al destinatario;
+- considerare conclusa la sessione corrente ed eseguire le 
+operazioni previste nel caso di chiusura normale di una 
+sessione.
+
+6)	RICEZIONE DI UN MESSAGGIO CORRETTO, CONTENENTE UNA RICHIESTA 
+CONOSCIUTA, PREVISTA NELLA FASE CORRENTE, ACCETTABILE
+
+Alla ricezione di un messaggio corretto, contenente una richiesta 
+conosciuta, prevista nella fase corrente ed accettabile, il 
+destinatario deve rispondere al mittente in base alla richiesta 
+ricevuta.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.3  PROTOCOLLO
+
+Come complemento alle regole generali descritte ai paragrafi precedenti 
+e' riportato di seguito il flusso dei messaggi  che si possono avere 
+nell'ambito di una generica sessione di comunicazione tra SAE ed HOST.
+
+Con la scritta OPZIONALE sono evidenziate le attivita' che possono 
+essere eseguite dall'HOST per recuperare le situazioni di errore piu' 
+frequenti ma che non sono in ogni caso eseguite dal SAE.
+
+Il valore Nr fissato come limite del contatore do ritrasmissione vale 
+"infinito" per il SAE mentre e' opportuno che abbia un valore "finito" 
+per l'HOST in modo da permettere la chiusura di una sessione di 
+comunicazione nel caso di evoluzione anomala della sessione stessa.
+
+
+
+           HOST                 ß 		SAE
+
+                                ß
+                                ß OPZIONALE:
+                                ß ( ä attivo il "timer di attesa
+                                ß  messaggio" su destinatario)
+                                ß
+(M 1)                           ß
+messaggio                       ß
+----------------------------->  ß
+attivaz. OPZIONALE su mitt.     ß
+"timer di attesa messaggio"     ß
+                                ß
+                                ß (D 1)
+                                ß disattivaz. OPZIONALE su dest.
+                                ß del "timer di attesa messaggio"
+                                ß si passa al punto (D 2.1),
+                                ß   oppure al punto (D 2.2),
+                                ß   oppure al punto (D 2.3),
+                                ß   oppure al punto (D 2.4),
+                                ß   oppure al punto (D 2.5).
+                                ß
+
+                    (segue a pagina successiva)
+
+
+
+
+
+
+
+
+
+
+
+                    (segue da pagina precedente)
+
+                                ß
+           HOST                 ß 		SAE
+
+                                ß
+                                ß (D 2.1)
+                                ß [messaggio non corretto]
+                                ß [messaggi errati consecutivi
+                                ß  ricevuti <= Nr]
+                                ß                           NACK
+                                ß <-----------------------------
+                                ß si passa al punto (D 2.1.1),
+                                ß   oppure al punto (D 2.1.2).
+                                ß (D 2.1.1)
+                                ß [NACK consecutivi inviati < Nr]
+                                ß attivaz. OPZIONALE su dest. del
+                                ß "timer di attesa messaggio"
+                                ß (D2.1.2)
+                                ß [NACK consecutivi inviati = Nr]
+                                ß    CHIUSURA PER ERRORE
+                                ß Rif. SESSIONE DI COMUNICAZIONE
+                                ß
+(M 2.1)                         ß
+disattivaz. OPZIONALE su mitt.  ß
+del "timer di attesa messaggio" ß
+si passa al punto (M 2.1.1),    ß
+  oppure al punto (M 2.1.2).    ß
+(M 2.1.1)                       ß
+[NACK consecutivi ricevuti < Nr]ß
+   si torna al punto (M 1)      ß
+(M 2.1.2)                       ß
+[NACK consecutivi ricevuti = Nr]ß
+   CHIUSURA PER ERRORE          ß
+Rif. SESSIONE DI COMUNICAZIONE  ß
+                                ß
+
+                                ß
+                                ß (D 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta sconosciuta oppure
+                                ß  non prevista]
+                                ß attivaz. OPZIONALE su dest. del
+                                ß "timer di attesa messaggio"
+                                ß
+(M 2.2)                         ß
+scadenza OPZIONALE su mitt. del ß
+"timer di attesa messaggio"     ß
+Rif. REGOLE GENERALI            ß
+                                ß
+                     (segue a pagina successiva)
+
+
+
+                     (segue da pagina precedente)
+
+                                ß
+           HOST                 ß 		SAE
+
+                                ß (D 2.3)
+                                ß [messaggio corretto]
+                                ß [richiesta conosciuta,
+                                ß  prevista, ma non accettata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß attivaz. OPZIONALE su dest. del
+                                ß "timer di attesa messaggio"
+(M 2.3)                         ß
+disattivaz. OPZIONALE su mitt.  ß
+del "timer di attesa messaggio" ß
+si passa al punto (M 2.3.1),    ß
+  oppure al punto (M 2.3.2),    ß
+  oppure al punto (M 2.3.3).    ß
+(M 2.3.1)                       ß
+   si torna al punto (M 1) ad   ß
+   inviare lo stesso messaggio  ß
+(M 2.3.2)                       ß
+   si torna al punto (M 1) ad   ß
+   inviare un nuovo messaggio   ß
+(M 2.3.3)                       ß
+   CHIUSURA NORMALE             ß
+Rif. SESSIONE DI COMUNICAZIONE  ß
+
+                                ß (D 2.4)
+                                ß [messaggio corretto]
+                                ß [richiesta = NACK]
+                                ß vedere comportamento mittente
+                                ß alla ricezione di un NACK al
+                                ß punto (M 2.1)
+                                ß
+(M 2.4)                         ß
+vedere comportamento            ß
+destinatario all'invio di       ß
+un NACK al punto (D 2.1)        ß
+                                ß
+
+                                ß (D 2.5)
+                                ß [messaggio corretto]
+                                ß [richiesta = COMANDERR]
+                                ß vedere comportamento mittente
+                                ß alla ricezione di un COMANDERR
+                                ß al punto (M 2.3)
+(M 2.5)                         ß
+vedere comportamento            ß
+destinatario all'invio di       ß
+un COMANDERR al punto (D 2.3)   ß
+                                ß
+
+
+
+
+
+NOTE:
+
+Di seguito, nell'illustrare i protocolli di scambio relativi ai diversi 
+servizi:
+
+- vengono omessi, a vantaggio della leggibilitÖ, i messaggi di NACK che 
+assumono il significato spiegato in precedenza;
+- si usa l'espressione "TERMINE SERVIZIO" per indicare un punto in cui 
+lo scambio di messaggi relativi ad un dato servizio si ritiene 
+concluso (in tale punto la sessione ä ancora aperta e possono 
+seguire un'ulteriore richiesta di servizio oppure una chiusura 
+sessione).
+
+
+
+
+
+
+
+
+
+
+
+
+
+CAPITOLO 3
+SESSIONE DI COMUNICAZIONE SAE-HOST
+
+Per sessione si intende l'ambito nel quale ä possibile avere uno scambio 
+di messaggi relativo ad uno o pió servizi SAE accessibili da HOST.
+
+In un dato istante, puï essere in corso una sola sessione.
+
+Una sessione puï essere aperta solo dall'HOST.
+
+Il SAE puo' solo richiedere all'HOST l'apertura di una sessione per il 
+trasferimento record di documentazione servizi da SAE ad Host.
+
+Nei paragrafi che seguono sono descritte:
+* le attivita' svolte da SAE ed HOST nell'ambito della gestione di una 
+sessione di colloquio aperta da HOST;
+* la procedura di richiesta apertura sessione attivata dal SAE.
+
+
+
+3.1 APERTURA/CHIUSURA DI UNA SESSIONE DI COMUNICAZIONE SAE-
+HOST DA HOST
+
+3.1.1 APERTURA
+
+L'HOST esegue l'apertura di una sessione di comunicazione con il SAE se:
+1) e' stato richiesto un servizio da parte dell'utente tramite il 
+terminale HOST;
+2) il SAE ha richiesto l'apertura sessione per il trasferimento record 
+di documentazione servizi (vedi paragrafo PROCEDURA DI RICHIESTA 
+APERTURA SESSIONE DA SAE) .   
+
+Nel caso 1) nell'ambito della sessione aperta  e' consigliabile gestire 
+sia il protocollo di scambi dati relativo al servizio richiesto da HOST 
+sia il protocollo di trasferimento record di documentazione servizi per 
+trasferire i record presenti nella struttura di bufferizzazione del SAE 
+relativa all'HOST richiedente.
+
+Nel caso 2) nell'ambito della sessione aperta si deve gestire il solo 
+protocollo di trasferimento record di documentazione servizi per 
+trasferire i record presenti nella struttura di bufferizzazione del SAE 
+relativo all'HOST destinatario.
+
+All'apertura, su richiesta dell'HOST, di una sessione, sono a carico 
+dell'HOST:
+- far rilevare al SAE la transizione 1->0 del segnale DTR;
+- inviare al SAE il messaggio INICOLL;
+- inviare al SAE il messaggio STARTHOST.
+
+
+
+
+
+1) TRANSIZIONE 1->0 DEL SEGNALE DTR
+
+Per transizione 1->0 del segnale DTR si intende l'esecuzione, in 
+sequenza, delle due manovre seguenti:
+- porre a 1 il segnale DTR, se non giÖ ad 1,
+- porre a 0 il segnale DTR.
+
+La transizione 1->0 del segnale DTR comunica al SAE che l'HOST ä 
+fisicamente collegato e necessita dell'effettivo collegamento con il 
+canale seriale del SAE; se il canale seriale dedicato al collegamento 
+SAE-HOST ä disponibile, il SAE connette tale canale all'HOST. Le 
+elaborazioni effettuate dal SAE in questa fase sono trasparenti all'HOST 
+il quale, comunque, deve tenere in considerazione il tempo che il SAE 
+impiega nella loro esecuzione ed attendere, di conseguenza, per un tempo 
+pari almeno ad un secondo prima di proseguire con l'invio del messaggio 
+di INICOLL.
+
+2) INVIO DEL MESSAGGIO DI INICOLL
+
+Il messaggio di INICOLL puï giungere al SAE solo se questi ha connesso 
+effettivamente il canale seriale all'HOST. Se tale messaggio non giunge 
+al SAE, l'HOST non puï ricevere, naturalmente, alcun messaggio di 
+risposta e, alla scadenza del suo "timer di attesa risposta"(sempre che 
+sia gestito), puï scegliere tra rinunciare all'apertura della sessione 
+oppure ritentare, ricominciando dalla transizione 1->0 del segnale DTR. 
+Il messaggio di INICOLL conferma al SAE l'intenzione dell'HOST di aprire 
+una sessione. Alla ricezione dell'accettazione del SAE, l'HOST puo' 
+proseguire con l'invio del messaggio STARTHOST.
+
+3) INVIO DEL MESSAGGIO DI STARTHOST
+
+Il messaggio di STARTHOST contiene la password che il SAE deve 
+verificare prima di aprire effettivamente la sessione richiesta 
+dall'HOST. La password ä una stringa di 10 caratteri alfanumerici da 20H 
+a 7EH compresi. Se l'HOST riceve il messaggio di rifiuto (COMANDERR) del 
+SAE puï scegliere tra rinunciare all'apertura della sessione, eseguendo 
+la procedura di FINE COLLEGAMENTO, oppure ritentare l'invio del 
+messaggio STARTHOST con una password diversa. 
+Dopo un certo numero di tentativi errati di invio password, fissato in 
+3, il SAE abortisce il collegamento per cui l'HOST puï scegliere tra 
+rinunciare all'apertura della sessione oppure ritentare, ricominciando 
+dalla transizione 1->0 del segnale DTR.
+
+Se l'HOST riceve l'accettazione del SAE puï proseguire richiedendo a 
+questi il servizio o i servizi per cui ha aperto la sessione.
+
+Riassumendo, il SAE apre, su richiesta dell'HOST, una sessione se:
+- il canale seriale per il collegamento SAE-HOST ä disponibile 
+(controllo effettuato alla rilevazione della transizione 1->0 del 
+segnale DTR);
+- la password immessa dall'HOST ä corretta (controllo effettuato alla 
+ricezione del messaggio di STARTHOST).
+
+
+
+
+
+3.1.2 CHIUSURA
+
+Riassumendo, una sessione aperta dall'HOST puï essere chiusa dall'HOST 
+stesso perchä:
+- gli ä scaduto per Nr volte consecutive il "timer di attesa risposta" 
+(chiusura per errore);
+- ha ricevuto Nr messaggi di NACK consecutivi (chiusura per errore);
+- ha inviato Nr messaggi di NACK consecutivi (chiusura per errore);
+- ä terminato lo scambio di messaggi relativo ai servizi per cui aveva 
+aperto la sessione corrente (chiusura normale).
+Una sessione aperta dall'HOST puï essere abortita dal SAE a seguito di:
+- Np errate ricezioni del messaggio STARTHOST contenente la password 
+(chiusura per errore).
+
+Nel caso di sessione chiusa da HOST, sia nel caso di chiusura normale 
+sia nel caso di chiusura per errore, sono a carico dell'HOST:
+- inviare al SAE il messaggio di FINECOLL;
+- far rilevare al SAE la transizione 0->1 del segnale DTR.
+Il SAE in ogni caso considera chiusa la sessione al ricevimento del 
+messaggio FINECOLL e/o alla transizione 0->1 del segnale DTR.
+Nel caso di sessione abortita dal SAE, l'HOST non riceve alcuna risposta 
+da questi per cui allo scadere del timer di "ATTESA RISPOSTA" (se 
+gestito) puo' eseguire o meno l'attivita' di ritrasmissione del 
+messaggio per un certo numero di volte (Nr) prima di eseguire la 
+chiusura della sessione: 
+- inviando al SAE il messaggio di FINECOLL;
+- facendo rilevare al SAE la transizione 0->1 del segnale DTR.
+Il SAE non rileva e non gestisce le segnalazioni di chiusura della 
+sessione avendo gia' per conto suo chiuso la sessione.
+
+1) INVIO DEL MESSAGGIO DI FINECOLL
+
+Il messaggio di FINECOLL indica al SAE l'intenzione dell'HOST di 
+chiudere la sessione corrente. Alla ricezione di tale messaggio, il SAE 
+risponde sempre all'HOST con il messaggio di accettazione, ossia ACK. Se 
+l'HOST non riceve dal SAE la risposta prevista, dopo aver ritrasmesso il 
+suo messaggio di FINECOLL, come spiegato nel paragrafo REGOLE GENERALI, 
+deve comunque considerare chiusa la sessione corrente.
+
+2) TRANSIZIONE 0->1 DEL SEGNALE DTR
+
+Per transizione 0->1 del segnale DTR si intende:
+- porre ad 1 il segnale DTR, che ä rimasto a 0 per tutta la durata della 
+sessione aperta dall'HOST.
+L'HOST deve comunque effettuare la transizione 0->1 del segnale DTR 
+perchä ä corretto che il segnale DTR venga riportato allo stato 1, stato 
+indicante che non ä in corso una sessione aperta dall'HOST e che il 
+canale seriale dedicato al collegamento SAE-HOST ä libero.
+
+
+
+
+
+3.1.3 PROTOCOLLO
+
+
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+transizione 1->0 del DTR        ß
+attesa di 1 secondo             ß
+                                ß (S 1)
+                                ß rilevazione della transizione
+                                ß si passa al punto (H 2)
+                                ß
+
+                                ß
+(H 2)                           ß
+INICOLL                         ß
+----------------------------->  ß
+attivazione OPZIONALE su HOST   ß
+del "timer di attesa risposta"  ß
+                                ß
+(H 2.1)                         ß 
+                                ß
+
+                    [INICOLL NON GIUNGE AL SAE]
+
+                                ß
+scadenza OPZIONALE su HOST del  ß 
+"timer di  attesa risposta"     ß 
+Rif. REGOLE GENERALI            ß
+                                ß
+(H 2.2)                         ß (S 2.2)
+                                ß
+
+                    [INICOLL GIUNGE AL SAE]
+
+                                ß
+                                ß [apertura accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+
+(segue a pagina successiva)
+
+
+
+
+
+
+
+
+
+
+
+
+(segue da pagina precedente)
+
+
+           HOST                 ß			SAE
+
+                                ß
+(H 3)                           ß
+STARTHOST                       ß
+----------------------------->  ß
+                                ß
+                                ß (S 3)
+                                ß verifica password
+                                ß
+                                ß (S 3.1)
+                                ß password corretta
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß SESSIONE APERTA
+                                ß
+                                ß (S 3.2)
+                                ß password errata
+                                ß [password errate consecutive
+                                ß  ricevute <= Np]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß si passa al punto (S 3.2.1),
+                                ß   oppure al punto (S 3.2.2).
+                                ß (S 3.2.1)
+                                ß [COMANDERR consecutivi inviati
+                                ß  <3p]
+                                ß alcuna ulteriore azione
+                                ß (S 3.2.2)
+                                ß [COMANDERR consecutivi inviati
+                                ß  =3]
+                                ß    CHIUSURA PER ERRORE
+                                ß Rif. SESSIONE DI COMUNICAZIONE
+
+                     (segue a pagina successiva)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(segue da pagina precedente)
+
+           HOST                 ß		SAE
+
+                                ß
+(H 4)                           ß
+messaggio RICH. GENERICO        ß
+SERVIZIO DA HOST                ß
+----------------------------->  ß
+                                ß
+
+          [PROTOCOLLO RELATIVO AL SERVIZIO RICHIESTO DA HOST]
+
+                                ß
+
+                                ß
+(H 5)                           ß
+messaggio OPZIONALE             ß
+RICHIESTA LETTURA RECORD        ß
+MEMORIZZATI SU SAE (L_TOT_REC)  ß
+----------------------------->  ß
+                                ß
+
+      [PROTOCOLLO OPZIONALE: LETTURA RECORD MEMORIZZATI SU SAE]
+
+                                ß
+
+                                ß
+(H 6)                           ß
+FINECOLL                        ß
+----------------------------->  ß
+                                ß
+                                ß (S 6) 
+                                ß [messaggio corretto]
+                                ß                            ACK
+                                ß <-----------------------------
+
+                                ß
+(S 6)                           ß
+transizione 0->1 del DTR        ß
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.2 PROCEDURA DI RICHIESTA APERTURA SESSIONE DA SAE
+
+L'apertura di una sessione di comunicazione tra SAE ed HOST puo' essere 
+effettuata solo dall'HOST .
+Il SAE puo' in ogni caso notificare all'HOST la sua necessita' di 
+trasferire i record di documentazione bufferizzati in modo che l'HOST 
+possa aprire una sessione dedicata a tale trasferimento.
+La notifica suddetta e' eseguita utilizzando la procedura di seguito 
+descritta.
+Il SAE puo' richiedere l'apertura di una sessione quando:
+- il buffer in cui sono memorizzate le informazioni che l'HOST puï 
+richiedere raggiunge il livello di guardia;
+- nel buffer in cui sono memorizzate le informazioni che l'HOST puï 
+richiedere viene depositata un'informazione che l'HOST deve 
+ricevere con urgenza;
+- il SAE rileva il termine di un allarme sul canale seriale dedicato al 
+collegamento SAE-HOST.
+
+La procedura di RICHIESTA APERTURA SESSIONE DA SAE evolve attraverso i 
+seguenti passi:
+
+1)	Invio messaggio richiesta trasferimento documentazione (RICH_TRASF) 
+da SAE ad HOST su linea seriale predisposta dal SAE stesso; 
+tale invio e' possibile se:
+	- il canale seriale dedicato al collegamento SAE-HOST ä disponibile 
+in quanto non utilizzato verso un altro dispositivo di 
+presentazione della documentazione;  
+	- l'HOST ä fisicamente collegato.
+
+2)	Attivazione da parte del SAE del timer di attesa messaggio LETTURA 
+DI TUTTI I RECORD DEL SAE (L_TOT_REC); 
+	L_TOT_REC e' il messaggio con il quale l'HOST attiva il protocollo 
+di trasferimento dei record di documentazione bufferizzati su SAE;
+
+3)	Se entro la scadenza del timer di attesa non e' ricevuto dal SAE il 
+messaggio L_TOT_REC si ripete la procedura tornando al punto 1); 
+	se entro la scadenza del timer di attesa e' ricevuto il messaggio 
+L_TOT_REC e' disattivato il timer e chiusa la procedura di 
+RICHIESTA APERTURA SESSIONE DA SAE.
+Dall'invio del mesaggio RICH_TRASF da parte del SAE alla ricezione del 
+messaggio L_TOT_REC possono essere scambiati altri messaggi tra SAE ed 
+HOST quali:
+- i messaggi relativi all'APERTURA SESSIONE DA HOST (INICOLL e STARTHOST 
+da HOST a SAE con relativi ACK).
+
+
+
+
+
+3.2.1 PROTOCOLLO
+
+
+           HOST                 ß		SAE
+
+                                ß (S 1)
+                                ß                   (RICH-TRASF)
+                                ß<-----------------------------
+                                ßattivaz. su SAE del "timer di
+                                ßattesa messaggio L-TOT-REC"
+                                ßsi passa al punto (H 2.1)
+                                ßoppure al punto (H 2.2)
+                                ß
+
+     [SCAMBIO DI MESSAGGI ESTRANEI AL PRESENTE PROTOCOLLO]         
+
+                                ß
+
+                                ß
+(H 2.1)                         ß
+[messaggio non corretto] oppure ß
+[messaggio non ricevuto]        ß
+l'HOST non esegue alcuna azione ß
+                                ß
+                                ß (S 2.1)
+                                ß scadenza sul SAE del "timer 
+                                ß di attesa messaggio L_TOT_REC"
+                                ß si torna al punto (S1) 
+                                ß   
+
+                                ß
+(H 2.2)                         ß
+[messaggio corretto]            ß
+L_TOT_REC                       ß
+----------------------------->  ß
+                                ß
+                                ß (S 2.3)
+                                ß disattivaz. su HOST del "timer
+                                ß di attesa messaggio L_TOT_REC";
+                                ß si passa al protocollo di
+                                ß LETTURA TUTTI RECORD DEL SAE di
+                                ß cui L_TOT e'il primo messaggio
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+CAPITOLO 4
+RICHIESTE HOST
+
+Nel presente capitolo sono descritti i protocolli di comunicazione 
+relativi ai servizi che possono essere richiesti da HOST nell'ambito di 
+una sessione di comunicazione.
+
+I protocolli descritti si inseriscono tra la fase di APERTURA SESSIONE e 
+quella di CHIUSURA SESSIONE del protocollo totale relativo alla generica 
+SESSIONE DI COMUNICAZIONE SAE-HOST.
+
+Per ogni protocollo e' descritto inoltre il messaggio di attivazione del 
+tipo RICHIESTA ... .
+
+I tipi RICHIESTA descritti successivamente sono disponibili dalle 
+versioni Annunci Vocali/ISDDN e successive, mentre nella versione Base 
+e' disponibile solamente la "RICHIESTA DI LETTURA DI TUTTI I RECORDS 
+MEMORIZZATI SU SAE".
+
+
+
+4.1 RICHIESTA DI LETTURA DI TUTTI I RECORDS MEMORIZZATI SU SAE
+
+OBIETTIVO:
+il SAE bufferizza i record generati in attesa di essere interrogato da 
+HOST.
+La capacitÖ del buffer varia a seconda della versione (fare riferimento 
+ai dati di quantitÖ riportati nel corrispettivo manuale di Descrizione 
+dei Servizi).
+In caso di riempimento del buffer al 75% il SAE genera una richiesta di 
+trasferimento (RICH-TRASF) verso HOST per sollecitarlo ad aprire una 
+sessione di comunicazione.
+
+ACRONIMO: L_TOT_REC
+
+CAMPO DATI: (0 bytes)
+
+In seguito alla richiesta di L_TOT_REC ricevuta da HOST, il SAE 
+restituisce tutti gli eventuali records di documentazione servizi 
+memorizzati dall'ultima richiesta di L_TOT_REC fino all'istante 
+corrente.
+
+
+
+PROTOCOLLO:
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+L_TOT_REC                       ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1) 
+                                ß si passa al punto (S 1.1)
+                                ß oppure al punto (S 1.2)
+                                ß
+                                ß (S 1.1)
+                                ß [messaggio corretto]
+                                ß [nessun record da scaricare]
+                                ß                            EOL
+                                ß <-----------------------------
+                                ß TERMINE SERVIZIO
+                                ß
+                                ß (S 1.2)
+                                ß [messaggio corretto]
+                                ß [presente record da scaricare]
+                                ß R_ADD
+                                ß R_IMP_CNT
+                                ß R_AZZ_CNT
+                                ß R_ADD_BAR
+                                ß R_ALL_TEL
+                                ß R_STAT_ST
+                                ß R_SVE_IMP
+                                ß R_SVE_AZZ
+                                ß R_SVE_INO
+                                ß R_INTRUS
+                                ß R_RONDA
+                                ß <-----------------------------
+                                ß si passa al punto (H 2)
+                                ß
+(H 2)                           ß
+ACK                             ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer di attesa risposta"      ß
+si torna al punto (S 1)         ß
+                                ß
+
+
+
+
+
+
+
+
+
+4.2 RICHIESTA DI LETTURA STATO UTENTE
+
+OBIETTIVO:
+per una verifica pió accurata della documentazione addebiti, onde 
+eliminare la possibilitÖ che il record di addebito relativo all'ultima 
+conversazione non sia stato ancora emesso a causa del mancato riaggancio 
+del telefono, Ç possibile da parte di HOST interrogare il SAE per 
+leggere lo stato dell'utente, il SAE restituisce l'informazione di 
+telefono libero o occupato insieme ad altre informazioni.
+
+ACRONIMO: L_STATO
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß Valori consentiti 0H ˆ 9H cifra significativa
+      ß                   FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di L_STATO, il SAE restituisce 
+all'HOST:
+- R_STAT_UT se ä possibile determinare lo stato dell'utente dato;
+- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+L_STATO                         ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer di attesa risposta"      ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                      R_STAT_UT
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.3 RICHIESTA DI IMPOSTAZIONE CREDITO CONTATORE UTENTE
+
+OBIETTIVI:
+Ç possibile da parte di HOST impostare un valore di bonus per scatti 
+pre-pagati sul contatore del telefono dell'utente. Per abilitare il 
+telefono l'HOST deve inviare successivamente al SAE il messaggio di 
+cambio classe di servizio per portare il telefono in prima classe.
+Quando il bonus si azzera il telefono viene posto nella terza classe di 
+servizio in modo automatico dal SAE.
+
+ACRONIMO: IMPCNT
+
+CAMPO DATI: (7 bytes)
+
+ BYTE ß SIGNIFICATO
+ß 
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß Valori consentiti 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+  4   ß valore del credito (LOW)
+  5   ß valore del credito
+  6   ß valore del credito
+  7   ß valore del credito (HIGH)
+      ß Valori consentiti 217-1 (solo 17 bits sono significativi)
+      ß 
+
+Alla ricezione dall'HOST del messaggio di IMPCNT, il SAE restituisce 
+all'HOST:
+- ACK se ä possibile impostare il valore del contatore di tassazione per 
+l'utente dato;
+- COMANDERR in caso contrario.
+
+IMPORTANTE:
+
+*	Soddisfatta la richiesta di IMPCNT ricevuta dall'HOST, il SAE non 
+genera un record di R_IMP_CNT, quindi l'HOST deve provvedere 
+localmente ad eseguire le elaborazioni che avrebbe dovuto eseguire 
+alla ricezione di tale record.
+
+*	Il "valore del credito" impostabile e' un numero avente al massimo 
+4 cifre (9.999) e pertanto, nel caso in cui il SAE riceva una 
+RICHIESTA DI IMPOSTAZIONE CREDITO CONTATORE UTENTE con un valore 
+superiore, inviera' all'HOST un messaggio COMANDERR di risposta ad 
+indicare che la richiesta non e' stata accettata.
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+IMPCNT                          ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer di attesa risposta"      ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.4 RICHIESTA DI AZZERAMENTO CONTATORE UTENTE
+
+OBIETTIVO:
+Ç possibile da parte di HOST azzerare il contatore del telefono 
+dell'utente, indipendentemente dal suo valore, positivo (credito) o 
+negativo (debito).
+
+ACRONIMO: AZZCNT
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di AZZCNT, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile azzerare il contatore di tassazione per 
+l'utente dato;
+	- COMANDERR in caso contrario.
+
+
+IMPORTANTE:
+
+Soddisfatta la richiesta di AZZCNT ricevuta dall'HOST, il SAE non genera 
+un record di R_AZZ_CNT e quindi l'HOST deve provvedere localmente ad 
+eseguire le elaborazioni che avrebbe dovuto eseguire alla ricezione di 
+tale record.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+AZZCNT                          ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer di attesa risposta"      ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.5 RICHIESTA DI CAMBIO CLASSE UTENTE
+
+OBIETTIVO:
+Ç possibile da parte di HOST cambiare la classe di servizio del telefono 
+dell'utente per passarlo in 1a classe, 2a classe, 3a classe.
+Le abilitazioni o le restrizioni al servizio sono oggetto di 
+personalizzazione operata sul centralino e per ciascun telefono.
+
+ACRONIMO: IMPCDS
+
+CAMPO DATI: (4 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+  4   ß classe di servizio
+      ß V.P. 0 -> passaggio in classe di area
+      ß      1 -> passaggio in 1¶ classe
+      ß      2 -> passaggio in 2¶ classe
+      ß      3 -> passaggio in 3¶ classe
+      ß 
+
+Alla ricezione dall'HOST del messaggio di IMPCDS, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile effettuare il passaggio nella classe data per 
+l'utente dato;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+IMPCDS                          ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer di attesa risposta"      ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.6 RICHIESTA DI CHECK-IN/CHECK-OUT UTENTE
+
+OBIETTIVO:
+Ç possibile da parte di HOST associare al telefono il nome dell'utente e 
+la lingua parlata, nonchÇ i dati di identificazione ausiliari dello 
+stesso utente (campo al momento non utilizzato).
+La cancellazione del nome avviene impostando un nome composto da 
+caratteri blank.
+
+ACRONIMO: CHECK_IO
+
+CAMPO DATI: (31 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+  4   ß nome utente ( 1ß carattere)
+  5   ß nome utente ( 2ß carattere)
+  6   ß nome utente ( 3ß carattere)
+  7   ß nome utente ( 4ß carattere)
+  8   ß nome utente ( 5ß carattere)
+  9   ß nome utente ( 6ß carattere)
+ 10   ß nome utente ( 7ß carattere)
+ 11   ß nome utente ( 8ß carattere)
+ 12   ß nome utente ( 9ß carattere)
+ 13   ß nome utente (10ß carattere)
+ 14   ß nome utente (11ß carattere)
+ 15   ß nome utente (12ß carattere)
+      ß V.P. caratteri alfanumerici
+ 16   ß identificatore lingua
+      ß V.P. 1 ˆ 16
+ 17   ß ausiliario utente ( 1ß carattere)
+ 18   ß ausiliario utente ( 2ß carattere)
+ 19   ß ausiliario utente ( 3ß carattere)
+ 20   ß ausiliario utente ( 4ß carattere)
+ 21   ß ausiliario utente ( 5ß carattere)
+ 22   ß ausiliario utente ( 6ß carattere)
+ 23   ß ausiliario utente ( 7ß carattere)
+ 24   ß ausiliario utente ( 8ß carattere)
+ 25   ß ausiliario utente ( 9ß carattere)
+ 26   ß ausiliario utente (10ß carattere)
+ 27   ß ausiliario utente (11ß carattere)
+ 28   ß ausiliario utente (12ß carattere)
+ 29   ß ausiliario utente (13ß carattere)
+ 30   ß ausiliario utente (14ß carattere)
+ 31   ß ausiliario utente (15ß carattere)
+      ß V.P. 0x20 carattere non significativo
+
+
+
+
+
+NOTE:
+
+1)	Il byte di identificatore lingua deve puntare ad una delle lingue 
+definite in fase di personalizzazione del SAE.
+
+2)	Ciascuno dei 15 byte di ausiliario utente contiene il valore fisso 
+0x20, perchä l'informazione "ausiliario utente", attualmente, non ä 
+significativa.
+
+
+Alla ricezione dall'HOST del messaggio di CHECK_IO, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile effettuare il check-in/check-out per l'utente 
+dato;
+	- COMANDERR in caso contrario.
+
+3)	Soddisfatta la richiesta di CHECK_IO ricevuta dall'HOST, il SAE non 
+genera un record di R_STAT_ST e quindi l'HOST deve provvedere 
+localmente ad eseguire le elaborazioni che avrebbe dovuto eseguire 
+alla ricezione di tale record.
+
+4)	Le attivita' che devono essere eseguite dal SAE a seguito di una 
+richiesta di CHECK_IO proveniente dall'HOST sono innescate alla 
+chiusura della sessione di comunicazione. Pertanto tutte le 
+richieste di CHECK_IO ricevute in una sessione sono evase 
+contemporaneamente  dal SAE alla ricezione del FINECOLL di sessione 
+e richiedono un tempo di circa 3 minuti. 
+Se prima dello scadere di questo tempo l'HOST apre una nuova 
+sessione ed invia una nuova richiesta di CHECK_IO essa non puo' 
+essere gestita dal SAE. L'HOST pertanto ricevera' come risposta il 
+messaggio di COMANDERR.
+Da quanto detto si impone che l'attivita' di CHECK_IN/CHECK_OUT di 
+k UTENTI (1<= k <= N) debba prevedere:
+	-	la ripetizione per k volte del protocollo relativo al 
+CHECK_IN/CHECK_OUT di un UTENTE (di seguito specificato) 
+nell'ambito di una stessa sessione;
+	-	l'invio del FINECOLL di chiusura sessione subito dopo il 
+protocollo relativo all'ultimo CHECK_IN/CHECK_OUT di UTENTE 
+richiesto;
+	-	l'attesa di 3 minuti prima dell'apertura di una nuova sessione 
+se in essa deve essere richiesto un nuovo CHECK_IN/CHECK_OUT 
+di UTENTE. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+CHECH_IO                        ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer di attesa risposta"      ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.7 RICHIESTA DI CANCELLAZIONE SERVIZI UTENTE
+
+OBIETTIVO:
+Ç possibile da parte di HOST cancellare tutti gli eventuali servizi 
+attivati sul telefono dell'utente.
+Tali servizi sono:
+*	sveglia
+*	deviazione
+*	non disturbare
+*	messaggi giacenti
+*	numero urbano memorizzato
+*	ultimo numero urbano selezionato
+
+ACRONIMO: AZZ_SERV
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di AZZ_SERV, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile azzerare tutti gli eventuali servizi attivi 
+per l'utente dato;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+AZZ_SERV                        ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.8 RICHIESTA DI ATTIVAZIONE RELE`
+
+OBIETTIVO:
+Ç possibile da parte di HOST attivare uno dei relÇ disponibili sulla 
+scheda UnitÖ di Servizio del SAE come dispositivo di uscita per la 
+gestione ad esempio di allarmi.
+
+ACRONIMO: ATT_RELE
+
+CAMPO DATI: (2 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero della scheda UnitÖ di Servizio
+      ß V.P. 1 ˆ 6
+      ß 
+  2   ß numero del relä della scheda UnitÖ di Servizio
+      ß V.P. 1 ˆ 8
+      ß 
+
+Alla ricezione dall'HOST del messaggio di ATT_RELE, il SAE restituisce 
+all'HOST:
+- ACK se ä possibile attivare il dato relä;
+- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+ATT_RELE                        ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.9 RICHIESTA DI DISATTIVAZIONE RELE`
+
+OBIETTIVO:
+Ç possibile da parte di host disattivare uno dei relÇ disponibili sulla 
+scheda UnitÖ di Servizio del SAE  come dispositivo di uscita per la 
+gestione ad esempio di allarmi.
+
+ACRONIMO: DIS_RELE
+
+CAMPO DATI: (2 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero della scheda UnitÖ di Servizio
+      ß V.P. 1 ˆ 6
+      ß 
+  2   ß numero del relä della scheda UnitÖ di Servizio
+      ß V.P. 1 ˆ 8
+      ß 
+
+Alla ricezione dall'HOST del messaggio di DIS_RELE, il SAE restituisce 
+all'HOST:
+- ACK se ä possibile disattivare il dato relä;
+- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+DIS_RELE                        ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.10 RICHIESTA DI IMPOSTAZIONE SVEGLIA
+
+OBIETTIVO:
+Ç possibile da parte di HOST impostare la sveglia per il telefono di un 
+utente.
+
+ACRONIMO: IMPSVE
+
+CAMPO DATI: (5 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato da svegliare (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato da svegliare (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato da svegliare (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+  4   ß ora di impostazione sveglia
+      ß V.P. 00 ˆ 23
+  5   ß minuti di impostazione sveglia
+      ß V.P. 00 ˆ 59
+      ß 
+
+Alla ricezione dall'HOST del messaggio di IMPSVE, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile impostare la sveglia al dato orario per 
+l'utente dato;
+	- COMANDERR se l'esito dell'impostazione sveglia ä negativo.
+
+Soddisfatta la richiesta di IMPSVE ricevuta dall'HOST, il SAE non genera 
+un record di R_SVE_IMP e quindi l'HOST deve provvedere localmente ad 
+eseguire le elaborazioni che avrebbe dovuto eseguire alla ricezione di 
+tale record.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+                                ß (attivo su SAE il "timer di
+                                ß  attesa servizio")
+(H 1)                           ß
+IMPSVE                          ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.11 RICHIESTA DI CANCELLAZIONE SVEGLIA
+
+OBIETTIVO:
+Ç possibile da parte di HOST cancellare una sveglia precedentemente 
+impostata sul telefono di un utente.
+
+ACRONIMO: AZZSVE
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato da svegliare (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato da svegliare (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato da svegliare (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di AZZSVE, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile cancellare la sveglia per l'utente dato;
+	- COMANDERR in caso contrario.
+
+Soddisfatta la richiesta di AZZSVE ricevuta dall'HOST, il SAE non genera 
+un record di R_SVE_AZZ e quindi l'HOST deve provvedere localmente ad 
+eseguire le elaborazioni che avrebbe dovuto eseguire alla ricezione di 
+tale record.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+AZZSVE                          ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.12 RICHIESTA DI MESSAGGIO DA OPERATORE
+
+OBIETTIVO:
+Ç possibile da parte di HOST inviare un messaggio da operatore generico 
+verso il telefono dell'utente (e quindi attivare il LED di messaggio, 
+qualora questo fosse spento).
+
+ACRONIMO: OPMESSON
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di OPMESSON, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile accendere il LED di messaggio del telefono;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+OPMESSON                        ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.13 RICHIESTA DI DISATTIVAZIONE MESSAGGIO DA OPERATORE
+
+OBIETTIVO:
+Ç possibile da parte di HOST, eliminare dalla coda dei messaggi 
+dell'utente specificato, il messaggio proveniente dall'operatore 
+generico (e quindi spegnere il LED di messaggio del telefono, qualora 
+questo fosse l'unico messaggio in coda).
+
+ACRONIMO: OPMESSOFF
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di OPMESSOFF, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile spegnere il LED di messaggio del telefono;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+OPMESSOFF                       ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.14 RICHIESTA DI ATTIVAZIONE NON DISTURBARE
+
+OBIETTIVO:
+Ç possibile da parte di HOST attivare il NON DISTURBARE del telefono 
+specificato.
+
+ACRONIMO: ATTNODIST
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di ATTNODIST, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile attivare il servizio di NON DISTURBARE;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+ATTNODIST                       ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.15 RICHIESTA DI DISATTIVAZIONE NON DISTURBARE
+
+OBIETTIVO:
+Ç possibile da parte di HOST disattivare il NON DISTURBARE del telefono 
+specificato.
+
+ACRONIMO: DISNODIST
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di DISNODIST, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile disattivare il servizio di NON DISTURBARE;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+DISNODIST                       ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.16 RICHIESTA DI SVEGLIA IMMEDIATA
+
+OBIETTIVO:
+Ç possibile da parte di HOST attivare il servizio di attivazione di 
+sveglia immediatamente.
+
+ACRONIMO: SVEIMM
+
+CAMPO DATI: (3 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero telefonico derivato da svegliare (1¶/2¶ cifra BCD)
+  2   ß numero telefonico derivato da svegliare (3¶/4¶ cifra BCD)
+  3   ß numero telefonico derivato da svegliare (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di SVEIMM, il SAE restituisce 
+all'HOST:
+	- ACK se ä possibile attivare il servizio di sveglia immediata;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+SVEIMM                          ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.17 RICHIESTA DI IMPOSTAZIONE ORARIO DI SISTEMA
+
+OBIETTIVO:
+Ç possibile da parte di HOST impostare l'orario di sistema.
+
+ACRONIMO: IMPORADATA
+
+CAMPO DATI: (6 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno
+      ß V.P. 01 ˆ 31
+  2   ß mese
+      ß V.P. 01 ˆ 12
+  3   ß anno (LOW)
+  4   ß anno (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora 
+      ß V.P. 00 ˆ 23
+  6   ß minuti
+      ß V.P. 00 ˆ 59
+      ß 
+
+
+Alla ricezione dall'HOST del messaggio di IMPORADATA, il SAE restituisce 
+all'HOST:
+	- ACK in seguito all'impostazione dell'ora e della data di sistema;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+IMPORADATA                      ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.18 RICHIESTA DI CAMBIO STANZA
+
+OBIETTIVO:
+Ç possibile da parte di HOST inviare un comando di cambio stanza che 
+riporti le caratteristiche telefoniche da una linea vecchia ad una linea 
+nuova.
+
+ACRONIMO: CAMBIO_STANZA
+
+CAMPO DATI: (6 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß numero vecchio telefonico derivato (1¶/2¶ cifra BCD)
+  2   ß numero vecchio telefonico derivato (3¶/4¶ cifra BCD)
+  3   ß numero vecchio telefonico derivato (5¶/6¶ cifra BCD)
+  4   ß numero nuovo telefonico derivato (1¶/2¶ cifra BCD)
+  5   ß numero nuovo telefonico derivato (3¶/4¶ cifra BCD)
+  6   ß numero nuovo telefonico derivato (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+Alla ricezione dall'HOST del messaggio di CAMBIO_STANZA, il SAE 
+restituisce all'HOST:
+	- ACK se ä possibile effettuare il cambio stanza;
+	- COMANDERR in caso contrario.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROTOCOLLO
+
+                                ß
+           HOST                 ß		SAE
+
+                                ß
+(H 1)                           ß
+CAMBIO_STANZA                   ß
+----------------------------->  ß
+attivaz. OPZIONALE su HOST del  ß
+"timer  di attesa risposta"     ß
+                                ß
+                                ß (S 1)
+                                ß si passa al punto (S 2.1)
+                                ß oppure al punto (S 2.2)
+                                ß
+                                ß (S 2.1)
+                                ß [messaggio corretto]
+                                ß [richiesta accettata]
+                                ß                            ACK
+                                ß <-----------------------------
+                                ß
+                                ß (S 2.2)
+                                ß [messaggio corretto]
+                                ß [richiesta rifiutata]
+                                ß                      COMANDERR
+                                ß <-----------------------------
+                                ß
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CAPITOLO 5
+RECORDS GENERATI DAL SAE
+
+I records generati dal SAE si suddividono in:
+- records di RISPOSTA,
+- records NON URGENTI di documentazione servizi;
+- records URGENTI di documentazione servizi.
+
+RECORDS DI RISPOSTA
+
+Un record di risposta ä un particolare messaggio di risposta previsto 
+per una data richiesta dell'HOST. Il SAE genera un record di risposta 
+alla ricezione della richiesta dell'HOST a cui il dato record ä 
+associato.
+
+RECORDS DI DOCUMENTAZIONE SERVIZI
+
+I records di documentazione servizi non urgenti vengono memorizzati dal 
+SAE in un apposito buffer, in attesa che l'HOST effettui la richiesta 
+L_TOT_REC. 
+
+Se il numero di record contenuti nel buffer supera una soglia prefissata 
+pari al 75%, il SAE deve avvisare l'HOST dell'evento verificatosi 
+utilizzando la procedura di RICHIESTA APERTURA SESSIONE DA SAE.
+E' a carico dell'HOST attivare il protocollo di LETTURA DI TUTTI I 
+RECORDS MEMORIZZATI SU SAE prima che questi vadano persi per il 
+superamento della capacita' di bufferizzazione del SAE.
+
+Alla generazione di un record di documentazione servizi urgente, il SAE 
+non attende che sia l'HOST ad inviare la richiesta di L_TOT_REC ma invia 
+il messaggio di RICHIESTA APERTURA SESSIONE DA SAE per sollecitare HOST 
+ed aprire il collegamento.
+E' a carico dell'HOST attivare il protocollo di LETTURA DI TUTTI I 
+RECORDS MEMORIZZATI SU SAE in modo da ricevere il record urgente e con 
+esso tutti quelli bufferizzati dal SAE.
+
+Nell'ambito del protocollo di LETTURA DI TUTTI I RECORDS MEMORIZZATI SU 
+SAE e' eseguito dal SAE l'invio, uno ad uno, di tutti i records 
+bufferizzati.
+Dopo l'invio di ciascun record di documentazione servizi non urgente 
+oppure urgente, il SAE si pone in attesa del messaggio di ACK/NACK 
+dell'HOST:
+- un eventuale NACK viene elaborato come spiegato nel paragrafo "REGOLE 
+GENERALI";
+- se giunge un ACK, il SAE puï inviare all'HOST un eventuale record di 
+documentazione servizi successivo.
+Dopo aver ricevuto l'ACK relativo all'ultimo record di documentazione 
+servizi inviato oppure se il buffer del SAE non contiene records di 
+documentazione servizi da scaricare, il SAE restituisce un messaggio di 
+EOL (END OF LIST) indicante il termine della lista.
+ATTENZIONE: il SAE cancella automaticamente dal suo buffer tutti i 
+records di documentazione servizi che vengono scaricati.
+
+
+
+
+
+5.1 RECORD DI ADDEBITO TASSAZIONE  UTENTE DA SAE
+
+Questo record viene generato dal SAE a seguito di ogni conversazione 
+urbana tassata. 
+
+ACRONIMO: R_ADD
+
+TIPO RECORD: NON URGENTE
+
+CAMPO DATI: (48 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di inizio conversazione
+      ß V.P. 01 ˆ 31
+  2   ß mese di inizio conversazione
+      ß V.P. 01 ˆ 12
+  3   ß anno di inizio conversazione (LOW) 
+  4   ß anno di inizio conversazione (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di inizio conversazione
+      ß V.P. 00 ˆ 23
+  6   ß minuti di inizio conversazione
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß ora di durata conversazione
+      ß V.P. 00 ˆ (28-1)
+  8   ß minuti di durata conversazione
+      ß V.P. 00 ˆ 59
+  9   ß secondi di durata conversazione
+      ß V.P. 00 ˆ 59
+      ß 
+ 10   ß numero telefonico chiamante (1¶/2¶ cifra BCD)
+ 11   ß numero telefonico chiamante (3¶/4¶ cifra BCD)
+ 12   ß numero telefonico chiamante (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 13   ß area di appartenenza del chiamante
+      ß V.P. 0 ˆ 3
+ 14   ß ausiliario chiamante ( 1ß carattere)
+ 15   ß ausiliario chiamante ( 2ß carattere)
+ 16   ß ausiliario chiamante ( 3ß carattere)
+ 17   ß ausiliario chiamante ( 4ß carattere)
+ 18   ß ausiliario chiamante ( 5ß carattere)
+ 19   ß ausiliario chiamante ( 6ß carattere)
+ 20   ß ausiliario chiamante ( 7ß carattere)
+ 21   ß ausiliario chiamante ( 8ß carattere)
+ 22   ß ausiliario chiamante ( 9ß carattere)
+
+				(segue a pagina successiva)
+
+
+
+(segue da pagina precedente) 
+
+ 23   ß ausiliario chiamante (10ß carattere)
+ 24   ß ausiliario chiamante (11ß carattere)
+ 25   ß ausiliario chiamante (12ß carattere)
+ 26   ß ausiliario chiamante (13ß carattere)
+ 27   ß ausiliario chiamante (14ß carattere)
+ 28   ß ausiliario chiamante (15ß carattere)
+      ß V.P. 0x20 carattere non significativo
+      ß 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ BYTE ß SIGNIFICATO
+
+      ß
+ 29   ß modalitÖ impegno linea (1¶/2¶ cifra BCD)
+ 30   ß modalitÖ impegno linea (3¶/4¶ cifra BCD)
+ 31   ß modalitÖ impegno linea (5¶/6¶ cifra BCD)
+ 32   ß modalitÖ impegno linea (7¶/8¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 33   ß numero telefonico linea impegnata (1¶/2¶ cifra BCD)
+ 34   ß numero telefonico linea impegnata (3¶/4¶ cifra BCD)
+ 35   ß numero telefonico linea impegnata (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 36   ß numero impulsi ricevuti (LOW)
+ 37   ß numero impulsi ricevuti (HIGH)
+      ß V.P. 0 ˆ (216-1)
+      ß 
+ 38   ß numero telefonico chiamato ( 1¶/ 2¶ cifra BCD)
+ 39   ß numero telefonico chiamato ( 3¶/ 4¶ cifra BCD)
+ 40   ß numero telefonico chiamato ( 5¶/ 6¶ cifra BCD)
+ 41   ß numero telefonico chiamato ( 7¶/ 8¶ cifra BCD)
+ 42   ß numero telefonico chiamato ( 9¶/10¶ cifra BCD)
+ 43   ß numero telefonico chiamato (11¶/12¶ cifra BCD)
+ 44   ß numero telefonico chiamato (13¶/14¶ cifra BCD)
+ 45   ß numero telefonico chiamato (15¶/16¶ cifra BCD)
+ 46   ß numero telefonico chiamato (17¶/18¶ cifra BCD)
+ 47   ß numero telefonico chiamato (19¶/20¶ cifra BCD)
+ 48   ß numero telefonico chiamato (21¶/22¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+NOTE:
+
+1)	Ciascuno dei 15 byte di "ausiliario chiamante" contiene il valore 
+fisso 0x20, perchä l'informazione "ausiliario chiamante", in questa 
+versione, non ä significativa.
+
+2)	Le 8 cifre dell'informazione "modalitÖ di impegno linea" possono 
+assumere uno dei seguenti significati:
+
+modalitÖ impegno		prime 6 cifre   	ultime 2 cifre
+
+numero linea singola  	numero telefonico	FFH
+numero fascio singolo 	numero telefonico	FFH
+numero fascio generale	numero telefonico	FFH
+numero abbreviato     	prefisso tabella 	numero breve 00 ˆ 99
+
+
+
+
+
+
+5.2 RECORD DI ADDEBITO CHIAMATA URBANA ENTRANTE DA SAE
+
+Questo record viene generato dal SAE per le chiamate urbane entranti nei 
+casi previsti. 
+
+ACRONIMO: R_DUE
+
+TIPO RECORD: NON URGENTE
+
+CAMPO DATI: (48 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di inizio conversazione
+      ß V.P. 01 ˆ 31
+  2   ß mese di inizio conversazione
+      ß V.P. 01 ˆ 12
+  3   ß anno di inizio conversazione (LOW) 
+  4   ß anno di inizio conversazione (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di inizio conversazione
+      ß V.P. 00 ˆ 23
+  6   ß minuti di inizio conversazione
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß ora di durata conversazione
+      ß V.P. 00 ˆ (28-1)
+  8   ß minuti di durata conversazione
+      ß V.P. 00 ˆ 59
+  9   ß secondi di durata conversazione
+      ß V.P. 00 ˆ 59
+      ß 
+ 10   ß numero telefonico linea urbana chiamante (1¶/2¶ cifra BCD)
+ 11   ß numero telefonico linea urbana chiamante (3¶/4¶ cifra BCD)
+ 12   ß numero telefonico linea urbana chiamante (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 13   ß area di appartenenza della linea urbana chiamante
+      ß V.P. 0 ˆ 3
+ 14   ß codice ausiliario ( 1ß carattere) ( 1¯ cifra commessa)
+ 15   ß codice ausiliario ( 2ß carattere) ( 2¯ cifra commessa)
+ 16   ß codice ausiliario ( 3ß carattere) ( 3¯ cifra commessa)
+ 17   ß codice ausiliario ( 4ß carattere) ( 4¯ cifra commessa)
+ 18   ß codice ausiliario ( 5ß carattere) ( 5¯ cifra commessa)
+ 19   ß codice ausiliario ( 6ß carattere) ( 6¯ cifra commessa)
+ 20   ß codice ausiliario ( 7ß carattere)
+ 21   ß codice ausiliario ( 8ß carattere)
+ 22   ß codice ausiliario ( 9ß carattere)
+
+				(segue a pagina successiva)
+
+
+
+(segue da pagina precedente) 
+
+ 23   ß codice ausiliario (10ß carattere)
+ 24   ß codice ausiliario (11ß carattere)
+ 25   ß codice ausiliario (12ß carattere)
+ 26   ß codice ausiliario (13ß carattere)
+ 27   ß codice ausiliario (14ß carattere)
+ 28   ß codice ausiliario (15ß carattere)
+      ß V.P. 0x20 carattere non significativo
+      ß 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ BYTE ß SIGNIFICATO
+
+      ß
+ 29   ß numero telefonico selezionato/associato (1¶/2¶ cifra BCD)
+ 30   ß numero telefonico selezionato/associato (3¶/4¶ cifra BCD)
+ 31   ß numero telefonico selezionato/associato (5¶/6¶ cifra BCD)
+ 32   ß numero telefonico selezionato/associato (7¶/8¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 33   ß numero telefonico interno rispondente (1¶/2¶ cifra BCD)
+ 34   ß numero telefonico interno rispondente (3¶/4¶ cifra BCD)
+ 35   ß numero telefonico interno rispondente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 36   ß numero impulsi ricevuti (LOW)
+ 37   ß numero impulsi ricevuti (HIGH)
+      ß V.P. 0 campo non significativo
+      ß 
+ 38   ß numero telefonico chiamato ( 1¶/ 2¶ cifra BCD)
+ 39   ß numero telefonico chiamato ( 3¶/ 4¶ cifra BCD)
+ 40   ß numero telefonico chiamato ( 5¶/ 6¶ cifra BCD)
+ 41   ß numero telefonico chiamato ( 7¶/ 8¶ cifra BCD)
+ 42   ß numero telefonico chiamato ( 9¶/10¶ cifra BCD)
+ 43   ß numero telefonico chiamato (11¶/12¶ cifra BCD)
+ 44   ß numero telefonico chiamato (13¶/14¶ cifra BCD)
+ 45   ß numero telefonico chiamato (15¶/16¶ cifra BCD)
+ 46   ß numero telefonico chiamato (17¶/18¶ cifra BCD)
+ 47   ß numero telefonico chiamato (19¶/20¶ cifra BCD)
+ 48   ß numero telefonico chiamato (21¶/22¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+
+NOTE:
+
+1)	Nel campo "ausiliario chiamante" puï essere contenuto il codice 
+commessa oppure niente (20H).
+
+
+2)	Nel campo "numero telefonico selezionato/associato" sono usate solo 
+le prime 6 cifre, mentre la 7¯ e la 8¯ avranno il valore non 
+significativo FH.
+
+3)	Nel campo "numero telefonico chiamato" normalmente sono contenute 
+cifre non significative FH a meno che la linea non sia stata 
+utilizzata per fare una richiamata esterna.
+
+
+
+
+
+5.3 RECORD DI IMPOSTAZIONE CREDITO CONTATORE DA SAE
+
+ACRONIMO: R_IMP_CNT
+
+TIPO RECORD: NON URGENTE
+
+Questo record viene generato dal SAE a seguito di manovre di 
+impostazione di bonus su un telefono operata da terminali di operatore o 
+altro derivato abilitato.
+
+CAMPO DATI: (17 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di impostazione credito
+      ß V.P. 01 ˆ 31
+  2   ß mese di impostazione credito
+      ß V.P. 01 ˆ 12
+  3   ß anno di impostazione credito (LOW) 
+  4   ß anno di impostazione credito (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di impostazione credito
+      ß V.P. 00 ˆ 23
+  6   ß minuti di impostazione credito
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  8   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  9   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß area di appartenenza dell'utente
+      ß V.P. 0 ˆ 3
+      ß 
+ 11   ß valore del credito (LOW)
+ 12   ß valore del credito
+ 13   ß valore del credito
+ 14   ß valore del credito (HIGH)
+      ß V.P. 217-1 (solo 17 bits sono significativi)
+      ß 
+ 15   ß numero telefonico autore manovra (1¶/2¶ cifra BCD)
+ 16   ß numero telefonico autore manovra (3¶/4¶ cifra BCD)
+ 17   ß numero telefonico autore manovra (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+
+NOTA :
+Il "valore del credito" ricevuto e' un numero avente al massimo 4 cifre 
+(9.999). 
+
+
+
+
+
+5.4 RECORD DI AZZERAMENTO CONTATORE DA SAE
+
+ACRONIMO: R_AZZ_CNT
+
+TIPO RECORD: NON URGENTE
+Questo record viene generato dal SAE a seguito di manovra di azzeramento 
+operata da terminale di operatore o altro derivato abilitato.
+
+CAMPO DATI: (17 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di azzeramento contatore
+      ß V.P. 01 ˆ 31
+  2   ß mese di azzeramento contatore
+      ß V.P. 01 ˆ 12
+  3   ß anno di azzeramento contatore (LOW) 
+  4   ß anno di azzeramento contatore (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di azzeramento contatore
+      ß V.P. 00 ˆ 23
+  6   ß minuti di azzeramento contatore
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  8   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  9   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß area di appartenenza dell'utente
+      ß V.P. 0 ˆ 3
+      ß 
+ 11   ß numero telefonico autore manovra (1¶/2¶ cifra BCD)
+ 12   ß numero telefonico autore manovra (3¶/4¶ cifra BCD)
+ 13   ß numero telefonico autore manovra (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 14   ß valore del contatore prima dell'azzeramento (LOW)
+ 15   ß valore del contatore prima dell'azzeramento
+ 16   ß valore del contatore prima dell'azzeramento
+ 17   ß valore del contatore prima dell'azzeramento (HIGH)
+      ß V.P. 217-1 (solo 17 bits sono significativi)
+
+NOTA :
+Il "valore del contatore prima dell'azzeramento" puo' essere: 
+	-	positivo ad indicare CREDITO;
+	-	negativo ad indicare DEBITO.  
+
+
+
+
+5.5 RECORD DI STATO UTENTE DA SAE
+
+ACRONIMO: R_STAT_UT
+
+TIPO RECORD: NON URGENTE
+RISPOSTA inviata dal SAE alla ricezione dall'HOST della richiesta di 
+L_STAT_UT.
+
+CAMPO DATI: (23 bytes)
+
+ BYTE ß SIGNIFICATO
+
+  1   ß numero telefonico utente (1¶/2¶ cifra BCD)
+  2   ß numero telefonico utente (3¶/4¶ cifra BCD)
+  3   ß numero telefonico utente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+  4   ß area di appartenenza dell'utente
+      ß V.P. 0 ˆ 3
+      ß 
+  5   ß nome utente ( 1ß carattere)
+  6   ß nome utente ( 2ß carattere)
+  7   ß nome utente ( 3ß carattere)
+  8   ß nome utente ( 4ß carattere)
+  9   ß nome utente ( 5ß carattere)
+ 10   ß nome utente ( 6ß carattere)
+ 11   ß nome utente ( 7ß carattere)
+ 12   ß nome utente ( 8ß carattere)
+ 13   ß nome utente ( 9ß carattere)
+ 14   ß nome utente (10ß carattere)
+ 15   ß nome utente (11ß carattere)
+ 16   ß nome utente (12ß carattere)
+      ß V.P. caratteri alfanumerici
+ 17   ß identificatore lingua utente
+      ß V.P. 1 ˆ 16
+      ß 
+ 18   ß classe di servizio utente
+      ß V.P. 1 ˆ 3
+ 19   ß stato utente
+      ß V.P. 0 -> libero
+      ß      1 -> occupato
+      ß      2 -> in allarme
+ 20   ß valore del contatore di utente (LOW)
+ 21   ß valore del contatore di utente 
+ 22   ß valore del contatore di utente 
+ 23   ß valore del contatore di utente (HIGH)
+      ß V.P. 217-1 (solo 17 bits sono significativi)
+
+NOTA :
+Il "valore del contatore di utente' puo' essere: 
+	-	positivo ad indicare CREDITO;
+	-	negativo ad indicare DEBITO.  
+
+
+
+
+5.6 RECORD DI ADDEBITO CONSUMAZIONE UTENTE DA MINIBAR DA 
+SAE
+
+ACRONIMO: R_ADD_BAR
+
+TIPO RECORD: NON URGENTE
+
+Questo record viene generato dal SAE a seguito della richiesta di 
+addebito consumazioni da minibar operata da terminale di operatore o 
+altro derivato abilitato.
+
+CAMPO DATI: (31 bytes)
+
+ BYTE ß SIGNIFICATO
+
+  1   ß giorno di addebito consumazione
+      ß V.P. 01 ˆ 31
+  2   ß mese di addebito consumazione
+      ß V.P. 01 ˆ 12
+  3   ß anno di addebito consumazione (LOW) 
+  4   ß anno di addebito consumazione (HIGH)
+      ß V.P. da 1991 in poi
+  5   ß ora di addebito consumazione
+      ß V.P. 00 ˆ 23
+  6   ß minuti di addebito consumazione
+      ß V.P. 00 ˆ 59
+  7   ß numero telefonico debitore (1¶/2¶ cifra BCD)
+  8   ß numero telefonico debitore (3¶/4¶ cifra BCD)
+  9   ß numero telefonico debitore (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+ 10   ß area di appartenenza del debitore
+      ß V.P. 0 ˆ 3
+ 11   ß ausiliario debitore ( 1ß carattere)
+ 12   ß ausiliario debitore ( 2ß carattere)
+ 13   ß ausiliario debitore ( 3ß carattere)
+ 14   ß ausiliario debitore ( 4ß carattere)
+ 15   ß ausiliario debitore ( 5ß carattere)
+ 16   ß ausiliario debitore ( 6ß carattere)
+ 17   ß ausiliario debitore ( 7ß carattere)
+ 18   ß ausiliario debitore ( 8ß carattere)
+ 19   ß ausiliario debitore ( 9ß carattere)
+ 20   ß ausiliario debitore (10ß carattere)
+ 21   ß ausiliario debitore (11ß carattere)
+ 22   ß ausiliario debitore (12ß carattere)
+ 23   ß ausiliario debitore (13ß carattere)
+ 24   ß ausiliario debitore (14ß carattere)
+ 25   ß ausiliario debitore (15ß carattere)
+      ß V.P. 0x20 carattere non significativo
+ 26   ß numero telefonico originatore (1¶/2¶ cifra BCD)
+ 27   ß numero telefonico originatore (3¶/4¶ cifra BCD)
+ 28   ß numero telefonico originatore (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+H cifra non significativa
+
+
+
+
+
+ BYTE ß SIGNIFICATO
+
+ 29   ß numero identificativo(1¶/2¶ cifra BCD)
+ 30   ß numero identificativo(3¶/4¶ cifra BCD)
+ 31   ß numero identificativo(5¶/6¶ cifra BCD)
+      ß 
+
+
+NOTE :
+
+1)	Ciascuno dei 15 byte di "ausiliario debitore" contiene il valore 
+fisso 0x20, perchä l'informazione "ausiliario debitore", in questa 
+versione, non ä significativa.
+2)	L'HOST deve provvedere localmente a definirsi una tabella di codici 
+consumo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.7 RECORD DI ALLARME AUSILIARIO TELEFONO DA SAE
+
+ACRONIMO: R_ALL_TEL
+
+TIPO RECORD: URGENTE
+
+Questo record viene generato dal SAE a seguito del manifestarsi di un 
+allarme ausiliario gestito dal telefono DATIFON.
+
+CAMPO DATI: (11 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di rilevazione allarme
+      ß V.P. 01 ˆ 31
+  2   ß mese di rilevazione allarme
+      ß V.P. 01 ˆ 12
+  3   ß anno di rilevazione allarme (LOW)
+  4   ß anno di rilevazione allarme (HIGH)
+      ß V.P. da 1991 in poi
+  5   ß ora di rilevazione allarme
+      ß V.P. 00 ˆ  23
+  6   ß minuti di rilevazione allarme
+      ß V.P. 00 ˆ 59
+  7   ß numero telefonico telefono in allarme (1¶/2¶ cifra BCD)
+  8   ß numero telefonico telefono in allarme (3¶/4¶ cifra BCD)
+  9   ß numero telefonico telefono in allarme (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+ 10   ß area di appartenenza del telefono in allarme
+      ß V.P. 0 ˆ 3
+ 11   ß codice di allarme rilevato
+
+NOTA :
+
+Il byte relativo al codice di allarme rilevato puï assumere i seguenti 
+valori:
+
+	-	0x01   ALLARME 1
+	-	0x02   ALLARME 2
+	-	0x03   ALLARME DATIFON (solo per versione "HOTEL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.8 RECORD DI STATO STANZA DA SAE
+
+ACRONIMO: R_STAT_ST
+
+TIPO RECORD: NON URGENTE
+
+Questo record viene generato dal SAE a seguito di impostazione del 
+servizio di stanza pronta operato sul telefono dell'utente.
+
+CAMPO DATI: (13 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di impostazione stato stanza
+      ß V.P. 01 ˆ 31
+  2   ß mese di impostazione stato stanza
+      ß V.P. 01 ˆ 12
+  3   ß anno di impostazione stato stanza (LOW)
+  4   ß anno di impostazione stato stanza (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di impostazione stato stanza
+      ß V.P. 00 ˆ 23
+  6   ß minuti di impostazione stato stanza
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico stanza (1¶/2¶ cifra BCD)
+  8   ß numero telefonico stanza (3¶/4¶ cifra BCD)
+  9   ß numero telefonico stanza (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß area di appartenenza stanza
+      ß V.P. 0 ˆ 3
+      ß 
+ 11   ß stato stanza (1¶/2¶ cifra BCD)
+ 12   ß stato stanza (3¶/4¶ cifra BCD)
+ 13   ß stato stanza (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+
+NOTA :
+Lo "stato stanza" identificato delle 6 cifre di stato stanza non ä noto 
+al SAE: ä l'HOST che, localmente, deve provvedere ad assegnare un codice 
+avente al massimo 6 cifre agli stati stanza che ritiene significativi.
+
+
+
+
+
+
+
+
+
+5.9 RECORD DI IMPOSTAZIONE SVEGLIA DA SAE
+
+ACRONIMO: R_SVE_IMP
+
+TIPO RECORD: NON URGENTE
+
+Questo record viene generato dal SAE a seguito dell'impostazione della 
+sveglia su un utente operata da terminale di operatore o altro derivato 
+abilitato.
+
+CAMPO DATI: (19 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di impostazione sveglia
+      ß V.P. 01 ˆ 31
+  2   ß mese di impostazione sveglia
+      ß V.P. 01 ˆ 12
+  3   ß anno di impostazione sveglia (LOW)
+  4   ß anno di impostazione sveglia (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di impostazione sveglia
+      ß V.P. 00 ˆ 23
+  6   ß minuti di impostazione sveglia
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico del richiedente (1¶/2¶ cifra BCD)
+  8   ß numero telefonico del richiedente (3¶/4¶ cifra BCD)
+  9   ß numero telefonico del richiedente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß numero telefonico derivato da svegliare (1¶/2¶ cifra BCD)
+ 11   ß numero telefonico derivato da svegliare (3¶/4¶ cifra BCD)
+ 12   ß numero telefonico derivato da svegliare (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+ 13   ß area di appartenenza del derivato da svegliare
+      ß V.P. 0 ˆ 3
+ 14   ß giorno in cui attivare la sveglia
+      ß V.P. 01 ˆ 31
+ 15   ß mese in cui attivare la sveglia
+      ß V.P. 01 ˆ 12
+ 16   ß anno in cui attivare la sveglia (LOW)
+ 17   ß anno in cui attivare la sveglia (HIGH)
+      ß V.P. da 1991 in poi
+ 18   ß ora in cui attivare la sveglia
+      ß V.P. 00 ˆ 23
+ 19   ß minuti in cui attivare la sveglia
+      ß V.P. 00 ˆ 59
+
+
+
+
+5.10 RECORD DI CANCELLAZIONE SVEGLIA DA SAE
+
+ACRONIMO: R_SVE_AZZ
+
+TIPO RECORD: NON URGENTE
+
+Questo record viene generato dal SAE a seguito della cancellazione della 
+sveglia su un utente operata da terminale di operatore o altro derivato 
+abilitato.
+
+CAMPO DATI: (13 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di disattivazione sveglia
+      ß V.P. 01 ˆ 31
+  2   ß mese di disattivazione sveglia
+      ß V.P. 01 ˆ 12
+  3   ß anno di disattivazione sveglia (LOW)
+  4   ß anno di disattivazione sveglia (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di disattivazione sveglia
+      ß V.P. 00 ˆ 23
+  6   ß minuti di disattivazione sveglia
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico del richiedente (1¶/2¶ cifra BCD)
+  8   ß numero telefonico del richiedente (3¶/4¶ cifra BCD)
+  9   ß numero telefonico del richiedente (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß numero telefonico derivato da svegliare (1¶/2¶ cifra BCD)
+ 11   ß numero telefonico derivato da svegliare (3¶/4¶ cifra BCD)
+ 12   ß numero telefonico derivato da svegliare (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 13   ß area di appartenenza del derivato da svegliare
+      ß V.P. 0 ˆ 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.11 RECORD DI INOLTRO SVEGLIA DA SAE
+
+ACRONIMO: R_SVE_INO
+
+TIPO RECORD:	NON URGENTE	(INOLTRO CON ESITO POSITIVO)
+			URGENTE		(INOLTRO CON ESITO NEGATIVO)
+
+Questo record viene generato dal SAE a seguito dell'inoltro della 
+sveglia ad un utente.
+
+CAMPO DATI: (11 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di inoltro sveglia
+      ß V.P. 01 ˆ 31
+  2   ß mese di inoltro sveglia
+      ß V.P. 01 ˆ 12
+  3   ß anno di inoltro sveglia (LOW)
+  4   ß anno di inoltro sveglia (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di inoltro sveglia
+      ß V.P. 00 ˆ 23
+  6   ß minuti di inoltro sveglia
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico derivato svegliato (1¶/2¶ cifra BCD)
+  8   ß numero telefonico derivato svegliato (3¶/4¶ cifra BCD)
+  9   ß numero telefonico derivato svegliato (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß area di appartenenza del derivato svegliato
+      ß V.P. 0 ˆ 3
+      ß 
+ 11   ß esito inoltro
+      ß V.P. 0x00   OCCUPATO     (negativo)
+      ß      0x01   NON RISPONDE (negativo)
+      ß      0x02   INCAPSULATO  (negativo)
+      ß      0x03   RISPOSTA     (positivo)
+      ß      0x04   ALLARME      (negativo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.12 RECORD DI ALLARME INTRUSIONE DA SAE
+
+ACRONIMO: R_INTRUS
+
+TIPO RECORD: URGENTE
+
+Questo record viene generato dal SAE a seguito di un tentativo non 
+autorizzato di accesso ai dati del SAE operato tramite il Terminale di 
+gestione locale o remoto.
+
+CAMPO DATI: (10 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di intrusione
+      ß V.P. 01 ˆ 31
+  2   ß mese di intrusione
+      ß V.P. 01 ˆ 12
+  3   ß anno di intrusione (LOW) 
+  4   ß anno di intrusione (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di intrusione
+      ß V.P. 00 ˆ 23
+  6   ß minuti di intrusione
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß gruppo periferico della linea intrusore
+      ß V.P. 1 ˆ 78
+      ß 
+  8   ß numero terminazione della linea intrusore
+      ß V.P. 0 ˆ 31
+      ß 
+  9   ß tipo di collegamento in atto
+      ß V.P. 0-> locale
+      ß      1-> remoto
+      ß 
+ 10   ß tipo di intrusione rilevata;
+      ß V.P. 0->  3 accessi errati nella sessione in corso
+      ß      1-> 15 accessi errati totali
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.13 RECORD DI RONDA DA SAE
+
+ACRONIMO: R_RONDA
+
+TIPO RECORD: URGENTE
+
+Questo record viene generato dal SAE durante l'effettuazione del 
+servizio ronda e ad ogni passo previsto dal servizio stesso.
+
+CAMPO DATI: (13 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di ronda
+      ß V.P. 01 ˆ 31
+  2   ß mese di ronda
+      ß V.P. 01 ˆ 12
+  3   ß anno di ronda (LOW) 
+  4   ß anno di ronda (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di ronda
+      ß V.P. 00 ˆ 23
+  6   ß minuti di ronda
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico fruitore servizio (1¶/2¶ cifra BCD)
+  8   ß numero telefonico fruitore servizio (3¶/4¶ cifra BCD)
+  9   ß numero telefonico fruitore servizio (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+      ß 
+ 10   ß area di appartenenza fruitore servizio
+      ß V.P. 0 ˆ 3
+      ß 
+ 11   ß codice di itinerario ronda (1¶/2¶ cifra BCD)
+ 12   ß codice di itinerario ronda (3¶/4¶ cifra BCD)
+ 13   ß codice di itinerario ronda (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+
+NOTA :
+
+Il codice di "itinerario ronda" ä un numero di 6 cifre digitato dal 
+personale addetto alla ronda per segnalare informazioni relative al 
+servizio di ronda in corso.
+
+
+
+
+
+
+
+
+
+5.14RECORD DI FINE ALLARME AUSILIARIO TELEFONO DA SAE
+     (SOLO PER VERSIONE HOTEL)
+
+ACRONIMO: R_FINE_ALL_TEL
+
+TIPO RECORD: URGENTE
+
+Questo record viene generato dal SAE al termine dell'allarme per 
+malfunzionamento/disconnessione di un terminale DATIFON.
+
+CAMPO DATI: (11 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di fine allarme
+      ß V.P. 01 ˆ 31
+  2   ß mese di fine allarme
+      ß V.P. 01 ˆ 12
+  3   ß anno di fine allarme (LOW)
+  4   ß anno di fine allarme (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di fine allarme
+      ß V.P. 00 ˆ 23
+  6   ß minuti di fine allarme
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero telefonico telefono in allarme (1¶/2¶ cifra BCD)
+  8   ß numero telefonico telefono in allarme (3¶/4¶ cifra BCD)
+  9   ß numero telefonico telefono in allarme (5¶/6¶ cifra BCD)
+      ß V.P. 0H ˆ 9H cifra significativa
+      ß           FH cifra non significativa
+ 10   ß area di appartenenza del telefono in allarme
+      ß V.P. 0 ˆ 3
+      ß 
+ 11   ß codice di allarme terminato
+      ß 
+
+NOTA :
+
+Il byte relativo al codice di allarme rilevato puï assumere i seguenti 
+valori:
+
+	-	0x03   ALLARME DATIFON
+
+
+
+
+
+5.15RECORD DI INIZIO ALLARME ESTERNO DA SAE
+     (SOLO PER VERSIONE HOTEL)
+
+ACRONIMO: R_INIZIO_ALL_EST)
+
+TIPO RECORD: URGENTE
+
+Questo record viene generato dal SAE a seguito del manifestarsi di un 
+allarme esterno gestito dal SAE.
+
+CAMPO DATI: (8 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di rilevazione allarme
+      ß V.P. 01 ˆ 31
+  2   ß mese di rilevazione allarme
+      ß V.P. 01 ˆ 12
+  3   ß anno di rilevazione allarme (LOW)
+  4   ß anno di rilevazione allarme (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di rilevazione allarme
+      ß V.P. 00 ˆ 23
+  6   ß minuti di rilevazione allarme
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero della scheda UnitÖ di servizio.
+      ß V.P. 1 ˆ 2
+      ß 
+  8   ß codice di allarme rilevato
+      ß 
+
+NOTA :
+
+Il byte relativo al codice di allarme rilevato puï assumere i seguenti 
+valori:
+
+	-	0x01   ALLARME ESTERNO 1
+	-	0x02   ALLARME ESTERNO 2
+	-	0x03   ALLARME ESTERNO 3
+	-	0x04   ALLARME ESTERNO 4
+
+
+
+
+
+5.16RECORD DI FINE ALLARME ESTERNO DA SAE
+     (SOLO PER VERSIONE HOTEL)
+
+ACRONIMO: R_FINE_ALL_EST)
+
+TIPO RECORD: URGENTE
+
+Questo record viene generato dal SAE al termine dell'allarme esterno 
+gestito dal SAE.
+
+CAMPO DATI: (8 bytes)
+
+ BYTE ß SIGNIFICATO
+
+      ß 
+  1   ß giorno di fine allarme
+      ß V.P. 01 ˆ 31
+  2   ß mese di fine allarme
+      ß V.P. 01 ˆ 12
+  3   ß anno di fine allarme (LOW)
+  4   ß anno di fine allarme (HIGH)
+      ß V.P. da 1991 in poi
+      ß 
+  5   ß ora di fine allarme
+      ß V.P. 00 ˆ 23
+  6   ß minuti di fine allarme
+      ß V.P. 00 ˆ 59
+      ß 
+  7   ß numero della scheda UnitÖ di servizio
+      ß V.P. 1 ˆ 2
+      ß 
+  8   ß codice di allarme terminato
+      ß 
+
+NOTA :
+
+Il byte relativo al codice di allarme rilevato puï assumere i seguenti 
+valori:
+
+	-	0x01   ALLARME ESTERNO 1
+	-	0x02   ALLARME ESTERNO 2
+	-	0x03   ALLARME ESTERNO 3
+	-	0x04   ALLARME ESTERNO 4
+
+
+
+
+
+
+CAPITOLO 6
+PROSPETTO RIASSUNTIVO MESSAGGI
+
+
+messaggio                            identificatore  Origin.ri
+                                     acronimo-valore          
+
+                                                            
+apertura sessione di comunicazione    INICOLL   D6H 	HOST  
+
+invio password                        STARTHOST FDH 	HOST  
+
+chiusura sessione di comunicazione    FINECOLL  D7H 	HOST  
+
+richiesta trasferimento da SAE        RICH_TRASF FEH  		SAE
+
+verifica congruenza negativa          NACK      D9H 	HOST	SAE
+
+verifica congruenza positiva,                                
+                   servizio accettato ACK       E5H 	HOST	SAE
+
+verifica congruenza positiva,                       
+                   servizio rifiutato COMANDERR EBH   		SAE
+
+fine lista / lista vuota              EOL       00H   		SAE
+
+record di addebito su chiamata usc.   R_ADD     01H   		SAE
+
+record di impostazione credito cont.  R_IMP_CNT 02H   		SAE
+
+record di azzeramento contatore       R_AZZ_CNT 03H		SAE
+
+record di stato utente                R_STAT_UT 04H		SAE
+
+record di addebito consumazione       R_ADD_BAR 05H        SAE
+
+record di allarme ausiliario telefono R_ALL_TEL 06H        SAE
+
+record di stato stanza                R_STAT_ST 07H        SAE
+
+record di impostazione sveglia        R_SVE_IMP 08H        SAE
+
+record di disattivazione sveglia      R_SVE_AZZ 09H        SAE
+
+record di inoltro sveglia             R_SVE_INO 0AH        SAE
+
+record di intrusione term. manutenz.  R_INTRUS  0BH        SAE
+
+record di ronda                       R_RONDA   0CH        SAE
+
+lettura di tutti i records del SAE    L_TOT_REC 21H	HOST     
+
+				 (segue a pagina successiva)
+
+                  (segue da pagina precedente)
+
+lettura stato utente                  L_STATO   22H 	HOST
+
+impostazione credito contatore utente IMPCNT    23H 	HOST
+
+azzeramento contatore utente          AZZCNT    24H 	HOST
+
+cambio classe di servizio utente      IMPCDS    25H 	HOST
+
+check-in/check-out utente             CHECK_IO  26H 	HOST
+
+cancellazione servizi utente          AZZ_SERV  27H 	HOST
+
+attivazione relä                      ATT_RELE  28H 	HOST
+
+disattivazione relä                   DIS_RELE  29H 	HOST
+
+impostazione sveglia utente           IMPSVE    2AH 	HOST
+
+disattivazione sveglia utente         AZZSVE    2BH 	HOST
+
+record di fine allarme ausil. telef.  R_FINE_   0DH 	     SAE
+                                     _ALL_TEL
+
+record di inizio allarme esterno      R_INIZIO_ 0EH 	     SAE
+                                     _ALL_EST
+
+record di fine allarme esterno        R_FINE_   0FH 	     SAE
+                                     _ALL_EST
+
+invio messaggio da operatore generico OPMESSON  2CH 	HOST
+
+eliminazione messaggio da operatore   OPMESSOFF 2DH 	HOST
+
+attivazione NON DISTURBARE            ATTNODIST 2EH 	HOST
+
+disattivazione del NON DISTURBARE     DISNODIST 2FH 	HOST
+
+sveglia immediata                     SVEIMM    30H 	HOST
+
+impostazione ora e data di sistema    IMPORADATA 31H 	HOST
+
+cambio di stanza                      CAMBIO_STA 33H 	HOST
+
+record di addebito su chiamata
+urbana entrante                       R_DUE      34H       SAE
+
+
+
+
+CAPITOLO 7
+FORMATO MESSAGGI
+
+I messaggi scambiati tra SAE ed HOST possono avere uno dei due seguenti 
+formati:
+
+	-	FORMATO PER MESSAGGIO DI INIZIO COLLEGAMENTO INICOLL
+costituito da due parti:
+			- <preambolo>,
+			- <messaggio_effettivo>;
+
+	-	FORMATO PER TUTTI I MESSAGGI ESCLUSO INICOLL
+costituito da un'unica parte:
+				- <messaggio_effettivo>.
+
+
+Il <preambolo> (solo per messaggio INICOLL) ä cosç strutturato:
+
+7 byte iniziali di inizio collegamento (INIZIOCOLL)
+1 byte INIZIOCOLL negato
+
+
+Il <messaggio effettivo> (per tutti i messaggi) ä cosç strutturato:
+
+7 byte di inizio messaggio (INIZIOMESS)
+1 byte INIZIOMESS negato
+2 byte LM
+2 byte LM negato
+1 byte contenente il numero di blocco (e' sempre = 1)
+1 byte che indica il numero totale di blocchi (e' sempre = 1)
+1 byte di identificatore messaggio 
+  (vedere prospetto riassuntivo messaggi in APPENDICE 1)
+N byte per l'eventuale campo dati del messaggio,
+  con N>=0, fisso o variabile a seconda del tipo di messaggio
+  (vedere prospetto riassuntivo messaggi)
+1 byte contenente il checksum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOTE :
+1)	Il messaggio INICOLL ä l'unico ad avere il preambolo, poichä ä 
+quello che instaura il collegamento tra SAE e HOST.
+
+2)	LM non comprende:
+- 7 byte di INIZIOCOLL (solo per "inizio collegamento");
+- 1 byte di INIZIOCOLL negato (solo per "inizio collegamento");
+- 7 byte di INIZIOMESS;
+- 1 byte di INIZIOMESS negato;
+- 2 byte di LM;
+- 2 byte di LM negato.
+
+3)	INIZIOCOLL = EEH          INIZIOCOLL negato = 11H
+	INIZIOMESS = EDH          INIZIOMESS negato = 12H
+
+4)	Il byte relativo all'informazione "numero di blocco" deve contenere 
+sempre il valore 1.
+Il byte relativo all'informazione "numero totale blocchi" deve 
+contenere sempre il valore 1.
+
+5)	Il byte di checksum ä il risultato dell'OR esclusivo (somma modulo 
+256) di tutti i byte componenti il messaggio esclusi:
+	- 7 byte di INIZIOCOLL (solo per "inizio collegamento");
+	- 1 byte di INIZIOCOLL negato (solo per "inizio
+        collegamento");
+	- 7 byte di INIZIOMESS;
+	- 1 byte di INIZIOMESS negato;
+-	 1 byte di checksum.
+
+6)	Prima di accettare un messaggio, il destinatario deve eseguire la 
+verifica di congruenza del messaggio la quale consiste nel 
+verificare che:
+	- INIZIOCOLL negato sia effettivamente la negazione di
+      INIZIOCOLL;
+	- i 7 byte di INIZIOMESS arrivino in modo corretto;
+	- INIZIOMESS negato sia effettivamente la negazione di INIZIOMESS;
+	- LM negato sia effettivamente la negazione di LM;
+	- l'identificatore messaggio sia uno di quelli codificati nel 
+prospetto riassuntivo messaggi;
+	- la dimensione del campo dati sia corretta in relazione al tipo di 
+messaggio;
+	- il byte di checksum calcolato sul messaggio ricevuto sia uguale a 
+quello contenuto nel messaggio stesso.
+
+7) Il SAE riconosce la volonta' dell'HOST di aprire una sessione nel 
+momento in cui:
+- i 7 byte di INIZIOCOLL arrivino in modo corretto.
+Saranno pertanto scartati tutti i byte ricevuti dalla linea fino a che 
+non sono riconosciuti sette byte di INIZIOCOLL. 
+Lo scarto di tali byte non implica, a livello di protocollo, l'invio di 
+alcuna segnalazione verso l'altro corrispondente.
+
+
+
+
+
+CAPITOLO 8
+CARATTERISTICHE DEL CANALE SERIALE
+
+Sono di seguito riportate le caratteristiche principali del canale 
+seriale che connette il PC al SAE.
+
+La velocita' del collegamento puo' assumere i valori:
+                         300 baud
+                        1200 baud
+                        2400 baud
+                        4800 baud
+                        9600 baud    (valore di default)
+                       19200 baud
+
+Il formato del carattere puo' essere uno dei seguenti:
+                      1 START-BIT
+                      8 BIT DI CARATTERE
+                      NESSUNA PARITA'
+                      2 STOP BIT
+
+Modalita' di trasmissione del generico carattere; sono nell'ordine 
+trasmessi i bit       DI START
+                      UTILI dall'LSB all'MSB
+                      DI STOP
+
+Modalita' di trasmissione: 
+                      FULL DUPLEX
+
+Tipo di dispositivo:  l'HOST e' un dispositivo di tipo DTE
+
+
+CAVO DI COLLEGAMENTO:
+- il collegamento tra PC e SAE_3000 avviene interponendo la borchia a 8 
+contatti codice 156738040;
+- il cavo di collegamento porta le seguenti connessioni:
+
+         PC                               BORCHIA 
+  (25/9 poli femmina)                    (RJ45 8/8)
+
+ segnali      pin                          contatti
+
+   CD         8/1   <-------------------    8 (BL)
+   RX         3/2   <-------------------    2 (BR)
+   TX         2/3    ------------------->   1 (WH)
+  DTR        20/4    ------------------->   5 (RD)
+   SG         7/5    -------------------    6 (BK)
+  DSR         6/6   <-------------------    7 (OR)
+  RTS         4/7    ------------------->   4 (GR)
+  CTS         5/8   <-------------------    3 (YL)
+
+             22/9   Non collegati
+
+
+
+
+
+
+CAPITOLO 9
+ESEMPI DI MESSAGGI TRA SAE ED HOST
+
+Sono riportati di seguito gli esempi relativi allo scambio di messaggi 
+tra SAE ed HOST, durante le operazioni di "LETTURA DI TUTTI I RECORDS 
+MEMORIZZATI SU SAE" e di "CHECK-IN DI STANZA".
+Sulla prima riga viene indicato chi esegue l'azione che viene descritta 
+successivamente su due colonne; a sinistra e' illustrato il messaggio in 
+esadecimale, mentre a destra il suo significato.
+
+LETTURA DI TUTTI I RECORDS MEMORIZZATI SU SAE
+
+
+HOST :
+
+EE EE EE EE EE EE EE 11             Apertura del collegamento 
+ED ED ED ED ED ED ED 12 04       
+00 FB FF 01 01 D6 D6                                       
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione del carattere ACK
+04 00 FB FF 01 01 E5 E5                                     
+   
+HOST :
+
+ED ED ED ED ED ED ED 12 0E          Trasmissione della "PASSWORD"
+00 F1 FF 01 01 FD 50 41 52 4F 4C    
+41 35 20 20 20 51
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione del carattere ACK
+04 00 FB FF 01 01 E5 E5
+
+HOST :
+
+ED ED ED ED ED ED ED 12             Richiesta di lettura dei 
+04 00 FB FF 01 01 21 21             record memorizzati
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione dei record 
+34 00 CB FF 01 01 01 19 02 CA       
+07 14 33 00 02 0E 55 11 FF 00       
+20 20 20 20 20 20 20 20 20 20 
+20 20 20 20 20 0F FF FF FF 81 
+00 FF 00 00 73 5F FF FF FF FF 
+FF FF FF FF FF DE
+
+
+
+
+
+HOST :
+
+ED ED ED ED ED ED ED 12             Trasmissione del carattere ACK
+04 00 FB FF 01 01 E5 E5             
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione dei record 
+34 00 CB FF 01 01 01 19 02 CA       
+07 14 33 00 02 09 55 11 FF 00 
+20 20 20 20  20 20 20 20 20 20 
+20 20 20 20 20 0F FF FF FF 81 
+01 FF 00 00 73 51 23 FF FF FF 
+FF FF FF FF FF F0
+
+HOST :
+
+ED ED ED ED ED ED ED                Trasmissione del carattere ACK
+12 04 00 FB FF 01 01 E5 E5             
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione del record di
+04 00 FB FF 01 01 00 00             chiusura                
+
+HOST :
+
+ED ED ED ED ED ED ED 12             Chiusura del collegamento
+04 00 FB FF 01 01 D7 D7             
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione del carattere ACK
+04 00 FB FF 01 01 E5 E5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHECK-IN (ASSOCIAZIONE NOME-LINGUA) 
+
+
+HOST :
+
+EE EE EE  EE EE EE EE 11            Apertura del collegamento
+ED ED ED ED ED ED ED 12            
+04 00 FB FF 01 01 D6 D6             
+
+SAE :
+
+ED ED ED ED ED ED ED 12 04          Trasmissione del carattere ACK
+00 FB FF 01 01 E5 E5
+                                           
+HOST :
+
+ED ED ED ED ED ED ED 12 0E          Trasmissione della "PASSWORD"
+00 F1 FF 01 01 FD 50 41 52 4F 4C    
+41 35 20 20 20 51
+
+SAE :
+
+ED ED ED ED ED ED ED 12 04          Trasmissione del carattere ACK
+00 FB FF 01 01 E5 E5                      
+                                           
+HOST :
+
+ED ED ED ED ED ED ED 12 23          Richiesta di CHECK-IN per la
+00 DC FF 01 01 26 31 00 2F 44 41    camera n. 31002 con associa-
+52 49 4F 20 20 53 69 67 6E 6F 01    zione lingua = italiana(01).
+20 20 20 20 20 20 20 20 20 20 20    
+20 20 20 20 16                            
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione carattere ACK
+04 00 FB FF 01 01 E5 E5
+
+HOST :
+
+ED ED ED ED ED ED ED 12             Richiesta di CHECK-IN per la
+23 00 DC FF 01 01 26 32 42 1F       camera n. 31002 con associa-
+54 65 73 74 75 73 20 53 69 67       zione lingua = italiana(01).
+6E 6F 01 20 20 20 20 20 20 20       
+20 20 20 20 20 20 20 20 42                      
+
+
+
+
+
+
+
+
+
+
+
+SAE :
+
+ED ED ED ED ED ED ED 12             Trasmissione del carattere ACK
+04 00 FB FF 01 01 E5 E5                                           
+                                            
+HOST :
+
+ED ED ED ED ED ED ED 12             Chiusura del collegamento
+04 00 FB FF 01 01 D7 D7            
+
+SAE :
+
+ ED ED ED ED ED ED ED 12            Trasmissione del carattere ACK
+04 00 FB FF 01 01 E5 E5                                           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CAPITOLO 10
+INTERFACCIA SAE/STAMPANTE
+
+
+10.1 FORMATO RECORD PER LA VERSIONE ANNUNCI VOCALI ED ISDN
+
+Le informazioni qui riportate sono valide solo per le versioni "Annunci 
+Vocali" , "ISDN" e successive.
+
+Un generico record di documentazione e' formato da una stringa di 
+caratteri ASCII, di cui massimo 80 caratteri possono essere stampabili.
+Il primo carattere della stringa e' il carattere di START ("STX"); il 
+terzo carattere e' l'IDENTIFICATIVO del TIPO di record.
+In coda alla stringa vengono aggiunti i caratteri di controllo necessari 
+per predisporre la stampante all'inizio della riga successiva, ovvero: 
+CARRIAGE RETURN ("CR") e LINE FEED ("LF").
+
+Il formato del generico record e' pertanto il seguente:
+
+  1     2     3    4                     81    82     83     84
+
+"STX"  20h   "X"   INFO               	       "CR"   "LF"   "LF"
+
+   dove:
+
+   "STX"          = BYTE DI "START" (18h) 
+    20h           = CODICE DEL CARATTERE "BLANC"
+   "X"            = IDENTIFICATIVO del TIPO di RECORD
+   INFO           = CARATTERI INFORMATIVI DEL RECORD 
+   "CR"           = CARRIAGE RETURN
+   "LF"           = LINE FEED    
+
+Nel caso in cui la documentazione di un servizio debba essere contenuta 
+in piu' di 80 caratteri, questa viene spezzata in piu' record : il primo 
+record contiene in terza posizione l'identificativo del tipo di 
+documentazione, mentre i successivi record contengono in terza posizione 
+il carattere "#".
+
+Esempio:
+
+                     1     2    3   4             81   82    83   
+ 1¯ record di
+documentazione     "STX"  20h  "X"  INFO              "CR" "LF"
+ servizio "X"
+
+
+                	 1    2   3     4         81  82    83   84
+ 2¯ record di 
+documentazione      STX  20h "#"    INFO          CR    LF   LF
+servizio "X"
+                                                       
+
+
+
+
+10.2 RECORD : "ADDEBITO DI UTENTE" (*)
+
+Per il servizio di "ADDEBITO DI UTENTE" vengono generati due record di 
+stampa. Di seguito e' riportato il formato del primo di tali record.
+
+1^ record di addebito : Lunghezza : 79 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+1               20h           	             "STX"                
+
+3               20h                	 "A" oppure "G"           
+
+5     GIORNO_INIZ_CONV (MSB)            	   20h              
+
+7               "-"                	GIORNO_INIZ_CONV (LSB)   
+
+9       MESE_INIZ_CONV (LSB)   	     MESE_INIZ_CONV (MSB)     
+
+11      ANNO_INIZ_CONV (MSB)       	        "-"              
+
+13               20h               	 ANNO_INIZ_CONV (LSB)    
+
+15       ORA_INIZ_CONV (MSB)       	        20h              
+
+17               ":"               	  ORA_INIZ_CONV (LSB)    
+
+19       MIN_INIZ_CONV (LSB)       	  MIN_INIZ_CONV (MSB)    
+
+21               20h               	        20h              
+
+23        ORE_DURATA (LSB)         	   ORE_DURATA (MSB)      
+
+25        MIN_DURATA (MSB)         	        ":"              
+
+27               ":"               	   MIN_DURATA (MSB)      
+
+29        SEC_DURATA (LSB)         	   SEC_DURATA (MSB)      
+
+31               20h               	        20h              
+
+33          MOD_IMP_LINE           	  MOD_IMP_LINE (MSB)     
+
+35          MOD_IMP_LINE           	     MOD_IMP_LINE        
+
+37          MOD_IMP_LINE           	     MOD_IMP_LINE        
+
+39         NUM_BREVE o 20h         	     "-"  o  20h         
+
+(segue a pagina successiva)
+
+  (*) Per la versione base consultare il "FORMATO RECORD VERSIONE
+      BASE
+
+
+
+
+(segue da pagina precedente)
+
+41          20h               	          NUM_BREVE o 20h      
+
+43       NT_LIN_URB (MSB)     	             20h               
+
+45         NT_LIN_URB         	          NT_LIN_URB           
+
+47         NT_LIN_URB         	          NT_LIN_URB           
+
+49           20h              	       	NT_LIN_URB (LSB)        
+
+51      NT_C/TE (MSB)         	             20h               
+
+53         NT_C/TE            	          NT_C/TE             
+
+55         NT_C/TE            	     	NT_C/TE             
+
+57           20h              	     	NT_C/TE (LSB)        
+
+59      IND_AREA_C/TE         	             20h                
+
+61           20h              	             20h                
+
+63      IND_AUS_C/TE o COMM.  	     IND_AUS_C/TE (MSB) o COMM
+
+65      IND_AUS_C/TE o COMM.  	        IND_AUS_C/TE o COMM.   
+
+67      IND_AUS_C/TE o COMM.  	        IND_AUS_C/TE o COMM.   
+
+69      IND_AUS_C/TE          	        	IND_AUS_C/TE           
+
+71      IND_AUS_C/TE          	        	IND_AUS_C/TE           
+
+73      IND_AUS_C/TE          	        	IND_AUS_C/TE           
+
+75      IND_AUS_C/TE          	        	IND_AUS_C/TE           
+
+77           "CR"             	      IND_AUS_C/TE (LSB)       
+
+79           "LF"             
+
+
+
+
+
+
+  dove:
+   
+ "A"              = IDENTIFICATIVO DI  ADDEBITO SENZA COMMESSA
+ "G"              = IDENTIFICATIVO DI  ADDEBITO CON COMMESSA
+ "-" o 20h        = "-"   E' UTILIZZATO NEL CASO DI NUMERO
+                          ABBREVIATO;
+                    20h   E' UTILIZZATO NEL CASO DI MOD_IMP_LINE
+                          <> NUMERO ABBREVIATO
+ GIORNO_INIZ_CONV = GIORNO DI INIZIO DELLA CONVERSAZIONE
+ MESE_INIZ_CONV   = MESE DI INIZIO DELLA CONVERSAZIONE
+ ANNO_INIZ_CONV   = ANNO DI INIZIO DELLA CONVERSAZIONE
+ ORA_INIZ_CONV    = ORA DI INIZIO DELLA CONVERSAZIONE
+ MIN_INIZ_CONV    = MINUTO DI INIZIO DELLA CONVERSAZIONE
+ ORE_DURATA       = DURATA IN ORE DELLA CONVERSAZIONE
+ MIN_DURATA       = DURATA IN MINUTI DELLA CONVERSAZIONE
+ SEC_DURATA       = DURATA IN SECONDI DELLA CONVERSAZIONE
+ MOD_IMP_LINE     = MODALITA' DI IMPEGNO DELLA LINEA:
+                     NUMERO TELEFONICO DELLA LINEA/FASCIO 
+                     (6 CIFRE + FFh) o NUMERO BREVE
+ NUM_BREVE o 20h  = NUM_BREVE E' UTILIZZATO NEL CASO DI NUMERO
+                    ABBREVIATO;
+                    20h       E' UTILIZZATO NEL CASO DI
+                    MOD_IMP_LINE <> NUMERO ABBREVIATO
+ NT_LIN_URB       = NUMERO TELEFONICO DELLA LINEA URBANA
+ NT_C/TE          = NUMERO TELEFONICO DEL CHIAMANTE
+ IND_AREA_C/TE    = NUMERO DI AREA DEL CHIAMANTE
+ IND_AUS_C/TE     = CODICE IDENTIFICATIVO PERSONALE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2^ record di addebito : Lunghezza : 51 BYTE 
+
+ 1            20h              	           "STX"              
+
+ 3           20h               	            "#"               
+
+ 5      NUM_IMP_TAS (MSB)      	            20h               
+
+ 7       NUM_IMP_TAS           	        NUM_IMP_TAS           
+
+ 9      NUM_IMP_TAS (LSB)      	        NUM_IMP_TAS           
+
+11           20h               	            20h               
+
+13         IMPORTO_INT         	        IMPORTO_INT (MSB)     
+
+15         IMPORTO_INT         	          IMPORTO_INT         
+
+17         IMPORTO_INT         	          IMPORTO_INT         
+
+19         IMPORTO_INT         	          IMPORTO_INT         
+
+21           "."               	          IMPORTO_INT (LSB)   
+
+23         IMPORTO_DEC (LSB)   	          IMPORTO_DEC (MSB)   
+
+25           20h               	            20h               
+
+27         NT_C/TO             	       NT_C/TO (MSB)          
+
+29         NT_C/TO             	           NT_C/TO             
+
+31         NT_C/TO             	           NT_C/TO             
+
+33         NT_C/TO             	           NT_C/TO             
+
+35         NT_C/TO            	           NT_C/TO             
+
+37         NT_C/TO                 	      NT_C/TO             
+
+39         NT_C/TO                 	      NT_C/TO             
+
+41         NT_C/TO                 	      NT_C/TO             
+
+43         NT_C/TO                 	      NT_C/TO             
+
+45         NT_C/TO                 	      NT_C/TO             
+
+47       T_C/TO (LSB)              	      NT_C/TO             
+
+49          "LF"                   	       "CR"               
+
+51            "LF"              	
+
+
+
+
+   dove:
+   
+    "#"         = IDENTIFICATIVO DI "CONTINUAZIONE DEL PRECEDENTE 
+                  RECORD DI DOCUMENTAZIONE"
+ IMPORTO_INT    = PARTE INTERA DELL'IMPORTO ADDEBITATO
+ IMPORTO_DEC    = PARTE DECIMALE DELL'IMPORTO ADDEBITATO
+ NUM_IMP_TAS    = NUMERO DEGLI IMPULSI DI TASSAZIONE
+ NT_C/TO        = NUMERO TELEFONICO CHIAMATO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.3 RECORD : "ADDEBITO CHIAMATA URBANA ENTRANTE"
+
+Per il servizio di "ADDEBITO CHIAMATA URBANA ENTRANTE" vengono generati 
+due record di stampa. Di seguito e' riportato il formato del primo di 
+tali record.
+
+1^ record di addebito : Lunghezza : 79 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+1               20h           	             "STX"                
+
+3               20h                	 "U" oppure "P"           
+
+5     GIORNO_INIZ_CONV (MSB)            	   20h              
+
+7               "-"                	GIORNO_INIZ_CONV (LSB)   
+
+9       MESE_INIZ_CONV (LSB)   	     MESE_INIZ_CONV (MSB)     
+
+11      ANNO_INIZ_CONV (MSB)       	        "-"              
+
+13               20h               	 ANNO_INIZ_CONV (LSB)    
+
+15       ORA_INIZ_CONV (MSB)       	        20h              
+
+17               ":"               	  ORA_INIZ_CONV (LSB)    
+
+19       MIN_INIZ_CONV (LSB)       	  MIN_INIZ_CONV (MSB)    
+
+21               20h               	        20h              
+
+23        ORE_DURATA (LSB)         	   ORE_DURATA (MSB)      
+
+25        MIN_DURATA (MSB)         	        ":"              
+
+27               ":"               	   MIN_DURATA (MSB)      
+
+29        SEC_DURATA (LSB)         	   SEC_DURATA (MSB)      
+
+31               20h               	        20h              
+
+33          NUM_SEL_ASS	           	  	NUM_SEL_ASS (MSB)     
+
+35          NUM_SEL_ASS	           	     NUM_SEL_ASS        
+
+37          NUM_SEL_ASS 	          	     NUM_SEL_ASS        
+
+39         	20h         	     		   20h         
+
+(segue a pagina successiva)
+
+
+
+
+(segue da pagina precedente)
+
+41          20h               	 		   20h      
+
+43      NT_LIN_RISP (MSB)     	             20h               
+
+45		 NT_LIN_RISP	         	          NT_LIN_RISP           
+
+47         NT_LIN_RISP         	          NT_LIN_RISP           
+
+49           20h              	       	NT_LIN_RISP (LSB)        
+
+51      NT_C/TE (MSB)         	             20h               
+
+53         NT_C/TE            	          NT_C/TE             
+
+55         NT_C/TE            	     	NT_C/TE             
+
+57           20h              	     	NT_C/TE (LSB)        
+
+59      IND_AREA_C/TE         	             20h                
+
+61           20h              	             20h                
+
+63      COD_AUS o COMM.  	     	   COD_AUS o COMM
+
+65      COD_AUS o COMM.  	     	   COD_AUS o COMM
+
+67      COD_AUS o COMM.  	     	   COD_AUS o COMM
+
+69      COD_AUS	          	        	COD_AUS           
+
+71      COD_AUS	          	        	COD_AUS           
+
+73      COD_AUS	          	        	COD_AUS           
+
+75      COD_AUS	          	        	COD_AUS           
+
+77           "CR"             	      IND_AUS_C/TE (LSB)       
+
+79           "LF"             
+
+
+
+
+
+
+  dove:
+   
+ "U"              = IDENTIFICATIVO DI ADDEBITO CHIAMATA URBANA ENTRANTE 
+					SENZA COMMESSA
+ "P"              = IDENTIFICATIVO DI ADDEBITO CHIAMATA URBANA ENTRANTE
+				CON COMMESSA
+ GIORNO_INIZ_CONV = GIORNO DI INIZIO DELLA CONVERSAZIONE
+ MESE_INIZ_CONV   = MESE DI INIZIO DELLA CONVERSAZIONE
+ ANNO_INIZ_CONV   = ANNO DI INIZIO DELLA CONVERSAZIONE
+ ORA_INIZ_CONV    = ORA DI INIZIO DELLA CONVERSAZIONE
+ MIN_INIZ_CONV    = MINUTO DI INIZIO DELLA CONVERSAZIONE
+ ORE_DURATA       = DURATA IN ORE DELLA CONVERSAZIONE
+ MIN_DURATA       = DURATA IN MINUTI DELLA CONVERSAZIONE
+ SEC_DURATA       = DURATA IN SECONDI DELLA CONVERSAZIONE
+ NUM_SEL_ASS      = NUMERO TELEFONICO SELEZIONATO O ASSOCIATO ALLA LINEA 
+				URBANA ENTRANTE
+ NT_LIN_RISP      = NUMERO TELEFONICO DELL'INTERNO CHE HA RISPOSTO
+ NT_C/TE          = NUMERO TELEFONICO DELLA LINEA URBANA CHIAMANTE
+ IND_AREA_C/TE    = NUMERO DI AREA DEL CHIAMANTE
+ COD_AUS          = CODICE IDENTIFICATIVO PERSONALE O CODICE COMMESSA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2^ record di addebito : Lunghezza : 51 BYTE 
+
+ 1            20h              	           "STX"              
+
+ 3           20h               	            "#"               
+
+ 5      NUM_IMP_TAS (MSB)      	            20h               
+
+ 7       NUM_IMP_TAS           	        NUM_IMP_TAS           
+
+ 9      NUM_IMP_TAS (LSB)      	        NUM_IMP_TAS           
+
+11           20h               	            20h               
+
+13         IMPORTO_INT         	        IMPORTO_INT (MSB)     
+
+15         IMPORTO_INT         	          IMPORTO_INT         
+
+17         IMPORTO_INT         	          IMPORTO_INT         
+
+19         IMPORTO_INT         	          IMPORTO_INT         
+
+21           "."               	          IMPORTO_INT (LSB)   
+
+23         IMPORTO_DEC (LSB)   	          IMPORTO_DEC (MSB)   
+
+25           20h               	            20h               
+
+27         NT_C/TO             	       NT_C/TO (MSB)          
+
+29         NT_C/TO             	           NT_C/TO             
+
+31         NT_C/TO             	           NT_C/TO             
+
+33         NT_C/TO             	           NT_C/TO             
+
+35         NT_C/TO            	           NT_C/TO             
+
+37         NT_C/TO                 	      NT_C/TO             
+
+39         NT_C/TO                 	      NT_C/TO             
+
+41         NT_C/TO                 	      NT_C/TO             
+
+43         NT_C/TO                 	      NT_C/TO             
+
+45         NT_C/TO                 	      NT_C/TO             
+
+47       T_C/TO (LSB)              	      NT_C/TO             
+
+49          "LF"                   	       "CR"               
+
+51            "LF"              	
+
+
+
+
+   dove:
+   
+    "#"         = IDENTIFICATIVO DI "CONTINUAZIONE DEL PRECEDENTE 
+                  RECORD DI DOCUMENTAZIONE"
+ IMPORTO_INT    = PARTE INTERA DELL'IMPORTO ADDEBITATO
+			   (CONTERRA' SEMPRE VALORI 20H)
+ IMPORTO_DEC    = PARTE DECIMALE DELL'IMPORTO ADDEBITATO
+			   (CONTERRA' SEMPRE VALORI 20H)
+ NUM_IMP_TAS    = NUMERO DEGLI IMPULSI DI TASSAZIONE
+			   (CONTERRA' SEMPRE VALORI 20H)
+ NT_C/TO        = INDICA L'EVENTUALE NUMERO TELEFONICO SELEZIONATO IN
+			   USCITA SULLA LINEA URBANA TRAMITE SERVIZIO DI
+			   RICHIAMATA ESTERNA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.4 RECORD : "IMPOSTAZIONE SVEGLIA"
+
+Per il servizio di "IMPOSTAZIONE SVEGLIA" viene generato il seguente 
+record di stampa.
+
+   Lunghezza : 59 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h               	           "STX"              
+
+ 3           20h               	            "I"               
+
+ 5   GIORNO_IMP_SV (MSB)       	            20h               
+
+ 7           "-"               	      GIORNO_IMP_SV (LSB)     
+
+ 9    MESE_IMP_SV (LSB)        	       MESE_IMP_SV (MSB)      
+
+11    ANNO_IMP_SV (MSB)        	            "-"               
+
+13           20h               	       ANNO_IMP_SV (LSB)      
+
+15     ORA_IMP_SV (MSB)        	            20h               
+
+17           ":"               	        ORA_IMP_SV (LSB)      
+
+19      MIN_IMP_SV (LSB)       	        MIN_IMP_SV (MSB)      
+
+21           20h               	            20h               
+
+23         NT_IMP              	          NT_IMP (MSB)        
+
+25         NT_IMP              	          NT_IMP              
+
+27         NT_IMP (LSB)        	          NT_IMP              
+
+29           20h               	            20h               
+
+31          NT_DER             	        NT_DER (MSB)          
+
+33          NT_DER             	           NT_DER             
+
+35          NT_DER (LSB)       	           NT_DER              
+
+37           20h               	            20h               
+
+39           20h               	       IND_AREA_DER           
+	
+(segue a pagina successiva)
+
+
+
+
+
+(segue da pagina precedente)
+
+41       GIORNO_SV (MSB)       	            20h               
+
+43           "-"               	        GIORNO_SV (LSB)       
+
+45      MESE_SV (LSB)          	         MESE_SV (MSB)        
+
+47      ANNO_SV (MSB)          	            "-"               
+
+49           20h               	         ANNO_SV (LSB)        
+
+51       ORA_SV (MSB)          	   	       20h               
+
+53         ":"                 	   	     ORA_SV (LSB)        
+
+55       MIN_SV (LSB)          		     MIN_SV (MSB)        
+
+57         "LF"               		       "CR"              
+
+59         "LF"                             
+
+dove:
+   
+ "I"             = IDENTIFICATIVO DI "IMPOSTAZIONE SVEGLIA"
+ GIORNO_IMP_SV   = GIORNO DI IMPOSTAZIONE DELLA SVEGLIA
+ MESE_IMP_SV     = MESE DI IMPOSTAZIONE DELLA SVEGLIA
+ ANNO_IMP_SV     = ANNO DI IMPOSTAZIONE DELLA SVEGLIA
+ ORA_IMP_SV      = ORA DI IMPOSTAZIONE DELLA SVEGLIA
+ MIN_IMP_SV      = MINUTI DI IMPOSTAZIONE DELLA SVEGLIA
+ NT_IMP          = NUMERO TELEFONICO DELL'UTENTE CHE IMPOSTA IL
+                   SERVIZIO
+ NT_DER          = NUMERO TELEFONICO DEL DERIVATO CHE FRUISCE DEL
+                   SERVIZIO
+ IND_AREA_DER    = NUMERO DI AREA DEL DERIVATO DA SVEGLIARE
+ GIORNO_SV       = GIORNO DELLA SVEGLIA
+ MESE_SV         = MESE DELLA SVEGLIA
+ ANNO_SV         = ANNO DELLA SVEGLIA
+ ORA_SV          = ORA DELLA SVEGLIA
+ MIN_SV          = MINUTI DELLA SVEGLIA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.5 RECORD : "CANCELLAZIONE SVEGLIA"
+
+Per il servizio di "CANCELLAZIONE SVEGLIA" viene generato il seguente 
+record di stampa.
+
+   Lunghezza : 42 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h              	            "STX"             
+
+
+ 3           20h               	            "C"               
+
+ 5   GIORNO_CANC_SV (MSB)      	            20h               
+
+ 7           "-"               	      GIORNO_CANC_SV (LSB)    
+
+ 9    MESE_CANC_SV (LSB)       	       MESE_CANC_SV (MSB)     
+
+11    ANNO_CANC_SV (MSB)       	            "-"               
+
+13           20h               	       ANNO_CANC_SV (LSB)     
+
+15     ORA_CANC_SV (MSB)       	            20h               
+
+17           ":"               	        ORA_CANC_SV (LSB)     
+
+19      MIN_CANC_SV (LSB)     	         MIN_CANC_SV (MSB)    
+
+21           20h              	             20h               
+
+23         NT_CANC            	           NT_CANC (MSB)       
+
+25         NT_CANC            	           NT_CANC             
+
+27         NT_CANC (LSB)      	           NT_CANC             
+
+29           20h              	             20h               
+
+31          NT_DER            	         NT_DER (MSB)          
+
+33          NT_DER            	           NT_DER             
+
+35          NT_DER (LSB)      	           NT_DER              
+
+37           20h              	             20h               
+
+39           "CR"             	        IND_AREA_DER           
+
+41           "LF"             	            "LF"               
+
+
+
+
+   dove:
+
+ "C"             = IDENTIFICATIVO DI "CANCELLAZIONE SVEGLIA"
+ GIORNO_CANC_SV  = GIORNO DI CANCELLAZIONE DELLA SVEGLIA
+ MESE_CANC_SV    = MESE DI CANCELLAZIONE DELLA SVEGLIA
+ ANNO_CANC_SV    = ANNO DI CANCELLAZIONE DELLA SVEGLIA
+ ORA_CANC_SV     = ORA DI CANCELLAZIONE DELLA SVEGLIA
+ MIN_CANC_SV     = MINUTI DI CANCELLAZIONE DELLA SVEGLIA
+ NT_CANC         = NUMERO TELEFONICO DELL'UTENTE CHE CANCELLA LA
+                   SVEGLIA
+ NT_DER          = NUMERO TELEFONICO DEL DERIVATO FRUITORE DEL
+                   SERVIZIO
+ IND_AREA_DER    = NUMERO DI AREA DEL DERIVATO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.6 RECORD : "INOLTRO SVEGLIA" (*)
+
+Per il servizio di "INOLTRO SVEGLIA" viene generato il seguente record 
+di stampa.
+
+   Lunghezza : 37 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h              	            "STX"              
+
+ 3           20h              	             "S"               
+
+ 5   GIORNO_INOL_SV (MSB)     	             20h               
+
+ 7           "-"              	       GIORNO_INOL_SV (LSB)    
+
+ 9    MESE_INOL_SV (LSB)      	        MESE_INOL_SV (MSB)     
+
+11    ANNO_INOL_SV (MSB)      	             "-"               
+
+13           20h              	        ANNO_INOL_SV (LSB)     
+
+15     ORA_INOL_SV (MSB)      	             20h               
+
+17           ":"              	         ORA_INOL_SV (LSB)     
+
+19      MIN_INOL_SV (LSB)     	         MIN_INOL_SV (MSB)     
+
+21           20h              	             20h               
+
+23          NT_DER            	         NT_DER (MSB)          
+
+25          NT_DER            	            NT_DER             
+
+27          NT_DER (LSB)      	            NT_DER             
+
+29           20h              	             20h               
+
+31           20h              	         IND_AREA_DER          
+
+33   "O", "N", "I" "R" o "A"  	             20h               
+
+35          "LF"              	            "CR"               
+
+37          "LF"              
+
+
+ (*) Per la versione base consultare il "FORMATO RECORD VERSIONE
+     BASE".
+
+
+
+
+
+
+   dove:
+   
+    "S"                 = IDENTIFICATIVO DI "INOLTRO SVEGLIA"
+ GIORNO_INOL_SV         = GIORNO DI INOLTRO DELLA SVEGLIA
+ MESE_INOL_SV           = MESE DI INOLTRO DELLA SVEGLIA
+ ANNO_INOL_SV           = ANNO DI INOLTRO DELLA SVEGLIA
+ ORA_INOL_SV            = ORA DI INOLTRO DELLA SVEGLIA
+ MIN_INOL_SV            = MINUTI DI INOLTRO DELLA SVEGLIA
+ NT_DER                 = NUMERO TELEFONICO DEL DERIVATO
+ IND_AREA_DER           = NUMERO DI AREA DEL DERIVATO
+ "O", "N", "I" o "R"    = IDENTIFICATIVO DELL'ESITO DELL'INOLTRO
+                          SVEGLIA:    "UTN_OCCUPATO"      ("O"), 
+                                      "UTN_NON_RISPONDE"  ("N"),
+                                      "UTN INCAPSULATO"   ("I"),
+                                      "UTN_RISPONDE"      ("R"),
+                                      "UTN_ALLARME"       ("A").
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.7 RECORD : "STANZA PRONTA"
+
+Per il servizio di "STANZA PRONTA" e' generato il seguente record di 
+stampa.
+
+   Lunghezza : 43 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0
+ 
+ 1           20h              	            "STX"              
+
+ 3           20h              	             "P"               
+
+ 5   GIORNO_STN_READY (MSB)   	             20h               
+
+ 7           "-"              	     GIORNO_STN_READY (LSB)    
+
+ 9    MESE_STN_READY (LSB)    	      MESE_STN_READY (MSB)     
+
+11    ANNO_STN_READY (MSB)    	             "-"               
+
+13           20h              	        ANNO_STN_READY (LSB)   
+
+15    ORA_STN_READY (MSB)     	             20h               
+
+17           ":"              	       ORA_STN_READY (LSB)     
+
+19     MIN_STN_READY (LSB)    	       MIN_STN_READY (MSB)     
+
+21           20h              	             20h               
+
+23       NT_DER (MSB)         	             20h               
+
+25          NT_DER            	            NT_DER             
+
+27          NT_DER            	            NT_DER             
+
+29           20h              	         NT_DER (LSB)          
+
+31      IND_AREA_DER          	            20h                
+
+33           20h              	            20h                
+
+35        STATO_STN           	       STATO_STN (MSB)         
+
+37         STATO_STN          	          STATO_STN            
+
+39      STATO_STN (LSB)       	          STATO_STN            
+
+41         "LF"               	            "CR"              
+
+43         "LF"                             
+
+
+
+
+   dove:
+
+ "P"                    = IDENTIFICATIVO DI "STANZA PRONTA"
+ GIORNO_STN_READY       = GIORNO DI INVIO CODICE
+ MESE_STN_READY         = MESE DI INVIO CODICE
+ ANNO_STN_READY         = ANNO DI INVIO CODICE
+ ORA_STN_READY          = ORA DI INVIO CODICE
+ MIN_STN_READY          = MINUTI DI INVIO CODICE
+ NT_DER                 = NUMERO TELEFONICO DEL DERIVATO
+ IND_AREA_DER           = NUMERO DI AREA DEL DERIVATO
+ STATO_STN              = IDENTIFICATIVO DELLO STATO DELLA
+                          STANZA: E' IMPOSTATO DALL'UTENTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.8 RECORD : "RONDA"
+
+Per il servizio di "RONDA" viene generato il seguente record di stampa.
+
+   Lunghezza : 43 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2  1   0 
+
+ 1           20h              	            "STX"              
+
+ 3           20h              	             "R"               
+
+ 5      GIORNO_RONDA (MSB)    	             20h               
+
+ 7           "-"              	        GIORNO_RONDA (LSB)     
+
+ 9       MESE_RONDA (LSB)     	         MESE_RONDA (MSB)      
+
+11       ANNO_RONDA (MSB)     	             "-"               
+
+13           20h              	          ANNO_RONDA (LSB)     
+
+15        ORA_RONDA (MSB)     	             20h               
+
+17           ":"              	          ORA_RONDA (LSB)      
+
+19        MIN_RONDA (LSB)     	          MIN_RONDA (MSB)      
+
+21           20h              	             20h               
+
+23       NT_DER (MSB)         	             20h               
+
+25          NT_DER            	            NT_DER             
+
+27          NT_DER           	    	            NT_DER             
+
+29           20h                     		  NT_DER (LSB)       
+
+31      IND_AREA_DER                	        20h               
+
+33           20H                    	        20h               
+
+35        CODE_ITN                 	     CODE_ITN   ( MSB)    
+
+37        CODE_ITN                 	     CODE_ITN             
+
+39        CODE_ITN ( LSB )         	     CODE_ITN             
+
+41         "LF"                    	        "CR"              
+
+43         "LF"               
+
+
+
+
+ dove:
+   
+ "R"                = IDENTIFICATIVO DI "RONDA"
+ GIORNO_RONDA       = GIORNO DI INVIO CODICE
+ MESE_RONDA         = MESE DI INVIO CODICE
+ ANNO_RONDA         = ANNO DI INVIO CODICE
+ ORA_RONDA          = ORA DI INVIO CODICE
+ MIN_RONDA          = MINUTI DI INVIO CODICE
+ NT_DER             = NUMERO TELEFONICO DEL DERIVATO
+ IND_AREA_DER       = NUMERO DI AREA DEL DERIVATO
+ CODE_ITN           = CODICE DI ITINERARIO IMPOSTATO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.9 RECORD : "ALLARME DATIFON"
+
+Per il servizio di "ALLARME DATIFON" viene generato il seguente record 
+di stampa.
+
+   Lunghezza : 37 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h             	              	  "STX"           
+
+ 3           20h             	                  "F"            
+
+ 5    GIORNO_ALL_DTFN(MSB)   	                  20h            
+
+ 7           "-"             	     	GIORNO_ALL_DTFN(LSB)   
+
+ 9     MESE_ALL_DTFN(LSB)    	       	MESE_ALL_DTFN(MSB)     
+
+11     ANNO_ALL_DTFN(MSB)    	                 "-"             
+
+13           20h                 	    	ANNO_ALL_DTFN (LSB)    
+
+15      ORA_ALL_DTFN(MSB)               	   20h            
+
+17           ":"                     	ORA_ALL_DTFN (LSB)     
+
+19     MIN_ALL_DTFN (LSB)            	MIN_ALL_DTFN(MSB)      
+
+21           20h                     	        20h              
+
+23          NT_DER                   	   NT_DER (MSB)          
+
+25          NT_DER                          NT_DER              
+
+27       NT_DER (LSB)                       NT_DER              
+
+29           20h                               20h               
+
+31           20h                       		IND_AREA_C/TE        
+
+33      CODE_ALL_DATIFON                       20h               
+
+35         "LF"                                "CR"              
+
+37         "LF"              
+
+
+
+
+
+
+
+
+
+ dove:
+   
+ "F"                = IDENTIFICATIVO DI "ALLARME DATIFON"
+ GIORNO_ALL_DTFN    = GIORNO DI INVIO ALLARME
+ MESE_ALL_DTFN      = MESE DI INVIO ALLARME
+ ANNO_ALL_DTFN      = ANNO DI INVIO ALLARME
+ ORA_ALL_DTFN       = ORA DI INVIO ALLARME
+ MIN_ALL_DTFN       = MINUTI DI INVIO ALLARME
+ NT_DER             = NUMERO TELEFONICO DEL DERIVATO
+ IND_AREA_C/TE      = NUMERO DI AREA DEL DERIVATO
+ CODE_ALL_DATIFON   = CODICE DI ALLARME :
+                       1 = ALLARME 1
+                       2 = ALLARME 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.10 RECORD : "CONTATORE DI UTENTE" (*)
+
+Per il servizio di "CONTATORE DI UTENTE" viene generato il seguente 
+record di stampa.
+
+   Lunghezza : 80 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h              	            "STX"              
+
+ 3           20h              	             "T"               
+
+ 5   GIORNO_CTN_UTN (MSB)     	             20h               
+
+ 7           "-"              	       GIORNO_CTN_UTN (LSB)    
+
+ 9   MESE_CTN_UTN  (LSB)      	       MESE_CTN_UTN  (MSB)      
+
+11   ANNO_CTN_UTN  (MSB)      	             "-"               
+
+13           20h              	        ANNO_CTN_UTN (LSB)     
+
+15     ORA_CTN_UTN (MSB)      	             20h               
+
+17           ":"              	        ORA_CTN_UTN  (LSB)     
+
+19     MIN_CTN_UTN (LSB)      	        MIN_CTN_UTN  (MSB)     
+
+21           20h              	             20h               
+
+23      NT_DER/LIN (MSB)      	             20h               
+
+25         NT_DER/LIN         	           NT_DER/LIN          
+
+27         NT_DER/LIN         	           NT_DER/LIN          
+
+29           20h              	        NT_DER/LIN  (LSB)      
+
+31     IND_AREA_DER/LIN       	            20h                
+
+33           20h              	            20h                
+
+35      STATO_UTN/LIN         	      STATO_UTN/LIN (MSB)      
+
+37           20h             		      STATO_UTN/LIN (LSB)      
+
+39  IND-AUS-C/TE (MSB) o 20h  	             20h               
+	
+(segue a pagina successiva)
+
+ (*) Per la versione base consultare il "FORMATO RECORD VERSIONE
+     BASE".
+
+
+
+
+(segue da pagina precedente)
+
+41   IND_AUS_C/TE o 20h       	     IND_AUS_C/TE o 20h        
+
+43   IND_AUS_C/TE o 20h       	     IND_AUS_C/TE o 20h        
+
+45   IND_AUS_C/TE o 20h       	     IND_AUS_C/TE o 20h        
+
+47   IND_AUS_C/TE o 20h       	     IND_AUS_C/TE o 20h        
+
+49   IND_AUS_C/TE o 20h       	     IND_AUS_C/TE o 20h        
+
+51   IND_AUS_C/TE o 20h       	     IND_AUS_C/TE o 20h        
+
+53   IND_AUS_C/TE (LSB) o 20h 	     IND_AUS_C/TE o 20h        
+
+55           20h              	            20h               
+
+57       NUM_IMP_TAS (MSB)    	           "+"/"-"            
+
+59       NUM_IMP_TAS          	         NUM_IMP_TAS          
+
+61       NUM_IMP_TAS (LSB)    	         NUM_IMP_TAS          
+
+63           20h              	            20h               
+
+65      IMPORTO_INT (MSB)     	           "+"/"-"            
+
+67      IMPORTO_INT           	        IMPORTO_INT           
+
+69      IMPORTO_INT           	        IMPORTO_INT           
+
+71      IMPORTO_INT           	        IMPORTO_INT           
+
+73      IMPORTO_INT (LSB)     	        IMPORTO_INT           
+
+75      IMPORTO_DEC (MSB)     	            "."              
+
+77          "CR"              	        IMPORTO_DEC (LSB)    
+
+79          "LF"              	            "LF"             
+
+
+dove:
+ "T"                = IDENTIFICATIVO DI "RECORD DI CONTATORE DI
+                       UTENTE"
+ GIORNO_CTN_UTN     = GIORNO DELLA RICHIESTA
+ MESE_CTN_UTN       = MESE DELLA RICHIESTA
+ ANNO_CTN_UTN       = ANNO DELLA RICHIESTA
+ ORA_CTN_UTN        = ORA DELLA RICHIESTA
+ MIN_CTN_UTN        = MINUTI DELLA RICHIESTA
+ NT_DER/LIN         = NUMERO TELEFONICO DEL CONTATORE DI UTENTE
+
+
+
+
+
+
+ IND_AREA_DER/LIN   = NUMERO DI AREA DELL'UTENTE
+ STATO_UTN          = INDICA LO STATO CORRENTE DELL'UTENTE :
+                       "OCC"  PER UTENTE OCCUPATO 
+                        20h 20h 20h  PER UTENTE LIBERO
+ IND_AUS_C/TE o 20h = CODICE IDENTIFICATIVO PERSONALE :
+                      (VALE 20h NEL CASO DI LINEA)
+  "+"/ "-"      = IL SEGNO "+" INDICA UN CREDITO
+                  IL SEGNO "-" INDICA UN DEBITO
+ IMPORTO_INT    = PARTE INTERA DELL'IMPORTO ADDEBITATO
+ IMPORTO_DEC    = PARTE DECIMALE DELL'IMPORTO ADDEBITATO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.11 RECORD : "INTRUSIONE SUL TERMINALE DI GESTIONE" (*)
+
+Per il servizio di "INTRUSIONE SUL TERMINALE DI GESTIONE" vengono 
+generati i seguenti record di stampa:
+
+RECORD-1 segnalante  3 errori  consecutivi nella digitazione della 
+PAROLA CHIAVE
+Lunghezza : 75 BYTE 
+
+   15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h              	            "STX"              
+
+ 3           20h              	             "M"               
+
+ 5      GIORNO_INTR (MSB)     	             20h               
+
+ 7           "-"              	        GIORNO_INTR (LSB)      
+
+ 9      MESE_INTR (LSB)       	         MESE_INTR (MSB)        
+
+11      ANNO_INTR (MSB)       	             "-"               
+
+13           20h              	         ANNO_INTR (LSB)       
+
+15       ORA_INTR (MSB)       	             20h               
+
+17           ":"              	          ORA_INTR (LSB)       
+
+19       MIN_INTR (LSB)       	          MIN_INTR (MSB)       
+
+21           20h              	             20h               
+
+23           "P"              	             "G"               
+
+25           20H              	             ":"               
+
+27         NUM_GP (LSB)       	          NUM_GP (MSB)         
+
+29           20H              	             20H               
+
+31           "E"              	             "T"               
+
+33           "M"              	             "R"               
+
+35           20H              	             ":"               
+
+37         NUM_TERM (LSB)     	          NUM_TERM (MSB)       
+
+39           20H              	             20H               
+
+(segue a pagina successiva)
+
+(*) Per la versione base consultare il "FORMATO RECORD VERSIONE
+     BASE".
+
+
+
+(segue da pagina precedente)
+
+41           20H              	            "3"                
+
+43           "A"              	            "P"                
+
+45           "O"              	            "R"                
+
+47           "E"              	            "L"                
+
+49           "C"              	            20H                
+
+51           "I"              	            "H"                
+
+53           "V"              	            "A"                
+
+55           20H              	            "E"                
+
+57           "R"              	            "E"                
+
+59           "A"              	            "R"                
+
+61           "E"              	            "T"                
+
+63           "D"              	            20H                
+
+65           20H              	            "A"                
+
+67           "O"/"E"          	            "L"/"R"            
+
+69           "A"/"O"          	            "C"/"M"            
+
+71           "E"/"O"          	            "L"/"T"            
+
+73           "LF"             	            "CR"               
+
+75           "LF"             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RECORD-2 segnalante 15 errori  consecutivi in piu` collegamenti nella 
+digitazione della PAROLA CHIAVE
+ 
+  Lunghezza : 75 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1           20h              	            "STX"             
+
+ 3           20h              	            "M"               
+
+ 5      GIORNO_INTR (MSB)     	            20h               
+
+ 7           "-"              	        GIORNO_INTR (LSB)     
+
+ 9      MESE_INTR (LSB)       	         MESE_INTR (MSB)       
+
+11      ANNO_INTR (MSB)       	            "-"               
+
+13           20h              	         ANNO_INTR (LSB)      
+
+15       ORA_INTR (MSB)       	            20h               
+
+17           ":"              	          ORA_INTR (LSB)      
+
+19       MIN_INTR (LSB)       	          MIN_INTR (MSB)      
+
+21           20h              	            20h               
+
+23           "P"              	            "G"               
+
+25           20h              	            ":"               
+
+27         NUM_GP (LSB)       	          NUM_GP (MSB)        
+
+29           20h              	            ":"               
+
+31           "E"              	            "T"               
+
+33           "M"              	            "R"               
+
+35           20h              	            ":"               
+
+37         NUM_TERM (LSB)     	          NUM_TERM (MSB)      
+
+39           20h              	            20h               
+
+41           "N"              	            "I"               
+
+43           "R"              	            "T"               
+
+45           "S"              	            "U"               
+
+(segue a pagina successiva)
+
+
+(segue da pagina precedente)
+
+47           "O"              	            "I"                
+
+49           "E"              	            "N"                
+
+51           "N"              	            20h                
+
+53           "L"              	            "E"                
+
+55           "S"              	            20h                
+
+57           "S"              	            "I"                
+
+59           "E"              	            "T"                
+
+61           "A"              	            "M"                
+
+63           "D"              	            20h                
+
+65           20h              	            "A"                
+
+67           "O"/"E"          	            "L"/"R"            
+
+69           "A"/"O"          	            "C"/"M"            
+
+71           "E"/"O"          	            "L"/"T"            
+
+73           "LF"             	            "CR"               
+
+75           "LF"             
+
+
+   dove:
+   
+   "M"                = IDENTIFICATIVO DI RECORD DI INTRUSIONE
+ GIORNO_INTR          = GIORNO DI INVIO CODICE
+ MESE_INTR            = MESE DI INVIO CODICE
+ ANNO_INTR            = ANNO DI INVIO CODICE
+ ORA_INTR             = ORA DI INVIO CODICE
+ MIN_INTR             = MINUTI DI INVIO CODICE
+ NUM_GP               = NUMERO DEL GP SEGNALANTE INTRUSIONE       
+ NUM_TERM             = NUMERO TERMINAZIONE DEL GP SEGNALANTE
+                        INTRUSIONE
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.12 RECORD :"IMPOSTAZIONE CREDITO SU CONTATORE DI 
+UTENTE"
+
+A seguito della ricezione del messaggio di "IMPOSTAZIONE CREDITO SU 
+CONTATORE DI ADDEBITO  PER UTENTE" e' generato il seguente record di 
+stampa.
+
+   Lunghezza : 49 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1              20h             	 	         "STX"              
+
+ 3              20h              		          "B"               
+
+ 5     GIORNO_IMPCRED (MSB)      		          20h               
+
+ 7             "-"               		    GIORNO_IMPCRED (LSB)    
+
+ 9     MESE_IMPCRED  (LSB)       		    MESE_IMPCRED (MSB)       
+
+11     ANNO_IMPCRED (MSB)        		          "-"               
+
+13              20h              		    ANNO_IMPCRED (LSB)     
+
+15      ORA_IMPCRED (MSB)        		          20h              
+
+17             ":"              		      ORA_IMPCRED (LSB)    
+
+19      MIN_IMPCRED (LSB)         		    MIN_IMPCRED (MSB)      
+
+21              20h               		         20h               
+
+23           NT_ORIGIN            		     NT_ORIGIN (MSB)       
+
+25           NT_ORIGIN            		       NT_ORIGIN           
+
+27           NT_ORIGIN (LSB)      		       NT_ORIGIN           
+
+29              20h               		         20h               
+
+31           NT_IMPCRED           		    NT_IMPCRED (MSB)      
+
+33           NT_IMPCRED           		      NT_IMPCRED          
+
+35           NT_IMPCRED (LSB)    		      NT_IMPCRED          
+
+37              20h               	              20h              	
+
+(segue a pagina successiva)
+
+
+
+
+
+(segue da pagina precedente)
+
+39             20h            	        	IND_AREA_IMPCRE        
+
+41            "+"             	          	20h               
+
+43        NUM_IMP_BON         	       	NUM_IMP_BON (MSB)                
+
+45        NUM_IMP_BON (LSB)   	        	NUM_IMP_BON            
+
+47            "LF"            	          	"CR"              
+
+49            "LF"            
+
+ dove:
+   
+ "B"                = IDENTIFICATIVO DI "IMPOSTAZIONE CREDITO SU 
+                      CONTATORE DI UTENTE"
+
+ IND_AREA_IMPCRE    = INDICA L'AREA A CUI APPARTIENE L'UTENTE
+                      RICEVENTE IL "BONUS"
+
+     "+"            = INDICA CHE GLI IMPULSI SUCCESSIVI SONO DI
+                      CREDITO
+
+ GIORNO_IMPCRED     = INDICA IL GIORNO DI IMPOSTAZIONE CREDITO
+ MESE_IMPCRED       = INDICA IL MESE DI IMPOSTAZIONE CREDITO 
+ ANNO_IMPCRED       = INDICA L'ANNO DI IMPOSTAZIONE CREDITO 
+ ORA_IMPCRED        = INDICA L'ORA DI IMPOSTAZIONE CREDITO
+ MIN_IMPCRED        = INDICA I MINUTI DI IMPOSTAZIONE CREDITO
+ NT_IMPCRED         =INDICA IL NUMERO TELEFONICO RICEVENTE CREDITO
+ NT_ORIGIN        =INDICA IL NUMERO TELEFONICO ORIGINATORE CREDITO
+ NUM_IMP_BON      =INDICA IL NUMERO DI IMPULSI DI CREDITO (BONUS)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.13 RECORD :"AZZERAMENTO CONTATORE DI ADDEBITO PER 
+UTENTE"
+
+A seguito della ricezione del messaggio di "AZZERAMENTO CONTATORE DI 
+ADDEBITO  PER UTENTE" e' generato il seguente record di stampa.
+
+   Lunghezza : 50 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1             20h            	            "STX"              
+
+ 3             20h            	             "Z"               
+
+ 5     GIORNO_AZZCONT (MSB)   	             20h               
+
+ 7             "-"            	       GIORNO_AZZCONT (LSB)    
+
+ 9     MESE_AZZCONT (LSB)     	       MESE_AZZCONT (MSB)       
+
+11     ANNO_AZZCONT (MSB)     	             "-"               
+
+13             20h            	        ANNO_AZZCONT (LSB)     
+
+15       ORA_AZZCONT (MSB)    	             20h               
+
+17             ":"            	        ORA_AZZCONT (LSB)      
+
+19      MIN_AZZCONT (LSB)     	        MIN_AZZCONT (MSB)      
+
+21             20h            	             20h               
+
+23           NT_ORIGIN        	         NT_ORIGIN (MSB)       
+
+25           NT_ORIGIN        	           NT_ORIGIN           
+
+27           NT_ORIGIN (LSB)  	           NT_ORIGIN           
+
+29             20h            	             20h               
+
+31           NT_AZZCONT       	         NT_AZZCONT (MSB)      
+
+33           NT_AZZCONT       	           NT_AZZCONT          
+
+35           NT_AZZCONT (LSB) 	           NT_AZZCONT          
+
+37             20h            	             20h              
+
+(segue a pagina successiva)
+
+
+
+
+
+
+
+
+(segue da pagina precedente)
+
+39             20h            	        IND_AREA_AZZCONT       
+
+41           "+"/"-"          	             20h               
+
+43        NUM_IMP_TASS_TOT    	     NUM_IMP_TASS_TOT (MSB)    
+
+45        NUM_IMP_TASS_TOT    	        NUM_IMP_TASS_TOT       
+
+47            "CR"            	     NUM_IMP_TASS_TOT (LSB)    
+
+49            "LF"            	            "LF"               
+
+
+
+   dove:
+   
+ "Z"                = IDENTIFICATIVO DI "AZZERAMENTO CONTATORE DI
+                      UTENTE"
+ IND_AREA_AZZCONT   = INDICA L'AREA A CUI APPARTIENE L'UTENTE
+                      RICEVENTE LA CANCELLAZIONE
+ GIORNO_AZZCONT     = INDICA IL GIORNO DI AZZERAMENTO CONTATORE
+ MESE_AZZCONT       = INDICA IL MESE DI AZZERAMENTO CONTATORE
+ ANNO_AZZCONT       = INDICA L'ANNO DI AZZERAMENTO CONTATORE
+ ORA_AZZCONT        = INDICA L'ORA DI AZZERAMENTO CONTATORE
+ MIN_AZZCONT        = INDICA I MINUTI DI AZZERAMENTO CONTATORE
+ NT_AZZCONT       = INDICA IL NUMERO TELEFONICO CONTATORE AZZERATO
+ NT_ORIGIN        = INDICA IL NUMERO TELEFONICO ORIGINATORE 
+                    AZZERAMENTO
+ "+"/ "-"         = IL SEGNO "+" INDICA UN CREDITO
+                    IL SEGNO "-" INDICA UN DEBITO
+ NUM_IMP_TASS_TOT = INDICA IL NUMERO DI IMPULSI DI TASSAZIONE AL
+                    MOMENTO DELL'AZZERAMENTO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.14 RECORD :"ADDEBITO CONSUMAZIONE"
+
+A seguito della ricezione del messaggio di "ADDEBITO CONSUMAZIONE" e' 
+generato il seguente record di stampa.
+
+   Lunghezza : 50 BYTE 
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1             20h            	            "STX"              
+
+ 3             20h            	             "D"               
+
+ 5     GIORNO_ADDCONS (MSB)   	             20h               
+
+ 7             "-"            	       GIORNO_ADDCONS (LSB)    
+
+ 9     MESE_ADDCONS (LSB)     	       MESE_ADDCONS (MSB)       
+
+11     ANNO_ADDCONS (MSB)     	             "-"               
+
+13            20h             	        ANNO_ADDCONS (LSB)     
+
+15       ORA_ADDCONS (MSB)    	             20h               
+
+17             ":"            	        ORA_ADDCONS (LSB)      
+
+19      MIN_ADDCONS (LSB)     	        MIN_ADDCONS (MSB)      
+
+21             20h            	             20h               
+
+23           NT_ORIGIN        	         NT_ORIGIN (MSB)       
+
+25           NT_ORIGIN        	           NT_ORIGIN           
+
+27           NT_ORIGIN (LSB)  	           NT_ORIGIN           
+
+29             20h            	             20h               
+
+31           NT_ADDCONS       	         NT_ADDCONS (MSB)      
+
+33           NT_ADDCONS       	           NT_ADDCONS          
+
+35           NT_ADDCONS (LSB) 	           NT_ADDCONS          
+
+37             20h            	              20h              
+
+(segue a pagina successiva)
+
+
+
+
+
+
+
+
+(segue da pagina precedente)
+
+39             20h            	        IND_AREA_ADDCONS       
+
+41        COD_CONS (MSB)      	             20h               
+
+43           COD_CONS        	 	           COD_CONS                      
+
+45           COD_CONS          	           COD_CONS            
+
+47            "CR"             	        COD_CONS (LSB)        
+
+49            "LF"             	            "LF"              
+
+   dove:
+   
+ "D"                = IDENTIFICATIVO DI "ADDEBITO CONSUMAZIONE"
+
+ IND_AREA_ADDCONS   = INDICA L'AREA A CUI APPARTIENE L'UTENTE
+                      RICEVENTE L'ADDEBITO CONSUMAZIONE
+ GIORNO_ADDCONS     = INDICA IL GIORNO DI INIZIO ADDEBITO
+                       CONSUMAZIONE
+ MESE_ADDCONS       = INDICA IL MESE DI ADDEBITO CONSUMAZIONE
+ ANNO_ADDCONS       = INDICA L'ANNO DI ADDEBITO CONSUMAZIONE
+ ORA_ADDCONS        = INDICA L'ORA DI ADDEBITO CONSUMAZIONE
+ MIN_ADDCONS        = INDICA I MINUTI DI ADDEBITO CONSUMAZIONE
+ NT_ADDCONS         = INDICA IL NUMERO TELEFONICO DEBITORE
+ NT_ORIGIN          = INDICA IL NUMERO TELEFONICO ORIGINATORE
+                      ADDEBITO
+ COD_CONS           = INDICA IL CODICE IDENTIFICATIVO DEL CONSUMO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.15 RECORD :"INIZIO ALLARME ESTERNO"
+
+
+Lunghezza riga: 31 BYTE
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0
+ 
+ 1             20h                          "STX"              
+ 
+ 3             20h                           "E"               
+
+ 5      GIORNO_ALL_EST (MSB)                 20h               
+
+ 7             "-"                  GIORNO_ALL_EST (LSB)       
+
+ 9       MESE_ALL_EST (LSB)           MESE_ALL_EST (MSB)       
+
+11       ANNO_ALL_EST (MSB)                  "-"               
+
+13             20h                     ANNO_ALL_EST  (LSB)     
+
+15        ORA_ALL_EST (MSB)                  20h               
+
+17             ":"                     ORA_ALL_EST  (LSB)      
+
+19       MIN_ALL_EST  (LSB)             MIN_ALL_EST (MSB)      
+
+21             20h                           20h               
+
+23            "S"                            "U"               
+
+25         NUM_US                            20h               
+
+27         COD_ALL_EST                       20h               
+
+29           "LF"                            "CR"              
+             "LF"              
+
+Dove:
+
+"E"
+identificativo riga relativa a record R_INIZIO_ALL_EST
+
+GIORNO_ALL_EST 
+MESE_ALL_EST 
+ANNO_ALL_EST 
+data di rilevazione allarme
+
+ORA_ALL_EST 
+MIN_ALL_EST 
+orario di rilevazione allarme
+
+US
+abbreviazione di scheda UnitÖ di Servizio
+
+
+
+
+
+NUM_US
+indica l'US a cui ä relativo l'allarme
+
+CODE_ALL_EST
+codice allarme; puï valere: "1" PER INIZIO ALLARME ESTERNO 1
+                            "2" PER INIZIO ALLARME ESTERNO 2
+                            "3" PER INIZIO ALLARME ESTERNO 3
+                            "4" PER INIZIO ALLARME ESTERNO 4
+
+
+10.16 RECORD :"FINE ALLARME ESTERNO"
+
+
+Lunghezza riga: 31 BYTE
+
+    15  14  13  12  11  10  9   8   7   6   5   4   3   2   1   0 
+
+ 1             20h                          "STX"              
+
+ 3             20h                           "E"               
+
+ 5      GIORNO_ALL_EST (MSB)                 20h               
+
+ 7             "-"                  GIORNO_ALL_EST (LSB)       
+
+ 9       MESE_ALL_EST (LSB)           MESE_ALL_EST (MSB)       
+
+11       ANNO_ALL_EST (MSB)                  "-"               
+
+13             20h                     ANNO_ALL_EST  (LSB)     
+
+15        ORA_ALL_EST (MSB)                  20h               
+
+17             ":"                     ORA_ALL_EST  (LSB)      
+
+19       MIN_ALL_EST  (LSB)             MIN_ALL_EST (MSB)      
+
+21             20h                           20h               
+
+23            "S"                            "U"               
+
+25         NUM_US                            20h               
+
+27         COD_ALL_EST                       20h               
+
+29           "LF"                            "CR"              
+
+31           "LF"              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dove:
+
+"E"
+identificativo riga relativa a record R_FINE_ALL_EST
+
+GIORNO_ALL_EST 
+MESE_ALL_EST 
+ANNO_ALL_EST 
+data di termine allarme
+
+ORA_ALL_EST 
+MIN_ALL_EST 
+orario di termine allarme
+
+US
+abbreviazione di scheda UnitÖ di Servizio
+
+NUM_US
+indica l'US a cui ä relativo l'allarme
+
+CODE_ALL_EST
+codice allarme; puï valere: "5" PER FINE ALLARME ESTERNO 1
+                            "6" PER FINE ALLARME ESTERNO 2
+                            "7" PER FINE ALLARME ESTERNO 3
+                            "8" PER FINE ALLARME ESTERNO 4
+
+
+
+
+
+10.17 ESEMPI DI STAMPA
+
+10.17.1 RECORD: ADDEBITO SINGOLA URBANA USCENTE
+
+A  27-02-94  00:43  00:00:33   8008      8008    11
+
+ #      0  000000000.0  2365478965412365412362
+
+
+00 18 20 55 20 20 32 37 2D 30 32 2D 39 34 20 20 30 30 3A 
+34 33 20 20 30 30 3A 30 30 3A 33 33 20 20 20 20 38 30 30
+38 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 38 30 30
+38 20 20 31 31 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+20 20 20 0D 0A 18 20 23 20 20 20 20 20 20 30 20 20 30 30
+30 30 30 30 30 30 30 2A 30 30 20 20 32 33 36 35 34 37 38
+39 36 35 34 31 32 33 36 35 34 31 32 33 0D 0A 0A
+
+
+10.17.2 RECORD: ADDEBITO SINGOLA URBANA ENTRANTE
+
+U  27-02-94  00:43  00:00:33   531       539    11
+
+ #                       2365478965412365412362
+
+
+00 18 20 55 20 20 32 37 2D 30 32 2D 39 34 20 20 30 30 3A 
+34 33 20 20 30 30 3A 30 30 3A 33 33 20 20 20 20 20 35 33
+31 20 20 20 20 20 20 20 20 35 33 39 20 20 20 20 38 30 30
+38 20 20 31 31 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+20 20 20 0D 0A 18 20 23 20 20 20 20 20 20 20 20 20 20 20
+20 20 20 20 20 20 20 20 20 20 20 20 32 33 36 35 34 37 38
+39 36 35 34 31 32 33 36 35 34 31 32 33 0D 0A 0A
+
+
+10.17.3 RECORD: IMPOSTAZIONE SVEGLIA
+
+ I  27-02-94  00:49  11      31001   1  27-02-94  00:50
+
+00 18 20 49 20 20 32 37 2D 30 32 2D 39 34 20 20 30 30 3A 
+34 39 20 20 31 31 20 20 20 20 20 20 33 31 30 30 31 20 20 
+20 31 20 20 32 37 2D 30 32 2D 39 34 20 20 30 30 3A 35 30 
+0D 0A 0A                    
+
+
+10.17.4 RECORD: CANCELLAZIONE SVEGLIA
+
+ C  27-02-94  00:51  11      31001   1
+
+
+00 18 20 43 20 20 32 37 2D 30 32 2D 39 34 20 20 30 30 3A 
+35 31 20 20 31 31 20 20 20 20 20 20 33 31 30 30 31 20 20 
+20 31 0D   
+
+
+10.17.5 RECORD: INOLTRO SVEGLIA
+
+ S  27-02-94  02:00  31001   1  R
+
+
+00 18 20 53 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 
+30 30 20 20 33 31 30 30 31 20 20 20 31 20 20 52 0D 0A 0A 
+
+
+10.17.6 RECORD: STANZA PRONTA 
+
+P  27-02-94  02:05   31001   1  654321
+
+18 20 50 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 30 
+35 20 20 20 33 31 30 30 31 20 20 20 31 20 20 36 35 34 33 
+32 31 0D 0A 0A 
+
+
+10.17.7 RECORD: RONDA 
+
+R  27-02-94  02:06   31001   1  123456
+
+18 20 52 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 30 
+36 20 20 20 33 31 30 30 31 20 20 20 31 20 20 31 32 33 34 
+35 36 0D 0A 0A 
+
+
+10.17.8 RECORD: ALLARME AUSILIARIO TELEFONO
+
+D  27-02-94  02:18  31001   1  2
+
+18 20 44 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 31 
+38 20 20 33 31 30 30 31 20 20 20 31 20 20 32 0D 0A 0A 
+
+
+10.17.9 RECORD: CONTATORE DI UTENTE
+
+T  27-02-94  02:24   32001   1                      -    0  -
+000000000.00
+
+
+18 20 54 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 32 
+34 20 20 20 33 32 30 30 31 20 20 20 31 20 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 2D 
+20 20 20 20 30 20 20 2D 30 30 30 30 30 30 30 30 30 2E 30 
+30 0D 0A 0A 
+
+
+
+
+
+
+
+
+
+10.17.10 RECORD: INTRUSIONE DAL TERMINALE DI MANUTENZIONE
+
+M  27-02-94  02:27  GP: 17  TERM: 10  INTRUSIONE NEL SISTEMA DA LOCALE 
+
+
+18 20 4D 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 32 37 20 20 47 50 
+3A 20 31 37 20 20 54 45 52 4D 3A 20 31 30 20 20 
+49 42 54 52 55 53 54 4F 4E 45 20 4E 45 4C 20 53 49 53 54 45 4D 41 
+20 44 41 20 4C 4F 43 41 4C 45 0D 0A 0A 
+
+
+10.17.11 RECORD: IMPOSTAZIONE CREDITO SU CONTATORE DI UTENTE
+
+B  27-02-94  02:57  31001   32001   0  +1234
+
+
+18 20 42 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 35 37 20 20 33 31 
+30 30 31 20 20 20 33 32 30 30 31 20 20 20 30 20 20 2B 31 32
+33 34 0D 0A 0A 
+
+
+10.17.12 RECORD: AZZERAMENTO CONTATORE DI UTENTE
+
+Z  27-02-94  02:57  31001   32001   0  -12345
+
+
+18 20 5A 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 35 37 20 20 33 31 
+30 30 31 20 20 20 33 32 30 30 31 20 20 20 30 20 20 2D 31 32
+33 34 35 0D 0A 0A 
+
+
+10.17.13 RECORD: ADDEBITO CONSUMAZIONE
+
+ D  27-02-94  02:57  31001   10         111222
+  
+
+18 20 44 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 35 37 20 20 33 31 
+30 30 31 20 20 20 31 30 20 20 20 20 20 20 20 20 20 31 31 31 32 32 32 0D 
+0A 0A 18 20 44 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 35 38 20 20 
+33 31 30 30 31 20 20 20 33 31 30 30 31 20 20 20   31 20 20 31 32 33 36 
+35 34 0D 0A 0A 
+
+
+10.17.14 RECORD: INIZIO ALLARME ESTERNO
+
+ E  27-02-94  02:57  SU18 1 
+  
+
+18 20 44 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 35 37 20 20 53 55 
+20 20 31 28 20 31 20 0D 0A 0A 
+
+
+
+
+
+10.17.15 RECORD: FINE ALLARME ESTERNO
+
+ E  27-02-94  02:57  SU18 5
+  
+
+18 20 44 20 20 32 37 2D 30 32 2D 39 34 20 20 30 32 3A 35 37 20 20 53 55 
+20 20 31 28 20 35 20 0D 0A 0A 
+
+
+
+
+
+CAPITOLO 11
+COLLEGAMENTO STAMPANTE
+
+
+11.1 VELOCITA' STAMPANTE
+
+La velocita' del collegamento puo' assumere i valori:
+
+                         300 baud
+                        1200 baud    (valore di default)
+                        2400 baud
+                        4800 baud
+                        9600 baud
+                       19200 baud
+
+Il formato del carattere puo' essere uno dei seguenti:
+
+                      1 START-BIT
+                      8 BIT DI CARATTERE
+                      NESSUNA PARITA'
+                      1 STOP BIT
+
+
+
+11.2 CAVO DI COLLEGAMENTO DELLA STAMPANTE
+
+
+- il collegamento tra stampante e SAE 3000 avviene interponendo la 
+borchia a 8 contatti codice 156738040;
+- il cavo di collegamento porta le seguenti connessioni:
+
+
+         PC                               BORCHIA 
+  (25 poli femmina)                      (RJ45 8/8)
+
+ segnali      pin                          contatti
+
+   PG         8     <-------------------    8 (BL)
+   RX         3     <-------------------    2 (BR)
+   TX         2      ------------------->   1 (WH)
+  DTR        20      ------------------->   5 (RD)
+   SG         7      -------------------    6 (BK)
+
+            altri    Non collegati
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+  Telematica S.p.A.
+  Telematica S.p.A.
+82
+cod. 720.031.014 - Ed. 2
+83
+cod. 720.031.014 - Ed. 2
+
+cod. 720.xxx.xxx - Ed. 1
+
+
+
+
