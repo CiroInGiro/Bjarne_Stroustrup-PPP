@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Drill", "Drill\Drill.vcxproj", "{F4344F4E-2FDF-4357-836E-9954793AEF44}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Esercizio 01", "Esercizio 01\Esercizio 01.vcxproj", "{9D737921-D4EE-4F16-AAF6-1E6EF90637BE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Esercizio 02", "Esercizio 02\Esercizio 02.vcxproj", "{87E69F47-3575-49AC-B9BC-EAD943F92424}"
@@ -41,14 +39,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Debug|x64.ActiveCfg = Debug|x64
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Debug|x64.Build.0 = Debug|x64
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Debug|x86.ActiveCfg = Debug|Win32
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Debug|x86.Build.0 = Debug|Win32
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Release|x64.ActiveCfg = Release|x64
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Release|x64.Build.0 = Release|x64
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Release|x86.ActiveCfg = Release|Win32
-		{F4344F4E-2FDF-4357-836E-9954793AEF44}.Release|x86.Build.0 = Release|Win32
 		{9D737921-D4EE-4F16-AAF6-1E6EF90637BE}.Debug|x64.ActiveCfg = Debug|x64
 		{9D737921-D4EE-4F16-AAF6-1E6EF90637BE}.Debug|x64.Build.0 = Debug|x64
 		{9D737921-D4EE-4F16-AAF6-1E6EF90637BE}.Debug|x86.ActiveCfg = Debug|Win32
