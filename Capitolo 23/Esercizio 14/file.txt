@@ -1,0 +1,33 @@
+/* Capitolo 23 Esercizio 14
+* Scrivi un programma come quello del paragrafo 23.8.7 che può essere usato per sperimentare le pattern matching digitado delle pattern.
+* Comunque, letto un file in memoria (rappresentando l'interruzione di nuova linea col carattere '\n'), in modo che possa sperimentare modeli di interruzioni.
+* Testalo e documenta una dozzina di pattern.
+*/
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <regex>
+#include <vector>
+
+int main() {
+	std::ifstream ifs{ "file.txt" };
+	std::vector<std::string> linee;
+	if (!ifs) exit(1);
+
+	for (std::string linea; std::getline(ifs, linea);) linee.push_back(linea);
+
+	for (std::string pat; std::getline(std::cin, pat);) {
+		std::regex pattern{ pat };
+		std::smatch match;
+		for (auto p : linee) {
+			if (std::regex_match(p, match, pattern)) {
+				std::cout << "Trovato in: " << match[0] << ": " << std::endl;
+				for (size_t i = 1; i < match.size(); ++i) {
+					std::cout << "Match " << i << ": " << match[i] << std::endl;
+				}
+			}
+		}
+		std::cout << std::endl << "nuova pattern: ";
+	}
+}
