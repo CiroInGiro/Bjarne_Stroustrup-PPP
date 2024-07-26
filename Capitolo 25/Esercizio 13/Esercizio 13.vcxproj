@@ -99,7 +99,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Users\ciroingiro\source\repos\Bjarne - Programming\Capitolo 25\Librerie\Boost;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\ciroingiro\source\repos\Bjarne - Programming\Capitolo 25\Librerie\Boost\stage\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
